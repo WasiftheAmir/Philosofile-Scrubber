@@ -1,0 +1,29 @@
+{
+  "language": "fr",
+  "files": [
+    {
+      "path": "fr_words.tsv",
+      "role": "word_list",
+      "source": "Grammalecte Classique (LibreOffice fr_FR)",
+      "licence": "MPL 2.0",
+      "version": "v7.7",
+      "sha256": "e4bdbc5dc4040abeee69f49226dc9f2cf98eb14006976cd8e98e904b9fd7f577"
+    },
+    {
+      "path": "fr_name_gated.txt",
+      "role": "gated_list",
+      "source": "Hermit Dave FrequencyWords (fr_50k) vs INSEE prenoms",
+      "licence": "CC BY-SA 4.0",
+      "version": "2026-11-10",
+      "sha256": "5298803827b8fea0579386f2638c7ad027a44aa42c3d78f76159fa8dab9e4860"
+    },
+    {
+      "path": "fr_names.txt",
+      "role": "name_list",
+      "source": "INSEE Fichier des prenoms (ThinkR-open/prenoms)",
+      "licence": "Licence Ouverte v2.0 (Etalab)",
+      "version": "1900-2021 (nat2021)",
+      "sha256": "e9dfb85fcdfc764238f5c803ef2371f24b4951239b0db65c6e8637366117c93b"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+# English (en) - reviewed
+RELATION	en	reviewed	emergency\s+contact\s+name	father['’]?s\s+name	mother['’]?s\s+name	spouse['’]?s\s+name
+NAME	en	reviewed	holder['’]?s\s+name	given\s+names?	sur\s?name	full\s+name	first\s+name	last\s+name	name
+ADDRESS	en	reviewed	permanent\s+address	present\s+address	mailing\s+address	address	residence	street
+DATE	en	reviewed	date\s+of\s+birth	date\s+of\s+issue	date\s+of\s+expiry	birth\s*date	dob	born	expiry	issued	expires
+ID	en	reviewed	national\s+id	passport(?:\s*(?:no\.?|number))?	licen[cs]e(?:\s*(?:no\.?|number))?	personal\s+no\.?	document\s+no\.?	card\s+no\.?	student(?:\s*(?:no\.?|number|id))?	account(?:\s*(?:no\.?|number))?	policy(?:\s*(?:no\.?|number))?	file(?:\s*(?:no\.?|number))?	case(?:\s*(?:no\.?|number))?	reference(?:\s*(?:no\.?|number))?	registration(?:\s*(?:no\.?|number))?	vat(?:\s*(?:no\.?|number))?	tax(?:\s*(?:id|no\.?|number))?	id(?:\s*(?:no\.?|number))?	nid	tin	ssn	sin	ein	itin
+PHONE	en	reviewed	tel(?:ephone)?(?:\s*(?:no\.?|number))?	phone(?:\s*(?:no\.?|number))?	mobile(?:\s*(?:no\.?|number))?	cell(?:\s*(?:no\.?|number))?	fax(?:\s*(?:no\.?|number))?
+PLACE	en	reviewed	nationality	place\s+of\s+birth	country\s+of\s+birth
+
+# Bengali (bn) - pending native-speaker review
+RELATION	bn	draft	জরুরি যোগাযোগের নাম	জরুরি যোগাযোগকারীর নাম	পিতার নাম	বাবার নাম	মাতার নাম	মায়ের নাম	স্বামী/স্ত্রীর নাম	জীবনসঙ্গীর নাম	স্বামী বা স্ত্রীর নাম	অভিভাবকের নাম
+NAME	bn	draft	ধারকের নাম	আবেদনকারীর নাম	প্রার্থীর নাম	গ্রাহকের নাম	প্রদত্ত নাম	নামের প্রথম অংশ	পদবি	বংশনাম	পারিবারিক নাম	পূর্ণ নাম	পুরো নাম	প্রথম নাম	শেষ নাম	নাম	স্বাক্ষর	প্রেরক	প্রাপক
+ADDRESS	bn	draft	স্থায়ী ঠিকানা	বর্তমান ঠিকানা	ডাক ঠিকানা	ঠিকানা	বাসস্থান
+DATE	bn	draft	জন্ম তারিখ	প্রদানের তারিখ	ইস্যুর তারিখ	মেয়াদ শেষের তারিখ	মেয়াদোত্তীর্ণের তারিখ	জন্মতারিখ	জন্ম	মেয়াদ	মেয়াদোত্তীর্ণ	প্রদত্ত	মেয়াদ শেষ
+ID	bn	draft	জাতীয় পরিচয়পত্র	পাসপোর্ট নম্বর	পাসপোর্ট নং	লাইসেন্স নম্বর	লাইসেন্স নং	ব্যক্তিগত নম্বর	নথি নম্বর	ডকুমেন্ট নম্বর	কার্ড নম্বর	কার্ড নং	শিক্ষার্থী পরিচয়পত্র	রোল নম্বর	হিসাব নম্বর	অ্যাকাউন্ট নম্বর	হিসাব নং	পলিসি নম্বর	বীমা পলিসি নম্বর	ফাইল নম্বর	মামলা নম্বর	কেস নম্বর	রেফারেন্স নম্বর	সূত্র নম্বর	স্মারক নম্বর	নিবন্ধন নম্বর	রেজিস্ট্রেশন নম্বর	মূসক নিবন্ধন নম্বর	ভ্যাট নম্বর	করদাতা শনাক্তকরণ নম্বর	পরিচয় নম্বর	পরিচয়পত্র নম্বর	আইডি নম্বর
+PHONE	bn	draft	টেলিফোন	ফোন	ফোন নম্বর	মোবাইল	মোবাইল নম্বর	মুঠোফোন	ফ্যাক্স	ফ্যাক্স নম্বর
+PLACE	bn	draft	জাতীয়তা	নাগরিকত্ব	জন্মস্থান	জন্মের দেশ
+
+# Spanish (es) - UNREVIEWED (draft)
+RELATION	es	draft	contacto\s+de\s+emergencia	nombre\s+del\s+contacto\s+de\s+emergencia	nombre\s+del\s+padre	nombre\s+de\s+la\s+madre	nombre\s+del\s+cónyuge	nombre\s+del\s+conyuge	nombre\s+de\s+la\s+esposa	nombre\s+del\s+esposo	padre	madre	cónyuge	conyuge	representante\s+legal	tutor\s+legal	tutor	nombre\s+del\s+c[oó]nyuge	nombre\s+de\s+la\s+pareja	nombre\s+del\s+tutor	nombre\s+del\s+representante\s+legal	c[oó]nyuge	tutor(?:\s+legal)?	familiar\s+m[aá]s\s+cercano
+NAME	es	draft	nombre\s+del\s+titular	nombre\s+completo	nombre\s+y\s+apellidos	primer\s+apellido	segundo\s+apellido	apellidos?	primer\s+nombre	segundo\s+nombre	nombres?	nombre	nombres?\s+y\s+apellidos?	nombre\s+de\s+pila	titular
+ADDRESS	es	draft	dirección\s+permanente	direccion\s+permanente	dirección\s+actual	direccion\s+actual	dirección\s+postal	direccion\s+postal	dirección\s+de\s+residencia	direccion\s+de\s+residencia	domicilio\s+habitual	domicilio\s+fiscal	domicilio	dirección	direccion	residencia	calle	direcci[oó]n\s+permanente	direcci[oó]n\s+actual	direcci[oó]n\s+postal	direcci[oó]n\s+de\s+residencia	direcci[oó]n\s+del\s+domicilio	direcci[oó]n\s+habitual	direcci[oó]n	lugar\s+de\s+residencia
+DATE	es	draft	fecha\s+de\s+nacimiento	fecha\s+de\s+expedición	fecha\s+de\s+expedicion	fecha\s+de\s+emisión	fecha\s+de\s+emision	fecha\s+de\s+caducidad	fecha\s+de\s+vencimiento	fecha\s+de\s+validez	nacido\s+el	nacida\s+el	nacimiento	caducidad	vencimiento	expedición	expedicion	emisión	emision	fecha\s+de\s+expedici[oó]n	fecha\s+de\s+emisi[oó]n	fecha\s+de\s+expiraci[oó]n	f\.\s*nac(?:imiento)?	f\.\s*exp(?:edici[oó]n)?	f\.\s*cad(?:ucidad)?	expedido\s+el	caduca\s+el	vence\s+el	fecha
+ID	es	draft	documento\s+nacional\s+de\s+identidad	dni(?:\s*(?:no\.?|núm\.?|num\.?|número|numero))?	nie(?:\s*(?:no\.?|núm\.?|num\.?|número|numero))?	nif(?:\s*(?:no\.?|núm\.?|num\.?|número|numero))?	cif(?:\s*(?:no\.?|núm\.?|num\.?|número|numero))?	cédula(?:\s+de\s+identidad)?(?:\s*(?:no\.?|núm\.?|num\.?|número|numero))?	cedula(?:\s+de\s+identidad)?(?:\s*(?:no\.?|núm\.?|num\.?|número|numero))?	curp	rfc	pasaporte(?:\s*(?:no\.?|núm\.?|num\.?|número|numero))?	licencia(?:\s+de\s+conducir)?(?:\s*(?:no\.?|núm\.?|num\.?|número|numero))?	permiso\s+de\s+conducir	número\s+de\s+documento	numero\s+de\s+documento	no\.?\s*de\s+documento	número\s+de\s+identificación	numero\s+de\s+identificacion	número\s+de\s+tarjeta	numero\s+de\s+tarjeta	número\s+de\s+cuenta	numero\s+de\s+cuenta	número\s+de\s+póliza	numero\s+de\s+poliza	número\s+de\s+expediente	numero\s+de\s+expediente	número\s+de\s+registro	numero\s+de\s+registro	número\s+fiscal	numero\s+fiscal	seguridad\s+social(?:\s*(?:no\.?|núm\.?|num\.?|número|numero))?	n[uú]mero\s+de\s+identificaci[oó]n(?:\s+fiscal)?	n[uú]mero\s+de\s+documento	n[uú]mero\s+de\s+pasaporte	n[uú]mero\s+de\s+licencia	n[uú]mero\s+de\s+registro	n[uú]mero\s+de\s+tarjeta	n[uú]mero\s+de\s+cuenta	n[uú]mero\s+de\s+p[oó]liza	n[uú]mero\s+de\s+afiliaci[oó]n	n[uú]mero\s+de\s+seguridad\s+social	n[uú]mero\s+personal	c[eé]dula(?:\s+de\s+identidad)?	pasaporte(?:\s*(?:n[oº°]\.?|n[uú]mero))?	carnet\s+de\s+identidad	n[uú]m(?:\.|\b)?\s*doc(?:umento)?	no\.\s*de\s*documento	dni	nie	nif	cif	ruc
+PHONE	es	draft	teléfono(?:\s*(?:no\.?|núm\.?|número))?	telefono(?:\s*(?:no\.?|num\.?|numero))?	tel(?:\.|\b)(?:\s*(?:no\.?|núm\.?|número))?	teléfono\s+móvil	telefono\s+movil	teléfono\s+fijo	telefono\s+fijo	móvil	movil	celular	fax	tel[eé]fono(?:\s*(?:fijo|m[oó]vil|celular|n[oº°]\.?|n[uú]mero))?	n[uú]mero\s+de\s+tel[eé]fono	n[uú]mero\s+de\s+celular	n[uú]mero\s+de\s+m[oó]vil	tel[eé]fono	m[oó]vil	tel[eé]f?\.?	cel\.?	m[oó]v\.?
+PLACE	es	draft	nacionalidad	lugar\s+de\s+nacimiento	país\s+de\s+nacimiento	pais\s+de\s+nacimiento	país\s+de\s+origen	pais\s+de\s+origen	ciudad\s+de\s+nacimiento	pa[ií]s\s+de\s+nacimiento	lugar\s+de\s+expedici[oó]n	pa[ií]s\s+de\s+origen	pa[ií]s\s+de\s+residencia	ciudad\s+de\s+origen	municipio\s+de\s+nacimiento
+RELATION	es	draft	Contacto de emergencia	Nombre del padre	Nombre de la madre	Nombre del cónyuge
+NAME	es	draft	Nombre del titular	Nombres	Nombre de pila	Apellidos	Apellido	Nombre completo	Nombre y apellidos	Nombre	Primer nombre
+ADDRESS	es	draft	Domicilio permanente	Dirección permanente	Domicilio actual	Dirección actual	Dirección postal	Dirección	Domicilio	Residencia
+DATE	es	draft	Fecha de nacimiento	Fecha de expedición	Fecha de emisión	Fecha de caducidad	Fecha de vencimiento	Nacido	Caducidad	Vencimiento	Expedido	Emitido	Caduca	Válido hasta
+ID	es	draft	Documento Nacional de Identidad	Cédula de identidad	Número de pasaporte	Número de licencia	Número personal	Número de identificación personal	Número de documento	Número de tarjeta	Carné de estudiante	Número de estudiante	Matrícula	Número de cuenta	Número de póliza	Número de expediente	Número de caso	Número de causa	Número de referencia	Referencia	Número de registro	Número de IVA	NIF-IVA	Número de identificación fiscal	NIF	Número de identificación
+PHONE	es	draft	Teléfono	Tel	Móvil	Teléfono móvil	Celular	Fax	Telefax
+PLACE	es	draft	Nacionalidad	Lugar de nacimiento	País de nacimiento
+
+# French (fr) - UNREVIEWED (draft)
+RELATION	fr	draft	contact\s+d['’]urgence	nom\s+du\s+contact\s+d['’]urgence	nom\s+du\s+père	nom\s+du\s+pere	nom\s+de\s+la\s+mère	nom\s+de\s+la\s+mere	nom\s+du\s+conjoint	nom\s+de\s+l['’]époux	nom\s+de\s+l['’]épouse	père	pere	mère	mere	conjoint	épouse	époux	représentant\s+légal	representant\s+legal	tuteur	nom\s+du\s+p[eè]re	nom\s+de\s+la\s+m[eè]re	nom\s+de\s+l['’][eé]poux(?:/se)?	nom\s+du\s+tuteur	repr[eé]sentant\s+l[eé]gal	personne\s+[aà]\s+pr[eé]venir	p[eè]re	m[eè]re	[eé]poux	[eé]pouse
+NAME	fr	draft	nom\s+du\s+titulaire	nom\s+complet	nom\s+de\s+famille	nom\s+d['’]usage	nom\s+de\s+naissance	prénom(?:s)?	prenom(?:s)?	nom	noms?\s+et\s+pr[eé]noms?	nom\s+marital	pr[eé]noms?	titulaire
+ADDRESS	fr	draft	adresse\s+permanente	adresse\s+actuelle	adresse\s+postale	adresse\s+du\s+domicile	domicile	adresse	résidence	residence	rue	adresse\s+de\s+domicile	adresse\s+de\s+r[eé]sidence	adresse\s+principale	r[eé]sidence	lieu\s+de\s+r[eé]sidence
+DATE	fr	draft	date\s+de\s+naissance	date\s+de\s+délivrance	date\s+de\s+delivrance	date\s+d['’]émission	date\s+d['’]emission	date\s+d['’]expiration	date\s+de\s+validité	date\s+de\s+validite	date\s+d['’]échéance	date\s+d['’]echeance	né(?:\(e\))?\s+le	ne(?:\(e\))?\s+le	naissance	expiration	délivré\s+le	delivre\s+le	n[eé](?:/e)?\s+le	date\s+de\s+d[eé]livrance	date\s+d['’][eé]mission	date\s+de\s+validit[eé]	date\s+de\s+fin\s+de\s+validit[eé]	date\s+d['’][eé]ch[eé]ance	expire\s+le	d[eé]livr[eé](?:/e)?\s+le	date
+ID	fr	draft	numéro\s+d['’]identité	numero\s+d['’]identite	carte\s+nationale\s+d['’]identité	cni	numéro\s+de\s+passeport	numero\s+de\s+passeport	passeport(?:\s*(?:n°|no\.?|numéro|numero))?	permis\s+de\s+conduire(?:\s*(?:n°|no\.?|numéro|numero))?	numéro\s+de\s+sécurité\s+sociale	numero\s+de\s+securite\s+sociale	nss	nir	numéro\s+de\s+document	numero\s+de\s+document	numéro\s+de\s+carte	numero\s+de\s+carte	numéro\s+de\s+dossier	numero\s+de\s+dossier	numéro\s+d['’]enregistrement	numero\s+d['’]enregistrement	numéro\s+fiscal	numero\s+fiscal	numéro\s+d['’]immatriculation	numéro\s+de\s+tva	tva\s+intracommunautaire	siren	siret	no\.?\s*de\s+document	n°\s*de\s+document	carte\s+nationale\s+d['’]identit[eé]	titre\s+de\s+s[eé]jour	num[eé]ro\s+d['’]identit[eé]	num[eé]ro\s+d['’]identification	num[eé]ro\s+de\s+document	num[eé]ro\s+de\s+passeport	num[eé]ro\s+de\s+permis	num[eé]ro\s+de\s+carte	num[eé]ro\s+d['’]enregistrement	num[eé]ro\s+de\s+s[eé]curit[eé]\s+sociale	num[eé]ro\s+fiscal	num[eé]ro\s+de\s+compte	num[eé]ro\s+de\s+police	n[oº°]\s+de\s+dossier	n[oº°]\s+d['’]enregistrement	n[oº°]\s*id\.?	passeport(?:\s*(?:n[oº°]\.?|num[eé]ro))?
+PHONE	fr	draft	téléphone(?:\s*(?:n°|no\.?|numéro))?	telephone(?:\s*(?:n°|no\.?|numero))?	tél(?:\.|\b)(?:\s*(?:n°|no\.?|numéro))?	portable	téléphone\s+portable	telephone\s+portable	téléphone\s+fixe	telephone\s+fixe	cellulaire	fax	télécopie	telecopie	num[eé]ro\s+de\s+t[eé]l[eé]phone	num[eé]ro\s+de\s+portable	t[eé]l[eé]phone(?:\s*(?:fixe|portable|mobile|n[oº°]\.?|num[eé]ro))?	t[eé]l[eé]phone	mobile	t[eé]l\.?	port\.?
+PLACE	fr	draft	nationalité	nationalite	lieu\s+de\s+naissance	pays\s+de\s+naissance	pays\s+d['’]origine	ville\s+de\s+naissance	nationalit[eé]	lieu\s+de\s+d[eé]livrance	commune\s+de\s+naissance	pays\s+de\s+r[eé]sidence
+RELATION	fr	draft	Nom du contact d'urgence	Nom du père	Nom de la mère	Nom du conjoint
+NAME	fr	draft	Nom du titulaire	Prénoms	Prénom	Nom de famille	Nom	Nom complet	Nom et prénom
+ADDRESS	fr	draft	Adresse permanente	Adresse actuelle	Adresse postale	Adresse	Résidence	Domicile
+DATE	fr	draft	Date de naissance	Date de délivrance	Date d'émission	Date d'expiration	Date de naiss	Né le	Né	Expiration	Délivré le	Délivré	Expire le	Expire
+ID	fr	draft	Carte nationale d'identité	Numéro d'identité nationale	Numéro de passeport	N° de passeport	Numéro de permis	Numéro de licence	Numéro personnel	Numéro de document	Numéro du document	Numéro de carte	Carte d'étudiant	Numéro d'étudiant	Numéro de compte	Numéro de police	Numéro de dossier	Numéro d'affaire	Numéro de référence	Référence	Numéro d'enregistrement	Numéro d'immatriculation	Numéro de TVA	Numéro d'identification fiscale	Numéro fiscal	Numéro d'identification
+PHONE	fr	draft	Téléphone	Tél	Portable	Téléphone portable	Mobile	Cellulaire	Fax	Télécopie	Télécopieur
+PLACE	fr	draft	Nationalité	Lieu de naissance	Pays de naissance
+
+# German (de) - UNREVIEWED (draft)
+RELATION	de	draft	notfallkontakt(?:\s*name)?	name\s+des\s+vaters	vater(?:\s*name)?	name\s+der\s+mutter	mutter(?:\s*name)?	name\s+des\s+ehegatten	name\s+des\s+partners	ehegatte	ehepartner	gesetzlicher\s+vertreter	erziehungsberechtigte(?:r)?	notfallkontakt(?:name)?	name\s+des\s+notfallkontakts	vatersname	muttersname	name\s+des\s+gesetzlichen\s+vertreters	vater	mutter	vormund
+NAME	de	draft	vollständiger\s+name	vollstaendiger\s+name	name\s+des\s+inhabers	karteninhaber	vorname(?:n)?	nachname(?:n)?	familienname(?:n)?	geburtsname	name	vollst[aä]ndiger\s+name	vor-\s*und\s*nachname	vorname	nachname	familienname	rufname	k[uü]nstlername	inhaber
+ADDRESS	de	draft	ständiger\s+wohnsitz	staendiger\s+wohnsitz	aktuelle\s+adresse	derzeitige\s+anschrift	postanschrift	postadresse	meldeadresse	wohnsitz	anschrift	adresse	straße	strasse	str\.	wohnort	st[aä]ndiger\s+wohnsitz	hauptwohnsitz	nebenwohnsitz	derzeitige\s+adresse	wohnanschrift	stra[sß]e
+DATE	de	draft	geburtsdatum	ausstellungsdatum	ablaufdatum	gültig\s+bis	gueltig\s+bis	gültig\s+ab	gueltig\s+ab	geburtszeit	geboren\s+am	ausgestellt\s+am	ablauf	g[uü]ltig\s+bis	g[uü]ltigkeitsdatum	g[uü]ltig\s+ab	datum
+ID	de	draft	personalausweis(?:\s*(?:nr\.?|nummer))?	ausweisnummer	reisepass(?:\s*(?:nr\.?|nummer))?	passnummer	identifikationsnummer	steuer-?id	steuer-?nummer	sozialversicherungsnummer	versicherungsnummer	führerschein(?:\s*(?:nr\.?|nummer))?	fuehrerschein(?:\s*(?:nr\.?|nummer))?	dokumentennummer	kartennummer	kundennummer	aktenzeichen	registrierungsnummer	ust-?idnr\.?	umsatzsteuer-?identifikationsnummer	matrikelnummer	personalausweisnummer	reisepassnummer	f[uü]hrerscheinnummer	personenkennziffer	registriernummer	versichertennummer	steuernummer	steuer-id	ust-idnr\.?	mitgliedsnummer	ausweis-nr\.?	pass-nr\.?	id-nr\.?
+PHONE	de	draft	telefon(?:\s*(?:nr\.?|nummer))?	tel(?:\.|\b)(?:\s*(?:nr\.?|nummer))?	mobiltelefon	mobilnummer	mobil	handy(?:\s*nr\.?)?	festnetz(?:\s*nummer)?	telefax	fax(?:\s*nr\.?)?	telefonnummer	handynummer	mobilfunknummer	festnetznummer	telefon	handy	tel\.?	fax
+PLACE	de	draft	staatsangehörigkeit	staatsangehoerigkeit	nationalität	nationalitaet	geburtsort	geburtsland	herkunftsland	staatsangeh[oö]rigkeit	staatsb[uü]rgerschaft	ausstellungsbeh[oö]rde	ausstellungsort	wohnort
+RELATION	de	draft	Name des Notfallkontakts	Notfallkontakt	Name des Vaters	Name der Mutter	Name des Ehepartners	Name des Ehegatten
+NAME	de	draft	Name des Inhabers	Vornamen	Vorname	Nachname	Familienname	Vollständiger Name	Vor- und Nachname	Name
+ADDRESS	de	draft	Dauerhafte Anschrift	Ständiger Wohnsitz	Hauptwohnsitz	Aktuelle Anschrift	Postanschrift	Anschrift	Adresse	Wohnsitz	Wohnort
+DATE	de	draft	Geburtsdatum	Ausstellungsdatum	Ablaufdatum	Gültig bis	Geboren am	geb	Geboren	Ablauf	Ausgestellt	Ausgestellt am	Läuft ab am
+ID	de	draft	Personalausweis	Reisepassnummer	Passnummer	Führerscheinnummer	Lizenznummer	Persönliche Identifikationsnummer	Personalnummer	Dokumentennummer	Ausweisnummer	Kartennummer	Matrikelnummer	Studentenausweis	Kontonummer	Policennummer	Versicherungsscheinnummer	Versicherungsnummer	Aktenzeichen	Fallnummer	Geschäftszeichen	Referenznummer	Registrierungsnummer	Registernummer	Umsatzsteuer-Identifikationsnummer	USt-IdNr	Steuer-Identifikationsnummer	Steuernummer	Steuer-ID	Identifikationsnummer	ID-Nummer
+PHONE	de	draft	Telefon	Tel	Mobiltelefon	Mobil	Handy	Fax	Telefax
+PLACE	de	draft	Staatsangehörigkeit	Nationalität	Geburtsort	Geburtsland
+
+# Portuguese (pt) - UNREVIEWED (draft)
+RELATION	pt	draft	contato\s+de\s+emergência	contato\s+de\s+emergencia	contacto\s+de\s+emergência	nome\s+do\s+pai	filiação\s+paterna	filiacao\s+paterna	nome\s+da\s+mãe	filiação\s+materna	filiacao\s+materna	nome\s+do\s+cônjuge	nome\s+do\s+conjuge	nome\s+da\s+esposa	nome\s+do\s+marido	pai	mãe	mae	cônjuge	conjuge	responsável\s+legal	responsavel\s+legal	tutor	nome\s+do\s+contato\s+de\s+emerg[eê]ncia	contato\s+de\s+emerg[eê]ncia	nome\s+da\s+m[aã]e	filia[cç][aã]o	nome\s+do\s+c[oô]njuge	nome\s+do\s+tutor	representante\s+legal	m[aã]e	c[oô]njuge
+NAME	pt	draft	nome\s+completo	nome\s+do\s+titular	nome\s+próprio	nome\s+proprio	sobrenome	apelido	primeiro\s+nome	último\s+nome	ultimo\s+nome	nome	[uú]ltimo\s+nome	nome\s+de\s+solteiro(?:/a)?	nome\s+de\s+casado(?:/a)?	titular
+ADDRESS	pt	draft	endereço\s+permanente	endereco\s+permanente	morada\s+permanente	endereço\s+atual	endereco\s+atual	morada\s+atual	endereço\s+postal	endereco\s+postal	endereço\s+residencial	endereco\s+residencial	domicílio	domicilio	morada	endereço	endereco	residência	residencia	rua	logradouro	endere[cç]o\s+permanente	endere[cç]o\s+atual	endere[cç]o\s+residencial	endere[cç]o\s+para\s+correspond[eê]ncia	morada\s+fiscal	resid[eê]ncia	endere[cç]o	bairro
+DATE	pt	draft	data\s+de\s+nascimento	data\s+de\s+emissão	data\s+de\s+emissao	data\s+de\s+expedição	data\s+de\s+expedicao	data\s+de\s+validade	data\s+de\s+expiração	data\s+de\s+expiracao	data\s+de\s+vencimento	nascido\s+a	nascido\s+em	nascimento	validade	emissão	emissao	data\s+de\s+expedi[cç][aã]o	data\s+de\s+emiss[aã]o	data\s+de\s+expira[cç][aã]o	data\s+de\s+caducidade	v[aá]lido\s+at[eé]	emitido\s+em	data
+ID	pt	draft	número\s+de\s+identificação	numero\s+de\s+identificacao	cartão\s+de\s+cidadão	cartao\s+de\s+cidadao	bilhete\s+de\s+identidade	bi	registro\s+geral	rg	cpf	passaporte(?:\s*(?:n°|no\.?|número|numero))?	carteira\s+de\s+motorista	cnh	carta\s+de\s+condução	carta\s+de\s+conducao	número\s+do\s+documento	numero\s+do\s+documento	número\s+do\s+cartão	numero\s+do\s+cartao	número\s+de\s+registro	numero\s+de\s+registro	número\s+da\s+conta	numero\s+da\s+conta	número\s+da\s+apólice	numero\s+da\s+apolice	nif	cnpj	niss	documento\s+nacional\s+de\s+identidade	carteira\s+de\s+identidade	n[uú]mero\s+de\s+identifica[cç][aã]o(?:\s+fiscal)?	n[uú]mero\s+do\s+documento	n[uú]mero\s+do\s+passaporte	n[uú]mero\s+da\s+carteira\s+de\s+habilita[cç][aã]o	n[uú]mero\s+de\s+registro	n[uú]mero\s+do\s+cart[aã]o	n[uú]mero\s+da\s+conta	n[uú]mero\s+da\s+ap[oó]lice	passaporte(?:\s*(?:n[oº°]\.?|n[uú]mero))?	n[oº°]\s+do\s+doc(?:umento)?
+PHONE	pt	draft	telefone(?:\s*(?:n°|no\.?|número))?	telefone(?:\s*(?:n°|no\.?|numero))?	tel(?:\.|\b)(?:\s*(?:n°|no\.?|número))?	celular	telemóvel	telemovel	telefone\s+móvel	telefone\s+movil	telefone\s+celular	telefone\s+fixo	fax	n[uú]mero\s+de\s+telefone	n[uú]mero\s+de\s+celular	telefone(?:\s*(?:fixo|celular|m[oó]vel|n[oº°]\.?|n[uú]mero))?	telefone	m[oó]vel	telem[oó]vel	tel\.?	cel\.?
+PLACE	pt	draft	nacionalidade	naturalidade	lugar\s+de\s+nacimiento	local\s+de\s+nascimento	país\s+de\s+nascimento	pais\s+de\s+nascimento	país\s+de\s+origem	pais\s+de\s+origem	pa[ií]s\s+de\s+nascimento	cidade\s+de\s+nascimento	local\s+de\s+expedi[cç][aã]o	pa[ií]s\s+de\s+origem	pa[ií]s\s+de\s+resid[eê]ncia
+RELATION	pt	draft	Nome do pai	Nome da mãe	Nome do cônjuge	contacto de emergência	contato de emergência	nome do contacto de emergência	nome do contato de emergência
+NAME	pt	draft	Nome do titular	Nomes próprios	Nome próprio	Sobrenome	Apelido	Nome completo	Primeiro nome	Nome
+ADDRESS	pt	draft	Endereço permanente	Morada permanente	Endereço atual	Morada atual	Endereço para correspondência	Endereço postal	Endereço	Morada	Residência	Domicílio
+DATE	pt	draft	Data de nascimento	Data de emissão	Data de expedição	Data de validade	Data de expiração	D\.N	Nascido em	Nascido	Validade	Vencimento	Emitido	Expedido em	Expira em	Vence em	Válido até
+ID	pt	draft	Registro Geral	Documento nacional de identidade	Número do passaporte	N\.º do passaporte	Número da licença	Número pessoal	Número de identificação pessoal	Número do documento	Número do cartão	Número de estudante	Número de matrícula	Número da conta	Número da apólice	Número do processo	Número do caso	Número de referência	Número de registro	Número de registo	Número de IVA	Número de identificação fiscal	CPF	Número de identificação
+PHONE	pt	draft	Telefone	Tel	Telemóvel	Celular	Telefone móvel	Fax	Telefax
+PLACE	pt	draft	Nacionalidade	Local de nascimento	Naturalidade	País de nascimento
+
+# Italian (it) - UNREVIEWED (draft)
+RELATION	it	draft	contatto\s+di\s+emergenza	nome\s+del\s+contatto\s+di\s+emergenza	nome\s+del\s+padre	paternità	paternita	nome\s+della\s+madre	maternità	maternita	nome\s+del\s+coniuge	coniuge	marito	moglie	padre	madre	rappresentante\s+legale	tutore\s+legale	tutore	paternit[aà]	maternit[aà]	nome\s+del\s+tutore
+NAME	it	draft	nome\s+e\s+cognome	nome\s+completo	nome\s+del\s+titolare	intestatario	cognome	nome	cognome\s+e\s+nome	nome\s+di\s+battesimo	primo\s+nome	titolare
+ADDRESS	it	draft	indirizzo\s+permanente	indirizzo\s+attuale	indirizzo\s+postale	indirizzo\s+di\s+residenza	domicilio	residenza	indirizzo	via	corso	piazza	viale	luogo\s+di\s+residenza
+DATE	it	draft	data\s+di\s+nascita	data\s+di\s+rilascio	data\s+di\s+emissione	data\s+di\s+scadenza	nato\s+il	nata\s+il	nascita	rilasciato\s+il	scadenza	valida\s+fino\s+al	valido\s+fino\s+al	data
+ID	it	draft	codice\s+fiscale	cf	carta\s+d['’]identità	carta\s+d['’]identita	c\.i\.	passaporto(?:\s*(?:n°|no\.?|numero))?	patente(?:\s+di\s+guida)?(?:\s*(?:n°|no\.?|numero))?	numero\s+di\s+documento	numero\s+identificativo	numero\s+id	numero\s+di\s+carta	numero\s+carta	partita\s+iva	p\.?\s*iva	numero\s+di\s+matricola	matricola	numero\s+di\s+polizza	numero\s+di\s+conto	carta\s+d['’]identit[aà](?:\s+elettronica)?	documento\s+di\s+riconoscimento	numero\s+di\s+identificazione	numero\s+di\s+passaporto	numero\s+di\s+patente	numero\s+di\s+registrazione	numero\s+personale	passaporto(?:\s*(?:n[oº°]\.?|numero))?	n[oº°]\s+doc(?:umento)?	cie	p\.iva
+PHONE	it	draft	telefono(?:\s*(?:n°|no\.?|numero))?	tel(?:\.|\b)(?:\s*(?:n°|no\.?|numero))?	cellulare	telefono\s+cellulare	telefono\s+mobile	telefono\s+fisso	fax	numero\s+di\s+telefono	numero\s+di\s+cellulare	telefono(?:\s*(?:fisso|cellulare|mobile|n[oº°]\.?|numero))?	telefono	mobile	tel\.?	cell\.?
+PLACE	it	draft	cittadinanza	nazionalità	nazionalita	luogo\s+di\s+nascita	paese\s+di\s+nascita	paese\s+di\s+origine	comune\s+di\s+nascita	nazionalit[aà]	luogo\s+di\s+rilascio	paese\s+di\s+residenza
+RELATION	it	draft	Nome del padre	Paternità	Nome della madre	Maternità	Nome del coniuge	contatto di emergenza	nome del contatto di emergenza	contatto in caso di emergenza	nome contatto di emergenza
+NAME	it	draft	Nome del titolare	Intestatario	Nomi	Cognome	Nome completo	Nome e cognome	Nome
+ADDRESS	it	draft	Indirizzo permanente	Indirizzo attuale	Indirizzo postale	Indirizzo di corrispondenza	Indirizzo	Residenza	Domicilio
+DATE	it	draft	Data di nascita	Data di rilascio	Data di emissione	Data di scadenza	Scadenza	Nato/a il	Nato	Rilasciato	Rilasciato il	Scade il	Scade
+ID	it	draft	Carta d'identità	Numero di passaporto	N\.\s+passaporto	Numero di patente	Numero di licenza	Numero personale	Codice personale	Numero del documento	Numero della carta	Numero di carta	Numero di matricola	Numero di conto	Numero di polizza	Numero di fascicolo	Numero di pratica	Numero di caso	Numero di ruolo	Numero di riferimento	Riferimento	Numero di registrazione	Numero di iscrizione	Partita IVA	Codice fiscale	Numero di identificazione
+PHONE	it	draft	Telefono	Tel	Cellulare	Mobile	Fax	Telefax
+PLACE	it	draft	Cittadinanza	Nazionalità	Luogo di nascita	Paese di nascita	Stato di nascita
+
+# Dutch (nl) - UNREVIEWED (draft)
+RELATION	nl	draft	naam\s+noodcontact	noodcontact(?:persoon)?	naam\s+van\s+de\s+vader	naam\s+vader	vader	naam\s+van\s+de\s+moeder	naam\s+moeder	moeder	naam\s+echtgenoot	naam\s+partner	echtgeno(?:o)?t(?:e)?	partner	wettelijke\s+vertegenwoordiger	voogd	naam\s+van\s+de\s+noodcontactpersoon	contactpersoon\s+voor\s+noodgevallen	noodcontact	vader(?:s)?naam	moeder(?:s)?naam	naam\s+van\s+de\s+echtgenoot	naam\s+van\s+de\s+partner	echtgenoot
+NAME	nl	draft	volledige\s+naam	naam\s+kaarthouder	naam\s+houder	voornaam	voornamen	achternaam	familienaam	geboortenaam	meisjesnaam	tussenvoegsel(?:s)?	naam	naam\s+van\s+de\s+houder	voor-\s*en\s*achternaam	voorna(?:a)?m(?:en)?	roepnaam	houder
+ADDRESS	nl	draft	vast\s+adres	permanent\s+adres	huidig\s+adres	postadres	woonadres	domicilie	adres	woonplaats	straat(?:naam)?	verblijfplaats	straat	domicile
+DATE	nl	draft	geboortedatum	datum\s+van\s+afgifte	afgiftedatum	datum\s+uitgifte	vervaldatum	geldig\s+tot	geldig\s+tot\s+en\s+met	geldig\s+van	geldig\s+vanaf	geboren\s+op	afgegeven\s+op	vervalt	uitgiftedatum	datum\s+van\s+verval	datum
+ID	nl	draft	burgerservicenummer	bsn	identiteitskaart(?:\s*(?:nr\.?|nummer))?	id-?kaart(?:\s*nr\.?)?	paspoort(?:\s*(?:nr\.?|nummer))?	paspoortnummer	rijbewijs(?:\s*(?:nr\.?|nummer))?	rijbewijsnummer	documentnummer	persoonsnummer	kaartnummer	rekeningnummer	polisnummer	dossiernummer	registratienummer	btw-?nummer	btw-?id	kvk-?nummer	identiteitskaartnummer	btw-nummer	rrn
+PHONE	nl	draft	telefoon(?:\s*(?:nr\.?|nummer))?	tel(?:\.|\b)(?:\s*(?:nr\.?|nummer))?	mobiel(?:\s*(?:nr\.?|nummer))?	mobiele\s+telefoon	gsm	vast\s+nummer	fax(?:\s*(?:nr\.?|nummer))?	telefoonnummer	mobiel\s+nummer	telefoon	mobiel	tel\.?	mob\.?	fax
+PLACE	nl	draft	nationaliteit	geboorteplaats	geboorteland	land\s+van\s+herkomst	plaats\s+van\s+afgifte	woonplaats	land\s+van\s+verblijf
+RELATION	nl	draft	Naam noodcontact	Naam vader	Naam van de vader	Naam moeder	Naam van de moeder	Naam partner
+NAME	nl	draft	Naam houder	Naam van de houder	Voornamen	Achternaam	Familienaam	Volledige naam	Voor- en achternaam	Voornaam	Naam
+ADDRESS	nl	draft	Permanent adres	Vast woonadres	Huidig adres	Postadres	Correspondentieadres	Adres	Woonplaats	Verblijfplaats
+DATE	nl	draft	Geboortedatum	Datum van afgifte	Afgiftedatum	Geldig tot	Vervaldatum	Geb\.datum	Geboren op	Geboren	Afgegeven	Afgegeven op	Verloopt op
+ID	nl	draft	Identiteitskaart	Paspoortnummer	Rijbewijsnummer	Licentienummer	Persoonsnummer	Persoonlijk nummer	Documentnummer	Kaartnummer	Pasnummer	Studentnummer	Studentenkaart	Rekeningnummer	Polisnummer	Dossiernummer	Zaaknummer	Referentienummer	Registratienummer	Inschrijvingsnummer	Kenteken	BTW-nummer	Btw-identificatienummer	Fiscaal identificatienummer	Identificatienummer	ID-nummer
+PHONE	nl	draft	Telefoon	Telefoonnummer	Tel	Mobiel	Mobiel nummer	GSM	Mobiele telefoon	Fax	Faxnummer
+PLACE	nl	draft	Nationaliteit	Geboorteplaats	Geboorteland
+
+# Japanese (ja) - UNREVIEWED (draft)
+RELATION	ja	draft	緊急連絡先(?:\s*氏名)?	緊急連絡先	父親(?:\s*氏名)?	父(?:\s*の\s*氏名|\s*の\s*名前)?	母親(?:\s*氏名)?	母(?:\s*の\s*氏名|\s*の\s*名前)?	配偶者(?:\s*氏名)?	夫(?:\s*氏名)?	妻(?:\s*氏名)?	保護者(?:\s*氏名)?	法定代理人	緊急連絡先氏名	緊急連絡先の氏名	父の氏名	母の氏名	配偶者氏名	配偶者の氏名	保護者氏名	世帯主氏名	世帯主との続柄	続柄	父	母	配偶者	保護者	世帯主
+NAME	ja	draft	氏名	フルネーム	お名前	名前	名義人(?:\s*氏名)?	フリガナ	ふりがな	姓	苗字	名字	名	名義人氏名	なまえ	本名	氏	名義人	ローマ字氏名
+ADDRESS	ja	draft	現住所	本籍(?:地)?	住民票\s*記載\s*の\s*住所	送付先\s*住所	連絡先\s*住所	住所	所在地	番地	本籍地	本籍	居住地	住民票住所	送付先住所	送付先	居所
+DATE	ja	draft	生年月日	交付年月日	交付日	発行日	発行年月日	有効期限	有効期間\s*満了日	満了日	生年	誕生	生	有効	出生年月日	有効期限満了日	有効期間	作成年月日	生まれ	日付
+ID	ja	draft	マイナンバー	個人番号	旅券番号	パスポート番号	運転免許証番号	免許証番号	基礎年金番号	被保険者番号	保険証番号	記号番号	文書番号	書類番号	登録番号	カード番号	口座番号	証券番号	法人番号	学生証番号	学籍番号	在留カード番号	住民票コード	証明書番号	顧客番号	会員番号	番号
+PHONE	ja	draft	電話番号	電話	tel	携帯電話(?:\s*番号)?	携帯	固定電話	ファックス	fax	携帯電話番号	自宅電話番号	連絡先電話番号	連絡先	携帯電話	自宅	tel\.?
+PLACE	ja	draft	国籍	出生地	出身地	出身国	出生国	国籍・地域	発行国	居住国
+RELATION	ja	draft	緊急連絡先氏名	緊急連絡先	父の氏名	父親の氏名	母の氏名	母親の氏名	配偶者の氏名
+NAME	ja	draft	名義人氏名	所持人氏名	名前	氏名	フルネーム	下の名前	名字	苗字	家族名	ラストネーム	ファミリーネーム	ファーストネーム	ギブンネーム	お名前	本人氏名
+ADDRESS	ja	draft	恒久住所	本籍地	現住所	郵送先住所	送付先住所	連絡先住所	住所	居住地	住居	永住所	常住所	居住地住所	送付先	郵送先
+DATE	ja	draft	生年月日	発行日	発行年月日	交付年月日	有効期限	誕生日	生まれ	出生	発行	交付	失効
+ID	ja	draft	マイナンバー	国民識別番号	パスポート番号	旅券番号	免許証番号	個人番号	文書番号	書類番号	証明書番号	カード番号	学籍番号	学生証	口座番号	保険証券番号	証券番号	契約番号	整理番号	ファイル番号	事件番号	案件番号	参照番号	登録番号	登記番号	消費税登録番号	納税者番号	識別番号	身分証明書番号
+PHONE	ja	draft	電話番号	電話	TEL	携帯電話	携帯	FAX	ファクス	ファックス
+PLACE	ja	draft	国籍	出生地	出生国
+
+# Korean (ko) - UNREVIEWED (draft)
+RELATION	ko	draft	비상\s*연락처(?:\s*성명)?	부(?:\s*성명)?	부친(?:\s*성명)?	아버지\s*성명	모(?:\s*성명)?	모친(?:\s*성명)?	어머니\s*성명	배우자(?:\s*성명)?	보호자(?:\s*성명)?	법정대리인	비상\s*연락처\s*성명	비상\s*연락처	부\s*성명	부의\s*성명	모\s*성명	모의\s*성명	배우자\s*성명	보호자\s*성명	세대주와의\s*관계	세대주\s*성명	부모\s*성명	부	모	배우자	보호자	세대주	관계
+NAME	ko	draft	성명	성함	이름	명의자(?:\s*성명)?	영문\s*성명	성	명	본명	명의인\s*성명	풀네임	영문명	한글\s*성명	한글명	명의인
+ADDRESS	ko	draft	주민등록상\s*주소	실거주지	현주소	우편물\s*수령지	우편\s*주소	주소	거주지	소재지	도로명\s*주소	실거주지\s*주소	거주지\s*주소	배송지	본적지	본적
+DATE	ko	draft	생년월일	발급\s*일자	발급일	교부\s*일자	만료\s*일자	만료일	유효\s*기간	출생일	출생	발행일	생\s*년\s*월\s*일	발급일자	교부일자	교부일	유효기간\s*만료일	유효기간	만료일자	일자	날짜
+ID	ko	draft	주민등록번호	주민번호	외국인등록번호	여권번호	운전면허번호	면허번호	문서번호	카드번호	계좌번호	증권번호	사업자등록번호	법인등록번호	고유번호	학번	건강보험증\s*번호	개인통관고유부호	증명서\s*번호	증서번호	고객번호	등록번호	사번	식별번호
+PHONE	ko	draft	전화번호	전화	tel	휴대전화(?:\s*번호)?	휴대폰(?:\s*번호)?	핸드폰	자택전화	팩스(?:\s*번호)?	fax	전화\s*번호	휴대폰번호	휴대전화번호	핸드폰번호	집전화	비상전화	연락처	휴대폰	휴대전화	tel\.?	팩스번호	팩스
+PLACE	ko	draft	국적	출생지	출생국	본적지	본적	출신국	발급국	발급기관	거주국
+RELATION	ko	draft	비상연락처 성명	부친 성명	아버지 성명	부 성명	모친 성명	어머니 성명	모 성명	배우자 성명	배우자 이름
+NAME	ko	draft	소지자 성명	명의자 성명	이름	성씨	성명	전체 이름
+ADDRESS	ko	draft	영구 주소	본적	현주소	현재 주소	우편 주소	우편물 수령 주소	주소	거주지	주거지
+DATE	ko	draft	생년월일	발급일	발행일	발급일자	유효기간 만료일	만료일	출생	만료	발급	발행
+ID	ko	draft	주민등록번호	주민등록증	여권번호	여권 번호	면허번호	운전면허번호	개인번호	문서번호	카드번호	학번	학생증	계좌번호	증권번호	보험증권번호	파일번호	관리번호	사건번호	케이스 번호	참조번호	접수번호	등록번호	등기번호	사업자등록번호	부가가치세 등록번호	납세자번호	식별번호	신분증 번호
+PHONE	ko	draft	전화번호	전화	휴대전화	휴대폰	핸드폰	팩스
+PLACE	ko	draft	국적	출생지	출생국
+
+# Hindi (hi) - UNREVIEWED (draft)
+RELATION	hi	draft	आपातकालीन\s+संपर्क(?:\s+नाम)?	पिता\s+का\s+नाम	पिता	माता\s+का\s+नाम	माता	पति\s+का\s+नाम	पत्नी\s+का\s+नाम	जीवनसाथी\s+का\s+नाम	अभिभावक(?:\s+का\s+नाम)?	संरक्षक(?:\s+का\s+नाम)?	आपातकालीन\s+संपर्क\s+नाम	आपातकालीन\s+संपर्क	पति\s*/\s*पत्नी\s+का\s+नाम	अभिभावक\s+का\s+नाम	पति	पत्नी	अभिभावक	संबंध
+NAME	hi	draft	पूरा\s+नाम	धारक\s+का\s+नाम	नाम\s+का	नाम	प्रथम\s+नाम	उपनाम	अंतिम\s+नाम	पहला\s+नाम	कुलनाम	आवेदक\s+का\s+नाम	अभ्यर्थी\s+का\s+नाम
+ADDRESS	hi	draft	स्थायी\s+पता	वर्तमान\s+पता	डाक\s+का\s+पता	पत्राचार\s+का\s+पता	निवास\s+का\s+पता	आवासीय\s+पता	पता	निवास	सड़क	मार्ग	निवास\s+स्थान	गली	गाँव\s*/\s*शहर
+DATE	hi	draft	जन्म\s+तिथि	जन्म\s+की\s+तारीख	जन्म\s+दिनांक	जारी\s+करने\s+की\s+तिथि	जारी\s+तिथि	जारी\s+दिनांक	समाप्ति\s+की\s+तिथि	समाप्ति\s+तिथि	वैधता\s+की\s+तिथि	जन्म	समाप्ति	जारी\s+करने\s+का\s+दिनांक	समाप्ति\s+दिनांक	जन्म\s+का\s+साल	दिनांक	तारीख
+ID	hi	draft	पहचान\s+पत्र\s+संख्या	पहचान\s+संख्या	आईडी\s+संख्या	आधार(?:\s*संख्या|\s*कार्ड)?	पैन(?:\s*संख्या|\s*कार्ड)?	पासपोर्ट(?:\s*संख्या|\s*नंबर)?	ड्राइविंग\s+लाइसेंस(?:\s*संख्या)?	लाइसेंस\s+संख्या	दस्तावेज़\s+संख्या	दस्तावेज\s+संख्या	कार्ड\s+संख्या	खाता\s+संख्या	पंजीकरण\s+संख्या	मतदाता\s+पहचान\s+पत्र(?:\s*संख्या)?	जीएसटी(?:\s*संख्या|\s*नंबर)?	टिन(?:\s*संख्या)?	आधार\s+संख्या	आधार\s+नंबर	पैन\s+कार्ड\s+संख्या	पैन\s+नंबर	पासपोर्ट\s+संख्या	पासपोर्ट\s+नंबर	ड्राइविंग\s+लाइसेंस\s+संख्या	मतदाता\s+पहचान\s+पत्र\s+संख्या	राशन\s+कार्ड\s+संख्या	यूआईडीएआई	संख्या	क्रमांक
+PHONE	hi	draft	टेलीफोन(?:\s*संख्या|\s*नंबर)?	फोन(?:\s*संख्या|\s*नंबर)?	मोबाइल(?:\s*संख्या|\s*नंबर)?	दूरभाष(?:\s*संख्या|\s*नंबर)?	फैक्स	टेलीफोन\s+नंबर	मोबाइल\s+नंबर	फोन\s+नंबर	दूरभाष\s+संख्या	मोबाइल\s+संख्या	दूरभाष	मोबाइल	फोन
+PLACE	hi	draft	राष्ट्रीयता	जन्म\s+स्थान	जन्म\s+का\s+देश	मूल\s+देश	जन्म\s+का\s+स्थान	गृह\s+राज्य	जारी\s+करने\s+का\s+स्थान	मूल\s+स्थान	निवास\s+स्थान
+RELATION	hi	draft	आपातकालीन संपर्क का नाम	पिता का नाम	माता का नाम	माँ का नाम	जीवनसाथी का नाम
+NAME	hi	draft	धारक का नाम	दिया गया नाम	नाम का	नाम	उपनाम	कुलनाम	पूरा नाम	पूर्ण नाम	पहला नाम	प्रथम नाम	अंतिम नाम
+ADDRESS	hi	draft	स्थायी पता	वर्तमान पता	पत्राचार का पता	डाक पता	पता	निवास	निवास स्थान
+DATE	hi	draft	जन्म तिथि	जारी करने की तिथि	समाप्ति तिथि	वैधता समाप्ति तिथि	जन्मतिथि	जन्म	समाप्ति	जारी	समाप्त होता है	वैधता समाप्ति
+ID	hi	draft	राष्ट्रीय पहचान पत्र	पासपोर्ट संख्या	पासपोर्ट नंबर	लाइसेंस संख्या	व्यक्तिगत संख्या	दस्तावेज़ संख्या	कार्ड संख्या	कार्ड नंबर	छात्र पहचान पत्र	छात्र आईडी	खाता संख्या	खाता नंबर	पॉलिसी संख्या	पॉलिसी नंबर	बीमा पॉलिसी संख्या	फ़ाइल संख्या	मामला संख्या	केस नंबर	वाद संख्या	संदर्भ संख्या	पंजीकरण संख्या	वैट संख्या	कर पहचान संख्या	पहचान संख्या	पहचान पत्र संख्या	आईडी नंबर
+PHONE	hi	draft	दूरभाष	टेलीफोन	फ़ोन	फोन	मोबाइल	मोबाइल नंबर	सेल	फैक्स	फ़ैक्स
+PLACE	hi	draft	राष्ट्रीयता	नागरिकता	जन्म स्थान	जन्मस्थान	जन्म का देश	जन्म देश
+

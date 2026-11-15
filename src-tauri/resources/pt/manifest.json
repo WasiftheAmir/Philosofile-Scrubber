@@ -1,0 +1,45 @@
+{
+  "language": "pt",
+  "files": [
+    {
+      "path": "pt_BR_words.tsv",
+      "role": "word_list",
+      "source": "VERO (Verificador Ortografico Livre) pt_BR",
+      "licence": "LGPLv3",
+      "version": "v3.2.15 (2021-08-03)",
+      "sha256": "d558bcbb9d555085954faabb6179c4f5bff08903fe04786e95508c9be0fa89f8"
+    },
+    {
+      "path": "pt_PT_words.tsv",
+      "role": "word_list",
+      "source": "Hunspell pt_PT Dictionary (Projecto Natura)",
+      "licence": "MPL 1.1",
+      "version": "v20251001",
+      "sha256": "e1132b356487db307945722ee78edc5ba8a53c0c522070d8c98f61589a510793"
+    },
+    {
+      "path": "pt_name_gated.txt",
+      "role": "gated_list",
+      "source": "Leipzig Corpora vs Portuguese name lists",
+      "licence": "CC BY 4.0",
+      "version": "unknown",
+      "sha256": "f0409094b75cdd220edac92174232380b7f8f7c0e90b1cd5f3d7e2d3ecd6956a"
+    },
+    {
+      "path": "pt_names.txt",
+      "role": "name_list",
+      "source": "Philosofile generated Portuguese name lists",
+      "licence": "unknown",
+      "version": "2026-11-12",
+      "sha256": "27966d2fcc56282d358908feac9e56b2e01d40a909f6d5420a07ef518fe4732d"
+    },
+    {
+      "path": "freq/pt_freq.tsv.zst",
+      "role": "frequency",
+      "source": "Leipzig Corpora Collection (por-pt_web_2015_1M, por-br_newscrawl_2011_1M, por_news_2024_1M)",
+      "licence": "CC BY 4.0",
+      "version": "2011-2024",
+      "sha256": "8b01d0f627b78aa58263ed0715e292ab6b5027f1013cee944def3b1a9e83c7d5"
+    }
+  ]
+}

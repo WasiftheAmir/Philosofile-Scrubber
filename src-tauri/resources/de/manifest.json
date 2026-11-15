@@ -1,0 +1,13 @@
+{
+  "language": "de",
+  "files": [
+    {
+      "path": "de_names.txt",
+      "role": "name_list",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "licence": "dl-de/by-2-0 (see NOTICE_de.md)",
+      "version": "2026-11-02",
+      "sha256": "ebd8d336c2e600dd63bfa390e013af228d93838d2ddd780f987132f3d7c1f090"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+# Bengali nominal case markers, definite classifiers, and verb inflectional suffixes
+# Source: Standard Bengali morphology / Universal Dependencies Bengali-BRU (CC BY-SA 4.0)
+# Used ONLY in Step 3 of the Bangla word classifier (after exact Name and exact Word checks)
+# to strip inflectional suffixes and check if the resulting stem (>= 2 chars) is in bn_words.tsv.
+# Never used to match names.
+suffix	category
+গুলোকে	nominal_plural_accusative
+গুলিকে	nominal_plural_accusative
+গুলোতে	nominal_plural_locative
+গুলিতে	nominal_plural_locative
+গুলোর	nominal_plural_genitive
+গুলির	nominal_plural_genitive
+দেরকে	nominal_plural_accusative
+টাকে	nominal_classifier_accusative
+টিকে	nominal_classifier_accusative
+টাতে	nominal_classifier_locative
+টিতে	nominal_classifier_locative
+গুলো	nominal_plural_classifier
+গুলি	nominal_plural_classifier
+দের	nominal_plural_genitive
+টার	nominal_classifier_genitive
+টির	nominal_classifier_genitive
+কেই	nominal_emphatic_accusative
+েতে	nominal_locative
+টা	nominal_classifier
+টি	nominal_classifier
+কে	nominal_accusative
+তে	nominal_locative
+রা	nominal_plural_nominative
+য়	nominal_locative
+ের	nominal_genitive
+েছিলেন	verb_past_perfect_hon
+েছিলাম	verb_past_perfect_1p
+েছিলে	verb_past_perfect_2p
+েছিলো	verb_past_perfect_3p
+েছিল	verb_past_perfect_3p
+েছেন	verb_present_perfect_hon
+েছিস	verb_present_perfect_2p_int
+েছিলি	verb_past_perfect_2p_int
+ছিলাম	verb_past_1p
+ছিলেন	verb_past_hon
+ছিলে	verb_past_2p
+ছিলো	verb_past_3p
+ছিল	verb_past_3p
+েছে	verb_present_perfect_3p
+েছি	verb_present_perfect_1p
+েছো	verb_present_perfect_2p
+েছ	verb_present_perfect_2p
+ছেন	verb_present_continuous_hon
+বেন	verb_future_hon
+লাম	verb_past_simple_1p
+লেন	verb_past_simple_hon
+ছি	verb_present_1p
+ছো	verb_present_2p
+ছে	verb_present_3p
+েন	verb_present_hon
+িস	verb_present_2p_int
+ুন	verb_imperative_hon
+বো	verb_future_1p
+বে	verb_future_3p
+

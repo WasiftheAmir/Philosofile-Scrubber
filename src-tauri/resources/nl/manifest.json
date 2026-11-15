@@ -1,0 +1,13 @@
+{
+  "language": "nl",
+  "files": [
+    {
+      "path": "nl_names.txt",
+      "role": "name_list",
+      "source": "Sociale Verzekeringsbank (SVB) / CBS",
+      "licence": "CC0 1.0 / Open Overheid (see NOTICE_nl.md)",
+      "version": "2026-11-02",
+      "sha256": "9a0fafb9d8efb88fbf9bd5b550fc73fd50f2aaf6c15f308ca17686223c52e546"
+    }
+  ]
+}

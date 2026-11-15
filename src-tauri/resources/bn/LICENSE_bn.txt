@@ -1,0 +1,20 @@
+Bangla Word List and Name List Attribution & License
+====================================================
+
+1. Bangla Word List (`bn_words.tsv`)
+- License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+- Full License Text: LICENSE_bn_words_CC-BY-SA-4.0.txt (applies to the hermitdave/FrequencyWords-derived rows; see NOTICE_bn.md for OpenSubtitles/OPUS credits and open point)
+- License URL: https://creativecommons.org/licenses/by-sa/4.0/
+- Attribution Sources:
+  * Bangla Wiktionary page titles (`bnwiktionary_titles`) — Wikimedia Foundation & contributors (CC BY-SA 4.0)
+  * Bangla Wikipedia page titles (`bnwiki_titles`) — Wikimedia Foundation & contributors (CC BY-SA 4.0)
+  * hermitdave/FrequencyWords (`hermitdave_bn50k`, https://github.com/hermitdave/FrequencyWords), derived from OpenSubtitles via OPUS (https://opus.nlpl.eu/) (CC BY-SA 4.0 content; see LICENSE_bn_words_CC-BY-SA-4.0.txt and NOTICE_bn.md)
+
+2. Bangla Name List (`bn_names.tsv`)
+- Wikipedia Subset (`source == "wikipedia_category"`, 172 rows):
+  * License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+  * License URL: https://creativecommons.org/licenses/by-sa/4.0/
+  * Attribution Source: Bangla Wikipedia category `বিষয়শ্রেণী:বাঙালি_ব্যক্তি` (https://bn.wikipedia.org/wiki/বিষয়শ্রেণী:বাঙালি_ব্যক্তি, direct members) — Wikimedia Foundation & contributors (CC BY-SA 4.0)
+- AI-Generated Subset (`source == "gemini_unverified"` and `source == "manual_verification"` rows):
+  * These entries are project-authored and AI-generated; their licence will be set with the project's release licence.
+

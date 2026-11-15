@@ -1,0 +1,3736 @@
+# Source: src-tauri/resources/bn/bn_names.tsv (`romanized` column; gemini_unverified, AI-generated, unverified; manual_verification rows included; wikipedia_category rows have no romanized values) | Date: 2026-11-09
+# Filters: split cells on commas; trim whitespace; keep values with >=1 ASCII letter; drop values with <=2 letters (hyphens not counted);
+# Filters: keep hyphenated forms; include all sources without filtering; lowercase; exact-dedupe; sorted
+# Aliases: for every non-ASCII entry, keep original and add ASCII alias (macrons ā→a, ē→e, ī→i, ō→o, ū→u stripped; apostrophes removed; >=3 letters; deduplicated)
+# Note: ja_given.txt and ko_surname.txt were removed.
+aabed
+aabid
+aabida
+aakash
+aashiq
+abani
+abanindra
+abanti
+abantika
+abbas
+abdul
+abdul bari
+abdul baten
+abdul gaffar
+abdul gaffar chowdhury
+abdul gafur
+abdul gani
+abdul ghani
+abdul gofur
+abdul hadi
+abdul hai
+abdul hakim
+abdul halim
+abdul hamid
+abdul hye
+abdul jabbar
+abdul jalil
+abdul jobbar
+abdul jolil
+abdul kader
+abdul karim
+abdul khalek
+abdul khaleque
+abdul kuddus
+abdul latif
+abdul majid
+abdul malek
+abdul maleque
+abdul mannan
+abdul matin
+abdul mojid
+abdul momen
+abdul motaleb
+abdul motalib
+abdul motin
+abdul quader
+abdul quddus
+abdul wadud
+abdul wahab
+abdulla
+abdullah
+abdullah al mamun
+abdur
+abdur rab
+abdur rahim
+abdur rahman
+abdur rashid
+abdur rauf
+abdur razzak
+abdur razzaq
+abdur rob
+abdur roshid
+abdur rouf
+abdus
+abdus salam
+abdus samad
+abdus sattar
+abdus sobhan
+abdus subhan
+abed
+abedin
+abeer
+abha
+abhijit
+abhijna
+abhik
+abhilasha
+abhinaba
+abhirup
+abhishek
+abid
+abida
+abida sultana
+abideen
+abidur
+abir
+abraar
+abrar
+abu bakar
+abu bakr
+abu hanif
+abu hena
+abu huraira
+abu hurayrah
+abu ishaque
+abu jafar
+abu naser
+abu nasir
+abu saeed
+abu said
+abu saleh
+abu sayeed
+abu sufian
+abu sufiyan
+abu taher
+abu taleb
+abu talib
+abu zafar
+abu zafar obaidullah
+abul
+abul bashar
+abul fazal
+abul fazl
+abul hasan
+abul hasnat
+abul hassan
+abul hayat
+abul hosen
+abul hossain
+abul husain
+abul kalam
+abul kashem
+abul khair
+abul khayer
+abul mansur
+abul monsur
+abul qasem
+adeeb
+adeeba
+adhara
+adhir
+adib
+adiba
+aditi
+aditya
+adityo
+adnaan
+adnan
+adnan faruque hillol
+adrija
+adwaita
+afeef
+afia
+afif
+afif hossain
+afiya
+afjal
+afnaan
+afnan
+afran
+afran nisho
+afreen
+afrin
+afroja
+afroza
+afsana
+afsar
+aftab
+aftab ahmed
+afzal
+ahaad
+ahad
+ahalya
+ahana
+ahmad
+ahmed
+ahnaf
+ahsaan
+ahsan
+ahsan habib
+ahsanul
+aimaan
+aindrila
+aisha
+aishwarya
+ajhar
+ajharul
+ajij
+ajijul
+ajijur
+ajmain
+ajmeri
+akanksha
+akash
+akbar
+akbor
+akhi
+akhtar
+akhtar hossain
+akhtaruzzaman
+akhtaruzzaman elias
+akib
+akraam
+akram
+akram khan
+aktar
+aktaruzzaman
+akter
+akter hossain
+al amin
+al mahmud
+al shahriar
+al-amin
+alaka
+alakananda
+alam
+alamgir
+alamgir hossain
+alamin
+alauddin
+alauddin al azad
+alee
+ali
+ali ahmad
+ali ahmed
+ali ahsan
+ali akbar
+ali asgar
+ali azam
+ali azgor
+ali hossain
+ali imam
+ali riaz
+ali zaker
+alo
+alok
+aloke
+alokesh
+alom
+alomgir
+alvee
+alvi
+amal
+amal bose
+amala
+amalendu
+amar
+amaresh
+amartya
+ameen
+ameena
+ameenul
+ameer
+ameerul
+amena
+amena begum
+amin
+amin khan
+amina
+aminul
+aminul haque
+aminul huq
+aminul islam
+aminul islam bulbul
+aminur rahman
+amir
+amir hamza
+amir hossain
+amirul
+amirul haque
+amirul islam
+amit
+amitabha
+amitava
+amiya
+amrapali
+amrita
+anaam
+anam
+anamika
+anamul
+anamul haque
+anamul haque bijoy
+ananda
+anandamoyee
+anandita
+ananta
+ananya
+anasuya
+anath
+anathbandhu
+andrew kishore
+aneeka
+anees
+aneesa
+aneesul
+aneesur
+angad
+angana
+anik
+anik majumder
+anika
+aniket
+anil
+animesh
+anindita
+anindya
+anirban
+aniruddha
+anis
+anisa
+anisul
+anisul haque
+anisul huq
+anisul islam
+anisur
+anisur rahman
+anisuzzaman
+anjali
+anjan
+anjana
+ankhi
+ankita
+ankur
+ankush
+anondita
+anondo
+anoop
+anowar
+anowar hossain
+anowara
+anowarul
+anshuman
+antar
+antara
+anubha
+anubhab
+anukul
+anup
+anupam
+anupama
+anuradha
+anurag
+anushka
+anushree
+anwar
+anwar hossain
+anwara
+anwarul
+anwesha
+aparajita
+aparna
+aparup
+apel
+apurba
+aqib
+araaf
+arabinda
+aradhana
+aradhya
+araf
+arafaat
+arafat
+arafat sunny
+arati
+archana
+archita
+areef
+areefa
+areeful
+arefin
+arghya
+arham
+arif
+arifa
+arifin
+arifin shuvoo
+ariful
+arindam
+aritra
+arjo
+arjun
+arka
+armaan
+arman
+arnab
+aroti
+arpan
+arpita
+arun
+aruna
+arunabha
+arunava
+arundhati
+arunima
+arya
+asaad
+asad
+asad chowdhury
+asadul
+asadullah
+asaduzzaman
+asaduzzaman noor
+aseef
+asha
+ashabari
+ashalata
+ashfak
+ashfaq
+ashik
+ashikur
+ashim
+ashiq
+ashiqur
+ashis
+ashish
+ashna habib bhabna
+ashok
+ashoka
+ashoke
+ashraf
+ashraful
+ashrafun
+ashrafuzzaman
+ashutosh
+ashwini
+asif
+asif akbar
+asim
+asima
+asit
+aslaam
+aslam
+asma
+asma akter
+asraf
+asraful
+atanu
+ataur
+athar
+athar ali
+atia
+atik
+atikul
+atikur
+atiq
+atiqul
+atiqur
+atiya
+atm shamsuzzaman
+atul
+ava
+avijit
+avik
+ayaan
+ayan
+ayantika
+ayesha
+ayman
+aysha
+ayub
+ayub bachchu
+ayushman
+ayyub
+azaad
+azad
+azeez
+azeeza
+azhar
+azharul
+aziz
+aziza
+azizul
+azizul hakim
+azizul haque
+azizul huq
+azizul islam
+azizur
+azizur rahman
+azmain
+azmeri
+babu
+babul
+bachchu
+badiuzzaman
+badrul
+baidyanath
+baijayanti
+baishakhi
+bakhtiar
+bakul
+balai
+balaram
+banalata
+banani
+banashree
+bandana
+bande ali mia
+bani
+bankim
+bankimchandra
+bannya
+bappa
+bappa mazumder
+bapparaj
+barkat
+barna
+barnali
+barsha
+basabi
+basanta
+basanti
+bashar
+basheer
+bashir
+bashiruddin
+basumati
+basundhara
+bayazid
+bayezid
+bazlur
+bazlur rahman
+beethi
+begum
+begum rokeya
+belal
+belee
+beli
+bhabani
+bhabesh
+bhabna
+bhagaban
+bhagirath
+bhagyashree
+bhairabi
+bhairavi
+bhanu
+bhanumati
+bharat
+bharati
+bharoti
+bhaskar
+bhaskor
+bhaswati
+bhavna
+bhishma
+bholanath
+bhorot
+bhramar
+bhromor
+bhudeb
+bhupen
+bhupendra
+bibek
+bibekananda
+bibhabari
+bibhuti
+bibhutibhushan
+bidisha
+bidya
+bidyut
+bijan
+bijay
+bijaya
+bijli
+bijoli
+bijon
+bijoy
+bijoya
+bikarna
+bikash
+bikram
+bilal
+bilkis
+bilqis
+bimal
+bimala
+biman
+bimol
+bimola
+bina
+binapani
+binay
+binayak
+bindu
+binod
+binodini
+binoy
+bipasha
+bipasha hayat
+bipin
+biplab
+biplob
+birbala
+biren
+birendra
+bireshwar
+bishakha
+bishnu
+bishnupriya
+bishwojit
+bishwonath
+biswajit
+biswanath
+biswarup
+bithi
+bobby
+boby
+bodrul
+boidehi
+boishakhi
+bojlur
+bokhtiar
+bokul
+bonani
+bondona
+bonkim
+bonolota
+bonoshree
+bonya
+borhan
+borhanuddin
+borhanuddin khan jahangir
+borkot
+borna
+bornali
+borsha
+boshir
+boshonti
+boshonto
+boshundhora
+brinda
+brishti
+bristy
+buddhadeb
+bulbul
+bulbul ahmed
+burhan
+burhanuddin
+chadek
+chaitali
+chaitanya
+chaiti
+chakradhar
+chameli
+champa
+chanchal
+chanchal chowdhury
+chanchala
+chand
+chandan
+chandana
+chandidas
+chandni
+chandra
+chandrabati
+chandrahasan
+chandrakanta
+chandralekha
+chandramallika
+chandramukhi
+chandranath
+chandrani
+chandrashekhar
+chandrima
+chanowar
+chapal
+chapala
+charu
+charuchandra
+charulata
+chaturbhuj
+chaya
+chayan
+chhabi
+chhanda
+chhaya
+chintamani
+chiradip
+chiranjeev
+chiranjib
+chirantan
+chironton
+chitra
+chitralekha
+chitrangada
+chitta
+chittaranjan
+chobi
+choitali
+choiti
+cholim
+chompa
+chonchol
+chonda
+chondon
+chondona
+chondra
+chondraboti
+chondrani
+chondrima
+chondro
+chopol
+choyon
+chumki
+dabir
+dahlia
+daisy
+dalia
+dalim
+damayanti
+daud
+dawood
+deb
+debabrata
+debajit
+debajyoti
+debalina
+debangana
+debapriya
+debarati
+debarshi
+debashis
+debashish
+debashree
+debdas
+debdut
+debendra
+debesh
+debi
+debika
+debjani
+debobroto
+debojit
+debojyoti
+debolina
+debopriyo
+deepa
+deepak
+deepali
+deepanwita
+deepen
+deepika
+deepti
+delowar
+delowar hossain
+delwar
+delwar hossain
+dev
+devashree
+devdas
+devi
+devika
+devjani
+dhananjay
+dhananjoy
+dharitri
+dharmadas
+dhiraj
+dhiren
+dhirendra
+dhriti
+dhruba
+dhrubo
+dibya
+dibyendu
+didar
+didarul
+dilara
+dilara zaman
+dildar
+dileep
+dilip
+dilruba
+dilshad
+dinabandhu
+dinanath
+dinendra
+dinesh
+dipa
+dipak
+dipali
+dipankar
+dipannita
+dipen
+dipika
+dipok
+diponkor
+dipta
+dipti
+dipto
+dirghayu
+divya
+doel
+dola
+doli
+dolly
+dolon
+dolonchapa
+don
+doyel
+dulal
+durga
+durgadas
+durgamoni
+durgapada
+durjay
+durjoy
+easin
+ebadot
+ebadot hossain
+ebrahim
+edrees
+eesa
+ehsaan
+ehsan
+ehsanul
+ehsanul haque
+ejaz
+ekalabya
+ekanta
+ekanto
+eklas
+ekram
+ekramul
+ekramul haque
+elias
+elita
+elora
+emdad
+emdadul
+emdadul haque
+emon
+emrul
+ena
+enamul
+enamul haque
+enamul karim
+enayet
+ereen
+erfan
+esha
+eshan
+eshana
+eshani
+eshita
+eshtiak
+eshwor
+esmail
+esmat
+esrail
+esrat
+ety
+eunus
+eusuf
+eva
+fahad
+fahd
+faheem
+faheema
+fahim
+fahima
+fahmeeda
+fahmida
+fahmida nabi
+faisal
+faizunnesa
+fakhrul
+falguni
+fareed
+fareeha
+farhaan
+farhad
+farhan
+farhana
+faria
+farid
+faridi
+faridul
+fariha
+fariya
+farjana
+farooq
+farrukh
+farrukh ahmad
+faruk
+faruq mahfuz anam
+faruque
+faruque ahmed
+farzana
+fatema
+fatik
+fatima
+fatimah
+faysal
+fazal shahabuddin
+fazilatunnesa
+fazle
+fazle hasan
+fazle karim
+fazle mahmud
+fazle rabbi
+fazlul
+fazlul bari
+fazlul haque
+fazlul huq
+fazlul kader
+fazlul karim
+fazlul matin
+fazlul quader
+fazlul rashid
+fazlur rahman
+fazlur rahman babu
+ferdous
+ferdous ahmed
+ferdousi
+ferdousi mazumder
+ferdousi priyabhashini
+ferdousi rahman
+feroz
+feroza
+feroza begum
+firdaus
+firdausi
+firoz
+firoza
+fojlul
+forhad
+fotik
+fouad
+foyshal
+foyzunnesa
+fuad
+fulon
+gadadhar
+gaffar
+gagan
+galib
+ganesh
+ganga
+gangadhar
+gangapada
+gani
+gargi
+gaur
+gauranga
+gauri
+gautam
+gawhar
+gayatri
+gayotri
+gazi
+geeta
+geetali
+geetanjali
+geetashree
+ghaffar
+ghalib
+ghanashyam
+ghani
+ghazala
+ghazi
+ghiyas
+ghiyasuddin azam
+ghulam
+ghulam mustafa
+gias
+giasuddin
+giribala
+girindra
+girish
+girishchandra
+gita
+gitali
+gitanjali
+gitashree
+gobinda
+gogon
+gohar
+golam
+golam faruk
+golam faruque
+golam haidar
+golam hossain
+golam hyder
+golam kibria
+golam mawla
+golam mohammad
+golam morshed
+golam mostafa
+golam moula
+golam murshed
+golam mustafa
+golam rabbani
+golam rahman
+golam rasul
+golam rosul
+golam saqlain
+golam sarwar
+golam sorwar
+gonesh
+gopa
+gopal
+gopi
+gopinath
+gorachand
+gour
+gouranga
+gourhari
+gouri
+gourishankar
+goutam
+goutom
+govinda
+govinda chandra dev
+gozola
+gulshan
+gulshan ara
+gunamoy
+gungun
+gurudas
+gurupada
+gyandas
+gyanendra
+haadi
+habeeb
+habeeba
+habib
+habib wahid
+habiba
+habibul bashar
+habibul bashar sumon
+habibul islam
+habibullah
+habibur
+habibur rahman
+hadi
+hafeez
+hafiz
+hafizur
+haidar
+haimabati
+haimanti
+haji shariatullah
+haleem
+haleema
+halim
+halima
+hameed
+hameeda
+hamid
+hamida
+hamidul
+hamidur
+hamidur rahman
+hannan
+hannan sarkar
+hansika
+hari
+haridas
+harihar
+haripada
+haripriya
+haroon
+harshavardhan
+harun
+harun or rashid
+harun ur rashid
+harunur
+hasan
+hasan abidur reza jewel
+hasan azizul huq
+hasan hafizur rahman
+hasan mahmud
+hasanuzzaman
+haseeb
+haseena
+hashi
+hasi
+hasib
+hasibul
+hasina
+hasnat
+hassan
+haydar
+hedayet
+hedayetullah
+heera
+helal
+helal hafiz
+hema
+hemangini
+hemanta
+hemchandra
+hemlata
+hemolota
+hemonto
+hena
+heramba
+hia
+hidayat
+hidayatullah
+hilal
+hillol
+hima
+himangshu
+himani
+himel
+hira
+hiralal
+hiran
+hiranmoy
+hiranmoyee
+hiron
+hiya
+hoimonti
+hori
+hosen
+hosne ara
+hossain
+hriday
+hridi
+hridoy
+hridoy khan
+hrita
+humaira
+humayra
+humayun
+humayun ahmed
+humayun azad
+humayun faridi
+husain
+husne ara
+hussein
+hyder
+ibadat
+ibrahim
+idris
+iffat
+iftekhar
+iftekhar ahmed
+iftekhar uddin
+iftikhar
+ijaz
+ikbal
+ikhlas
+ikram
+ikramul
+ilias
+ilias kanchan
+ilora
+ilyas
+imdad
+imdadul
+imdadul haq milan
+imdadul haque
+imon
+imraan
+imran
+imran mahmudul
+imrul
+imtiaz
+imtiaz ahmed
+imtiyaz
+inamul
+inayat
+indira
+indra
+indrajit
+indranath
+indrani
+indranil
+indro
+indrojit
+indroneel
+indu
+indubhushan
+indulekha
+indumati
+intekhab
+intekhab dinar
+ipshita
+ipsita
+iqbal
+ira
+irabati
+iraboti
+irfan
+irin
+isa
+isa khan
+isha
+ishak
+ishan
+ishani
+ishaq
+ishita
+ishrak
+ishraq
+ishrat
+ishrat jahan
+ishtiak
+ishtiaq
+ishtiaq ahmed
+ishwar
+islam
+ismail
+ismail hossain siraji
+ismat
+ismat ara
+israil
+israt
+israt jahan
+iti
+iva
+jaba
+jabed
+jadab
+jafar
+jagabandhu
+jagaddhatri
+jagadish
+jagannath
+jagat
+jahanara
+jahanara begum
+jahanara imam
+jahangir
+jahangir alam
+jahangir hossain
+jahangir kabir
+jahar
+jahed
+jahid
+jahidul
+jahir
+jahnabi
+jahurul
+jahurul islam
+jakir
+jakir hossain
+jakiya
+jalaal
+jalal
+jalaluddin
+jamaal
+jamal
+jameel
+jameela
+james
+jamil
+jamila
+jamini
+jamuna
+janaki
+janardan
+jannaat
+jannat
+jannatul
+jannatul ferdous
+jannatul firdaus
+jannatul mawa
+jannatul naim
+jannatul nayeem
+jarif
+jarin
+jashim
+jashoda
+jasim
+jasimuddin
+jasmine
+jatin
+jatin sarkar
+jatindramohan
+jatindranath
+javed
+javed omar
+jawad
+jay
+jaya
+jaya ahsan
+jayadeb
+jayanta
+jayanti
+jayashree
+jaydip
+jayita
+jebunnesa
+jehangir
+jesmin
+jewel
+jhantu
+jharna
+jhilik
+jhilmil
+jhontu
+jhorna
+jhuma
+jhumur
+jiban
+jibanananda
+jibon
+jihad
+jimut
+jisan
+jiten
+jitendra
+jiya
+jiyaul
+jiyaur
+jnanendra
+joba
+jobayer
+jogendra
+jogesh
+jogodish
+jogonnath
+jogot
+johir
+johir uddin
+johirul
+johirul huq
+johirul islam
+johor
+johur
+johurul
+jolpori
+jonaki
+joti
+jotin
+jotirmoy
+jotsna
+joy
+joya
+joydeb
+joydip
+joyita
+joynal
+joynul abedin
+joyonti
+joyonto
+joyoshree
+jubaida
+jubayer
+judhisthir
+juel
+jui
+julekha
+julfikar
+junaid
+junaid siddique
+junayed
+juthi
+juthika
+jyoti
+jyotiprakash
+jyotirindra
+jyotirmoy
+jyotirmoy guhathakurta
+jyotsna
+kabeer
+kaberi
+kabir
+kabita
+kadambari
+kadambini
+kader
+kadombori
+kadri
+kafil
+kaikeyi
+kaikobad
+kailash
+kaiser
+kaiyum
+kajal
+kajol
+kakali
+kakoli
+kakon
+kalidas
+kalipada
+kaliprasanna
+kaliranjan
+kalpana
+kalpataru
+kalyan
+kalyani
+kamaal
+kamakhya
+kamal
+kamal chowdhury
+kamala
+kamalesh
+kamalika
+kamalini
+kamini
+kamran
+kamrul
+kamrul ahsan
+kamrul haque
+kamrul hasan
+kamrul islam
+kamrun
+kamrun nahar
+kamrunnahar
+kamruzzaman
+kamruzzaman khan
+kana
+kanad
+kanai
+kanak
+kanaklata
+kanan
+kananbala
+kanchan
+kanchanmala
+kanchon
+kanij
+kaniz
+kaniz fatema
+kaniz suborna
+kankana
+kanta
+kanti
+kanu
+kapil
+karabi
+kareem
+karim
+karna
+kartick
+kartik
+karuna
+karunamoy
+kashinath
+kasturi
+kaumudi
+kaushik
+kaushiki
+kaustav
+kaveri
+kayem
+kayes
+kazem al quraishi
+kazi
+kazi abdul wadud
+kazi motahar hossain
+kedar
+kedarnath
+keshab
+keshari
+keshav
+ketaki
+ketoki
+keya
+khadeeja
+khadija
+khadiza
+khagendra
+khairul
+khairul alam
+khairul anam
+khairul bashar
+khairul haque
+khairul islam
+khairuzzaman
+khaled
+khaled ahmed
+khaled mahmud
+khaled masud
+khaleel
+khalid
+khalid hasan milu
+khalil
+khalil ullah khan
+khalilur
+khandaker
+khayrul
+khokan
+khokon
+kholil
+khondokar
+khorshed
+khorsheda
+khudiram
+khuku
+khukumoni
+khurshid
+khurshida
+khushee
+khushi
+khwaja nazimuddin
+kibria
+kibriya
+kiran
+kiranbala
+kiranmala
+kiranmoy
+kiron
+kirti
+kishor
+kishore
+kishori
+kobir
+kobita
+koel
+kofil
+kohinoor
+kohinur
+kokila
+kolpona
+kolyan
+kolyani
+komal
+komol
+komola
+komolesh
+komolika
+kona
+konkona
+konok
+kopil
+korno
+korobi
+koruna
+kosturi
+koushik
+koushiki
+koustuv
+koyel
+krishna
+krishnachandra
+krishnachura
+krishnakanta
+krishnakoli
+krishnendu
+krishno
+kshitish
+kuddus
+kudrat
+kuheli
+kuhu
+kuldeep
+kuldip
+kulsoom
+kulsum
+kumar
+kumar bishwajit
+kumaresh
+kumkum
+kumud
+kumudini
+kumudranjan
+kunal
+kundan
+kuntala
+kushal
+kushol
+kusum
+kusumkumari
+kutub
+kutubuddin
+labanya
+lablu
+laboni
+labonno
+labony
+lahari
+laila
+lakshman
+lakshmi
+lalit
+lalita
+lalmohan
+lamia
+lamiya
+lata
+lateef
+lateefa
+latif
+latifa
+latika
+layla
+leela
+leelabati
+leema
+lekha
+liakat
+liaquat
+lija
+likhon
+lila
+lilabati
+lima
+liman
+limon
+lincoln
+lipi
+litan
+liton
+liton das
+liza
+lohori
+lokkhi
+lokkhon
+lokman
+lolit
+lolita
+lopa
+lopamudra
+lota
+lotika
+lubna
+luna
+luqman
+lutfar
+lutfar rahman
+lutfor
+lutfor rahman
+lutful bari
+lutful hai
+lutful haque
+lutfunnesa
+m r akhtar mukul
+maamun
+madeeha
+madhab
+madhabi
+madhabilata
+madhav
+madhavi
+madhu
+madhubanti
+madhuchanda
+madhulika
+madhumita
+madhurima
+madhushree
+madiha
+mafiz
+mafizul
+mafizur
+mahadev saha
+mahadi
+mahamaya
+mahasweta
+mahboob
+mahbooba
+mahboobur
+mahbub
+mahbub uz zaman
+mahbuba
+mahbubul alam
+mahbubul haque
+mahbubur
+mahbubur rahman
+mahdi
+mahedi hasan
+maheer
+mahfooza
+mahfuj
+mahfujur
+mahfuz
+mahfuz ahmed
+mahfuza
+mahfuzul haque
+mahfuzul islam
+mahfuzur
+mahfuzur rahman
+mahi
+mahia
+mahir
+mahiya
+mahmood
+mahmooda
+mahmoodul
+mahmoodur
+mahmud
+mahmuda
+mahmudul
+mahmudul haque
+mahmudul hasan
+mahmudul islam
+mahmudullah
+mahmudullah riyad
+mahmudur
+mahmudur rahman
+mahtab
+mahtim
+mahtim shakib
+mahua
+maimuna
+main
+maina
+mainul
+mainul ahsan saber
+maisha
+maitreya
+maitreyee
+majeda
+majeed
+majharul
+majid
+makbul
+makhan
+maksud
+maksudul alam
+maksudul haque
+maksudur rahman
+mala
+malabika
+malati
+malay
+maleeha
+maliha
+malini
+mallika
+malobika
+maloti
+mamata
+mamun
+mamunul haque
+mamunul islam
+mamunur rashid
+manabendra
+manabi
+manas
+manasi
+mandakini
+mandakranta
+mandira
+maneek
+manideepa
+manik
+manimala
+manisha
+manjoor
+manju
+manjula
+manjural islam
+manjuri
+manjushree
+manna
+manoj
+manorama
+manoranjan
+manosh
+manoshi
+mansoor
+mansur
+mantosh
+manwar
+manwara
+manzur
+manzur quader
+manzurul
+manzurul haque
+manzurul islam
+maqbul
+maqsud
+maqsudur rahman
+maria
+mariam
+mariya
+maroof
+maroofa
+maruf
+marufa
+maryam
+mashrafe
+mashrafe bin mortaza
+mashrafi
+masood
+masooda
+masoom
+masooma
+masud
+masuda
+masum
+masuma
+mateen
+matin
+matiur
+matiur rahman
+maya
+mayesha
+maymuna
+mayuri
+mazeda
+mazharul
+medha
+meem
+meena
+meenakshi
+meera
+meeta
+megha
+meghla
+meghmala
+meghna
+meghnad
+mehdi
+mehedi
+mehedi hasan
+mehedi maruf
+mehidy hasan
+mehtab
+menaka
+menoka
+meraj
+mihir
+mijan
+mijanur
+milan
+milon
+milu
+mim
+mimi
+mina
+minakshi
+minar
+minar rahman
+minati
+minhaj
+minhajul
+minhajul abedin
+minhaz
+minhazul
+minoti
+minu
+mir mosharraf hossain
+mir nisar ali
+mira
+miraj
+mishkat
+mita
+mitalee
+mitali
+mithila
+mithu
+mitu
+mitul
+mizan
+mizanul haque
+mizanul islam
+mizanur
+mizanur rahman
+moazzem
+moazzem hossain
+mobarak
+mobarak hossain
+modhu
+modhubonti
+modhumita
+modhurima
+modhushree
+moeen
+mofazzal
+mofazzal hossain
+mofiz
+mofizul
+mofizur
+mohamad
+mohammad
+mohammad ashraful
+mohammad mithun
+mohammad naim
+mohammad rafiq ahmed
+mohammad rafique
+mohammad saifuddin
+mohammed
+mohana
+mohashweta
+moheb
+mohini
+mohit
+mohiuddin
+mohiuddin jahangir
+mohona
+mohsin
+mohuya
+moin
+moinuddin
+moinul
+moitreyee
+mojammel huq
+mojib
+mojibul
+mojibur
+mojibur rahman
+mojid
+mokhles
+mokhlesur rahman
+mollika
+moloy
+momin
+mominul
+mominul haque
+momota
+momtaz
+momtaz begum
+momtazuddin
+mondira
+monica
+monidipa
+monika
+monir
+monir uddin
+monira
+monirul
+monirul alam
+monirul haque
+monirul islam
+moniruzzaman
+moniruzzaman islamabadi
+monisha
+monju
+monjur
+monjuri
+monjurul
+monjurul islam
+monoj
+monowar
+monowar hossain
+monowara
+monsur
+montasir
+montosh
+monwar
+monwar hossain
+monwarul islam
+moorad
+moosa
+moqbul
+moriyom
+morshed
+mortaza
+mosaddek
+mosharraf
+mosharraf hossain
+mosharraf karim
+moslehuddin
+mostafa
+mostafa kamal
+mostafa monwar
+mostafa sarwar
+mostafa zaman
+mostafiz
+mostafizur
+mostafizur rahman
+motahar
+motahar hossain
+motaher hossain chowdhury
+motaleb
+motalib
+motin
+motiur
+motiur rahman
+mou
+moulik
+moumita
+mouri
+moushumi
+mousumi
+moutushi
+mowmita
+moyna
+moyuri
+mozammel
+mozammel haque
+mridul
+mridula
+mrinal
+mrinalini
+mrinalkanti
+mrinmay
+mrinmoy
+mrinmoyee
+mrityunjay
+mrityunjoy
+muazzam
+mubarak
+mubarak hossain
+mufazzal
+muhammad
+muhammed zafar iqbal
+muhib
+muhiuddin
+muhsin
+muinuddin
+mujammel
+mujib
+mujibul
+mujibur
+mujibur rahman
+mukhles
+mukhlesur rahman
+mukta
+mukti
+mukul
+mukunda
+mumin
+muminul
+mumtaz
+mumtazuddin
+muneem
+muneer
+munier choudhury
+munim
+munir
+munira
+munirul
+munirul islam
+muniruzzaman
+munmun
+munshi abdur rouf
+muntasir
+muntassir mamoon
+murad
+murshid
+murtaza
+musa
+musa khan
+musaddiq
+musharraf
+mushfik
+mushfikur
+mushfiq
+mushfiqur
+mushfiqur rahim
+muslehuddin
+mustafa
+mustafa kamal
+mustafiz
+mustafizur
+mustafizur rahman
+mustapha
+mutahar
+mutaleb
+mutalib
+nabadwip
+nabakumar
+nabami
+nabaneet
+nabaneeta
+nabarun
+nabeel
+nabeela
+nabil
+nabila
+nabin
+nachiketa
+nadeem
+nadi
+nadia
+nadim
+nadiya
+naeem
+naeema
+nafees
+nafees iqbal
+nafeesa
+nafis
+nafisa
+nafiz
+nagendra
+nagini
+naheed
+naheeda
+nahian
+nahid
+nahida
+nahiyan
+naim
+naima
+naimur
+naimur rahman
+najeeb
+najeem
+najib
+najibur rahman
+najimuddin
+najiya
+najma
+najmul
+najmul hossain
+najmul hossain shanto
+najrul
+nakib
+nalini
+namita
+namrata
+nandadulal
+nandalal
+nandini
+nandita
+nanigopal
+naqib
+narahari
+narayani
+narendra
+naresh
+narottam
+naseem
+naseema
+naseer
+nasim
+nasima
+nasir
+nasir hossain
+nasiruddin
+nasiruddin yousuff
+nasreen
+nasrin
+nasrin akter
+nasrin sultana
+nasrul
+nasum
+nasum ahmed
+nataraj
+naushad
+naveen
+nawsheen
+nayan
+nayana
+nayantara
+nayem
+nayma
+nazia
+nazib
+nazim
+nazimuddin
+nazma
+nazmul
+nazmul abedin
+nazmul alam
+nazmul haque
+nazmul hasan
+nazmul huda
+nazmul islam
+nazmul karim
+nazneen
+naznin
+nazrul
+nazrul islam
+neegar
+neehal
+neeharika
+neel
+neela
+neelanjana
+neelima
+neelofar
+neepa
+nesar
+nesaruddin
+niaz
+nibedita
+nibha
+nigar
+nigar sultana
+nihal
+nihar
+niharika
+niharranjan
+nikhil
+nikhilesh
+nil
+nila
+niladri
+nilanjana
+nilay
+nilima
+nilkantha
+niloy
+nilratan
+nilufa
+nilufar
+nilufar yasmin
+nilufer
+nipa
+nirab
+nirad
+niraja
+nirendra
+nirendranath
+nirmal
+nirmala
+nirmalendu
+nirmalendu goon
+nirmol
+nirmola
+nirob
+nirupama
+nirupoma
+nisar
+nisha
+nishat
+nishat tasnim
+nishi
+nishit
+nishita
+nishith
+nisho
+nitai
+nityananda
+nivedita
+niyaz
+nobarun
+nobin
+nobokumar
+nobomi
+nobonita
+nochiket
+nodi
+noman
+nomita
+nomrota
+nondini
+nondita
+noopur
+noor
+noor alam
+noor hosen
+noor islam
+noor muhammad
+noor nobi
+noori
+noorjahan
+noorul
+noorul islam
+noorun nahar
+nooruzzaman
+norendro
+noresh
+nowshad
+nowshin
+noyon
+noyona
+noyontara
+nripen
+nripendra
+nrisimha
+numan
+nupur
+nur
+nur alam
+nur hossain
+nur islam
+nur mohammad
+nur mohammad sheikh
+nur nabi
+nuri
+nurjahan
+nurul
+nurul absar
+nurul alam
+nurul amin
+nurul anwar
+nurul haque
+nurul huda
+nurul huq
+nurul islam
+nurul kader
+nurul karim
+nurul majid
+nurul momen
+nurul quader
+nurun nahar
+nuruzzaman
+nushrat
+nusraat faria
+nusrat
+nusrat faria
+nusrat jahan
+obaidul
+obaidullah
+obhijit
+obhik
+obhilasha
+obhinobo
+obhirup
+obhishek
+oboni
+obonti
+obontika
+odhir
+odhora
+oditi
+odrija
+odud
+odwoito
+ohona
+oikya
+oindrila
+oishi
+oishorjo
+olok
+oloka
+olokesh
+omar
+omar sani
+omit
+omitabho
+omiyo
+omol
+omola
+omolendu
+omor
+omoresh
+omortyo
+omrita
+omrito
+onamika
+onath
+ongod
+ongona
+ongshuman
+onik
+onik mojumder
+oniket
+onil
+onimesh
+onindita
+onindyo
+onirban
+oniruddho
+onjoli
+onjon
+onjona
+onkita
+onkur
+onkush
+ononto
+ononya
+onoshuya
+ontor
+ontora
+onubha
+onubhob
+onukul
+onup
+onupom
+onupoma
+onuradha
+onurag
+onushka
+onushree
+onwesha
+oporajita
+oporna
+oporup
+opurbo
+orchita
+orchona
+orghyo
+orindom
+oritro
+orjun
+orko
+ornob
+orobindo
+orpita
+orpon
+orun
+oruna
+orunabho
+orundhoti
+orunima
+oshim
+oshima
+oshit
+oshok
+oshoka
+oshwini
+osman
+othman
+otonu
+otul
+oyon
+oyontika
+oyshee
+pabitra
+palash
+pallab
+pallabi
+pankaj
+panna
+papia
+papiya
+pappu
+param
+parameshwar
+paramita
+parashuram
+parboti
+parimal
+paritosh
+partha
+partha barua
+parthasarathi
+partho
+parul
+parvati
+parveen
+parvej
+parvez
+parvin
+parvin sultana
+pavel
+payel
+phanibhushan
+phulan
+phulmala
+pia
+piali
+pijush
+pinki
+pinky
+piya
+piyali
+piyasha
+piyush
+pobitro
+polash
+poli
+pollob
+pollobi
+poly
+ponkoj
+pooja
+poornima
+porimol
+poritosh
+poromita
+poushali
+prabha
+prabhabati
+prabhas
+prabhat
+prabir
+prabir mitra
+prabodh
+pradeep
+pradip
+pradipta
+pradyut
+prafulla
+pragati
+pragna
+prahlad
+prakash
+pralay
+pramatha
+pramila
+pramod
+pranab
+pranamita
+pranati
+pranay
+prasenjit
+prashanta
+prashanti
+prasun
+pratap
+pratibha
+pratik
+pratiki
+pratiksha
+pratim
+pratima
+pratyush
+pratyusha
+preeti
+prema
+premankur
+premendra
+prince
+pritam
+pritha
+prithwijit
+prithwiraj
+priti
+pritilata
+pritom
+pritom hasan
+priya
+priyabrata
+priyadarshini
+priyam
+priyanath
+priyanka
+probhash
+probhat
+probir
+probodh
+prodip
+prodipto
+prodyut
+profullo
+progoti
+progya
+prokash
+proloy
+promila
+promod
+promotho
+pronob
+pronoti
+pronoy
+prosenjit
+proshanto
+proshun
+protap
+protik
+protikkha
+protim
+protima
+protiva
+protyush
+prova
+puja
+pulak
+pulin
+pulok
+purabi
+purnendu
+purnima
+purobi
+pushpa
+pushpendu
+pushpita
+putul
+qader
+qadri
+qais
+qaisar
+qamrul
+qayem
+qayyum
+qazi
+quader
+quaiyum
+quamrul hassan
+quazi
+quddus
+qudrat
+qutub
+rabeya
+rabeya bosri
+rabeya khatun
+rabi
+rabia
+rabindra
+rabindranath
+radha
+radhakanta
+radhakanto
+radhamohan
+radharani
+radhika
+rafa
+rafee
+rafi
+rafik
+rafikul
+rafiq
+rafiq azad
+rafiq uddin
+rafiqul
+rafiqul alam
+rafiqul haque
+rafiqul islam
+rafiqun
+rafiqun nabi
+rafsan
+raghav
+raghob
+ragini
+rahat
+raheem
+raheema
+rahim
+rahima
+rahmaan
+rahman
+rahul
+raibati
+raihan
+raihana
+raisul
+raisul islam asad
+rajani
+rajanigandha
+rajarshi
+rajashree
+rajat
+rajeeb
+rajendra
+rajendro
+rajesh
+rajib
+rajin
+rajin saleh
+rajiv
+rajlakshmi
+rajorshi
+rajshekhar
+raju
+rakhal
+rakhee
+rakhi
+rakib
+rakibul
+rama
+ramakrishna
+ramala
+ramani
+ramaprasad
+rameez
+ramesh
+ramiz
+ramkrishno
+rammohan
+ramprasad
+rana
+ranabir
+ranajit
+ranen
+ranesh
+ranesh dasgupta
+rangana
+rani
+rani rashmoni
+ranjan
+ranjana
+ranjit
+ranjita
+raqib
+raqibul
+raqibul hasan
+rasel
+rashed
+rashedul
+rasheed
+rasheeda
+rashid
+rashida
+rashidul
+rashmi
+rashmoni
+ratan
+rathin
+ratna
+ratnabali
+raunak
+raushan
+ravi
+rayhan
+rayhana
+razia
+razia sultana
+raziya
+razzak
+reba
+reboti
+redwan
+reema
+reena
+reeta
+rehana
+rekha
+renu
+renuka
+reshma
+reshmi
+ressel
+revati
+reza
+rezaul
+rezaul haque
+rezaul karim
+rezwan
+ria
+riad
+riaz
+riaz uddin ahmed
+riddhi
+riddhima
+ridwan
+rikta
+rima
+rimi
+rimjhim
+rina
+ripan
+ripon
+rishabh
+rishav
+rishi
+rita
+ritika
+rittik
+ritu
+rituparna
+rituparno
+rituporna
+ritwik
+riya
+riyad
+riyadh
+riyaz
+riza
+rizvee
+rizvi
+robi
+robindro
+robindronath
+rofiq
+rofiqul islam
+rohan
+rojina
+rojoni
+rojot
+rokeya
+rokon
+rokonuzzaman
+roksana
+roma
+romesh
+romiz
+ronen
+ronesh
+roni
+ronjit
+ronjita
+ronjon
+ronjona
+ronobir
+ronojit
+rony
+rooma
+roona
+roopa
+roopali
+roshan
+roshid
+roshmi
+roshni
+rothin
+rotna
+roton
+rounak
+rownok
+rowshan
+rowshan ara
+roxana
+rozina
+rubaiyat
+rubayat
+rubeena
+rubel
+rubel hossain
+rubina
+ruchira
+rudra
+rudra mohammad shahidullah
+rudrani
+rudro
+ruhaan
+ruhul
+ruhul amin
+ruhul kuddus
+ruhul quddus
+rukhsana
+rukmini
+rukun
+rukunuzzaman
+ruma
+rumki
+rumman
+rumpa
+runa
+runa laila
+rupa
+rupak
+rupalekha
+rupali
+rupam
+rupamanjari
+rupasi
+rupkatha
+rupkotha
+rupok
+rupom
+ruposhi
+russell
+saad
+saadat
+saadman
+sabbir
+sabbir rahman
+sabeeha
+sabeena
+saber
+saber hossain
+sabiha
+sabikun
+sabikun nahar
+sabina
+sabir
+sabit
+sabita
+sabitri
+sabreena
+sabrina
+sabyasachi
+sad
+sadat
+sadeed
+sadek
+sadeq
+sadia
+sadid
+sadik
+sadiq
+sadiya
+sadman
+saeeda
+safia
+safiya
+safura
+sagar
+sagarika
+sahadat
+sahadeb
+sahana
+saheli
+sahida
+saida
+saidus salehin
+saif
+saifuddin
+saiful
+saiful alam
+saiful bari
+saiful islam
+saifur rahman
+saikat
+saima
+saiyad
+sajeda
+sajida
+sajjad
+sakhina
+sakib
+sakib al hasan
+saklain
+salahuddin
+salauddin
+saleem
+saleena
+saleha
+salehin
+saliha
+salihin
+salim
+salma
+salmaan
+salman
+salman shah
+samar
+samaresh
+sameen
+sameena
+sameer
+sameera
+samia
+samin
+samina
+samir
+samira
+samiya
+samsh
+samsul
+sanaul
+sanaul haque
+sanaullah
+sandeep
+sandhya
+sandip
+sani
+sanjay
+sanjeev
+sanjib
+sanjida
+sanjoy
+sanowar
+sanowar hossain
+santa
+santosh
+santosh gupta
+santwana
+sanwar
+sanwar hossain
+sanzida
+saptarshi
+saqib
+saqlain
+sara
+sarada
+sarah
+sarala
+saraswati
+sarat
+sarbajit
+sarbani
+sardar jainuddin
+sarmistha
+sarojini
+sarowar
+sarthak
+sarwar
+sarwar hossain
+sarwar jahan
+sathee
+sathi
+satyajit
+satyen
+satyen sen
+satyendra
+saurav
+sayan
+sayani
+sayantan
+sayantani
+sayed
+sayeda
+sayeedah
+sayf
+sayfuddin
+sayful
+sayful islam
+sayma
+sazzad
+seema
+sekhar
+selim
+selim al deen
+selina
+senjuti
+seraj
+serajul
+serajul islam choudhury
+setara
+shabbir
+shabitri
+shabnam
+shadhin
+shafikul
+shafiqul
+shafiqul alam
+shafiqul haque
+shafiqul islam
+shafiqur rahman
+shafiul
+shafiul islam
+shagor
+shagorika
+shagota
+shahabuddin
+shahadat
+shahadev
+shahana
+shahed
+shaheed
+shaheeda
+shaheedul
+shaheen
+shaheenur
+shahid
+shahid qadri
+shahid suhrawardy
+shahida
+shahidul
+shahidul alam
+shahidul haque
+shahidul islam
+shahidullah
+shahidullah kaiser
+shahiduzzaman
+shahiduzzaman selim
+shahin
+shahinur
+shahjahan
+shahjalal
+shahnaj
+shahnaz
+shahnaz parvin
+shahriar
+shahriar chowdhury emon
+shahriar kabir
+shahriar nafees
+shahriyar
+shaibal
+shaila
+shailaja
+shajahan
+shajalal
+shakeel
+shakib
+shakib al hasan
+shakib khan
+shakil
+shakuntala
+shalini
+shama
+shameem
+shameema
+shamim
+shamim hossain
+shamima
+shamima nasrin
+shamol
+shamoli
+shampa
+shams
+shamsuddin
+shamsuddin abul kalam
+shamsul
+shamsul alam
+shamsul arefin
+shamsul haque
+shamsul huda
+shamsul huq
+shamsul islam
+shamsur rahman
+shamsuzzaman
+shankari
+shanta
+shantanu
+shanti
+shantilata
+shanto
+shantona
+shantonu
+shaon
+sharad
+sharada
+sharadiya
+sharbari
+shareef
+shariatullah
+sharif
+sharif uddin
+shariful
+shariful alam
+shariful haque
+shariful islam
+sharmeen
+sharmila
+sharmin
+sharmin akhtar
+sharmin akter
+sharmin sultana
+sharmistha
+sharoda
+sharodiya
+shartok
+shashadhar
+shashanka
+shashikala
+shashwati
+shashwoti
+shatarupa
+shathi
+shaty
+shaukat
+shaurya
+shawan
+shawkat
+shawkat ali
+shawkat osman
+shawon
+shayan
+shayan chowdhury arnob
+shayla
+shayoni
+shayonton
+shayontoni
+sheela
+sheeta
+sheetal
+shefalee
+shefali
+shehab
+sheikh fazlul karim
+sheikh hasina
+sheikh mahedi
+shekhar
+shenjuti
+sheuli
+shiam
+shibaji
+shibani
+shiben
+shiddhartho
+shifat
+shihab
+shihabuddin
+shikha
+shila
+shiladitya
+shilpi
+shilpy
+shima
+shimontini
+shimonto
+shimu
+shinthi
+shipra
+shireen
+shirin
+shirin akter
+shirin sultana
+shishir
+shital
+shitala
+shiuli
+shivaji
+shivani
+shmita
+shneha
+shobha
+shobhana
+shobhon
+shobita
+shobnom
+shobyoshachi
+shoheli
+shohini
+shohom
+shoibal
+shoikot
+shokuntola
+shoma
+shomir
+shomlota
+shomor
+shomoresh
+shompa
+shonali
+shonamoni
+shondhya
+shondip
+shoniya
+shonjib
+shonjoy
+shonkori
+shontosh
+shopna
+shopon
+shoptorshi
+shorbani
+shorbojit
+shorbori
+shorif
+shoriful
+shoriful islam
+shormila
+shormistha
+shorna
+shornabho
+shorod
+shorojini
+shorola
+shoron
+shoroshoti
+shorot
+shorup
+shoshanko
+shoshodhor
+shostika
+shotorupa
+shotyen
+shotyendro
+shotyojit
+shougoto
+shoumi
+shoumik
+shoumitro
+shoumyo
+shourav
+shourin
+shourjo
+shova
+shovon
+shovona
+shraboni
+shrabonti
+shreela
+shreelekha
+shreemoyee
+shreetoma
+shrestha
+shrestho
+shreya
+shreyan
+shreyasi
+shreyoshi
+shribas
+shrija
+shrijato
+shrijon
+shrijoni
+shrikanto
+shrishti
+shriti
+shruti
+shubhankar
+shubhash
+shubhashini
+shubhendu
+shubho
+shubhodra
+shubhra
+shubhro
+shubir
+shuborna
+shubrato
+shuchismita
+shuchita
+shuchitra
+shuchonda
+shuchorita
+shudeshna
+shudip
+shudipta
+shudipto
+shuhashini
+shujata
+shukanto
+shukla
+shukumar
+shulekha
+shulochona
+shumita
+shumitra
+shunayona
+shuneel
+shuneeta
+shuni
+shunonda
+shupriya
+shupriyo
+shurma
+shurobhi
+shushanto
+shushila
+shuvo
+shuvonkor
+shuvoshree
+shuvra
+shuvro
+shyama
+shyamal
+shyamali
+siam
+siam ahmed
+siben
+siddhartha
+siddheshwari
+sifat
+sikandar
+sikandar abu jafar
+sikander
+sima
+simanta
+simantini
+sinthi
+siraj
+sirajul
+sisir
+sita
+sitara
+siyam
+smaran
+smita
+smriti
+smritikana
+smrity
+sneha
+sofura
+sohail
+soham
+sohan
+sohel
+sohel rana
+sohini
+sohrawardi
+soikot
+sokhina
+solaiman
+soma
+somlata
+sonali
+sonamoni
+sonia
+soniya
+sorwar
+soudamini
+sougata
+sougoto
+soumi
+soumik
+soumitra
+soumitro
+soumya
+soumya sarkar
+soumyo
+soundarya
+sourav
+sourin
+srabani
+srabanti
+sreela
+sreelekha
+sreemoyee
+sreetama
+sreya
+sreyan
+sribas
+srija
+srijan
+srijani
+srijato
+srijon
+srikanta
+srishti
+sruti
+subarna
+subhadra
+subhalakshmi
+subhankar
+subhas
+subhash
+subhashini
+subhashree
+subhendu
+subho
+subhra
+subir
+subir nandi
+suborna
+subrata
+subroto
+suchanda
+sucharita
+suchitra
+sudeep
+sudeshna
+sudip
+sudipta
+sudipto
+sufi motahar hossain
+suhan
+suhana
+suhasini
+suhel
+suhrawardy
+suhrid
+sujan
+sujata
+sujon
+sukanta
+sukanto
+sukla
+sukumar
+sulaiman
+sulekha
+suleman
+sulochana
+sultaan
+sultan
+sultana
+sumaiya
+suman
+sumana
+sumaya
+sumayyah
+sumee
+sumi
+sumita
+sumitra
+sumon
+sumona
+sunanda
+sunayana
+sunil
+sunita
+sunny
+supriya
+supriyo
+surabhi
+suraiya
+suravi
+suraya
+surma
+sushanta
+sushanti
+sushanto
+sushila
+sushmita
+susmita
+swadhin
+swagata
+swapan
+swapna
+swarna
+swarnabha
+swarup
+swastika
+swati
+syed
+syed abdul hadi
+syed abul maksud
+syed ali
+syed khaled ahmed
+syed manzoorul islam
+syed mujtaba ali
+syed nazrul islam
+syed rasel
+syed shamsul haque
+syed waliullah
+syeda
+tabarak
+tabassum
+tagar
+taha
+taher
+tahera
+tahia
+tahir
+tahira
+tahiya
+tahmeed
+tahmeena
+tahmid
+tahmina
+tahsan
+tahsan rahman
+tahseen
+tahsin
+tahsina
+taiba
+taifur
+taijul
+taijul islam
+taiyeba
+tajuddin
+tajul
+takia
+talha
+talhah
+tamal
+tamalika
+tamanna
+tameem
+tamim
+tamim iqbal
+tanaya
+tandra
+tanha
+tania
+tanima
+tanisha
+taniya
+tanjeeb
+tanjib
+tanjib sarowar
+tanjila
+tanjina
+tanmay
+tanmoy
+tanuja
+tanushree
+tanusree
+tanveer
+tanvir
+tanvir ahmed
+tanvir hayder
+tanvir islam
+tanvir mokammel
+tanzeed
+tanzeem
+tanzid
+tanzila
+tanzim
+tanzina
+tapan
+tapan chowdhury
+tapas
+tapash baisya
+tapasi
+tapasya
+tapati
+taposh
+taposhi
+taqiya
+tara
+taramoni
+tarangini
+tarek
+tarek aziz
+tarek masud
+tarek rahman
+tareque masud
+tarik
+tariq
+tariq anam khan
+tariq aziz
+tarique rahman
+tarulata
+tarun
+tasfia
+tasfiya
+tashrif
+tashrifa
+taskeen
+taskin
+taskin ahmed
+tasleema
+taslim
+taslima
+tasmia
+tasmim
+tasmiya
+tasneem
+tasnia
+tasnim
+tasniya
+tasrif
+tasrif khan
+tasrifa
+tauquir
+tauquir ahmed
+tawhid
+tawsif
+tawsif mahbub
+tayfur
+tayyaba
+teesta
+tele samad
+thabit
+tilottama
+timir
+tipu
+tirtha
+tirtho
+tisha
+tista
+tithee
+tithi
+titumir
+tofail
+tofayel
+tofazzal
+tofazzal hossain manik mia
+togor
+toha
+tomal
+tomalika
+tondra
+tonima
+tonmoy
+tonoya
+tonuja
+tonushree
+topon
+toposhya
+topoti
+topu
+torun
+touhid
+toukir
+toukir ahmed
+tousif
+towhid
+tribeni
+tridha
+tridib
+tridiv
+trina
+trinayani
+tripti
+trisa
+trisha
+trishna
+trisna
+tulashi
+tulee
+tuli
+tulsi
+tumpa
+tuni
+turja
+turjo
+turya
+tusar
+tushar
+tutul
+ubaidul
+ubaidullah
+uday
+udayan
+udbodhak
+uddipak
+udoy
+udoyon
+ulka
+ullas
+ullash
+uma
+umapati
+umar
+umashankar
+umesh
+umme
+umme ayman
+umme habiba
+umme hani
+umme kulsum
+umme rumman
+umme salma
+ummey
+upasana
+upashona
+urmee
+urmi
+urmila
+urmimala
+usha
+ushapati
+ushasi
+ushnish
+ushoshi
+usman
+utpal
+utpala
+utpol
+uttam
+uttara
+uttom
+uttora
+vaidehi
+vani
+veena
+vidya
+vijay
+vikram
+vinod
+vishakha
+vishnu
+vivek
+vivekananda
+vrinda
+wadud
+waheed
+waheeda
+wahid
+wahida
+wahidul
+wajed
+wakeel
+wakil
+waliullah
+waseem
+wasfia
+wasim
+wazed
+yadav
+yakub
+yakub ali
+yamuna
+yaqub
+yaseen
+yashoda
+yasin
+yasir
+yasmin
+yasser
+yeasmin
+younus
+yousuf
+yudhishthir
+yunus
+yusuf
+yuthi
+yuthika
+zafar
+zafar iqbal
+zahid
+zahid hasan
+zahidul
+zahir
+zahir raihan
+zahir uddin
+zahirul
+zahirul haque
+zahirul islam
+zahur
+zahur hossain chowdhury
+zainal
+zainul abedin
+zakia
+zakia sultana
+zakir
+zakir hossain
+zakiya
+zareen
+zarif
+zawad
+zebunnisa
+zeenat
+zeeshan
+zehad
+zerin
+zerin tasnim
+zia
+ziaul
+ziaur
+zinat
+zinat ara
+zisan
+zohad
+zonayed
+zubaida
+zubair
+zulekha
+zulfiqar

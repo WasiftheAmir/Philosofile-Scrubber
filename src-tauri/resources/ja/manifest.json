@@ -1,0 +1,109 @@
+{
+  "language": "ja",
+  "files": [
+    {
+      "path": "ja_names.txt",
+      "role": "name_list",
+      "source": "Wikidata",
+      "licence": "CC0 1.0 (see NOTICE_ja.md)",
+      "version": "unknown",
+      "sha256": "4b5b82ed834a47d25033b8c8b4518e166cedec94ed6ae741f34672f54cb21660"
+    },
+    {
+      "path": "ja_surnames.txt",
+      "role": "surname_list",
+      "source": "Wikidata",
+      "licence": "CC0 1.0 (see NOTICE_ja.md)",
+      "version": "unknown",
+      "sha256": "bbf1ee61cbb7d05d4252c2cce72a943b2d2e9ecea21e26269d6b6720fd312894"
+    },
+    {
+      "path": "ja_given_romanized.txt",
+      "role": "romanized_list",
+      "source": "Wikidata (en romanizations) + project-generated kana Hepburn/passport expansions (generate_ja_lists.py)",
+      "licence": "CC0 1.0 (Wikidata base) / Project-authored (kana expansions); see NOTICE_ja.md",
+      "version": "2026-11-07",
+      "sha256": "1ecc0064da23401eee9350f8a72137d20f6f0b0eabbfce89907728b11b6e7e61"
+    },
+    {
+      "path": "ja_surnames_romanized.txt",
+      "role": "romanized_list",
+      "source": "Wikidata (en romanizations) + project-generated ASCII/diacritic alias expansions",
+      "licence": "CC0 1.0 (Wikidata base) / Project-authored (ASCII alias expansions); see NOTICE_ja.md",
+      "version": "2026-11-09",
+      "sha256": "c668dbde2002347da20bde1f4d4e0e2519264f24d66a2d195b36a7617d861110"
+    },
+    {
+      "path": "ipadic/char_def.bin.zst",
+      "role": "dictionary",
+      "source": "mecab-ipadic via Lindera",
+      "licence": "IPADIC Notice",
+      "version": "2.7.0-20070801",
+      "sha256": "6b2f28954a88b7c2a0af3e2cca0df1f514955c2d55de869fec99f0a606d11281"
+    },
+    {
+      "path": "ipadic/dict.trie.zst",
+      "role": "dictionary",
+      "source": "mecab-ipadic via Lindera",
+      "licence": "IPADIC Notice",
+      "version": "2.7.0-20070801",
+      "sha256": "59e900e6efce7b1d039381400eb97b393e7f556371ace79972721b7f426c8def"
+    },
+    {
+      "path": "ipadic/dict.vals.zst",
+      "role": "dictionary",
+      "source": "mecab-ipadic via Lindera",
+      "licence": "IPADIC Notice",
+      "version": "2.7.0-20070801",
+      "sha256": "6ae79403e43567b628a9e57685e350ce7e02cbccf0189d31dcf11fb6572f3dae"
+    },
+    {
+      "path": "ipadic/dict.valsidx.zst",
+      "role": "dictionary",
+      "source": "mecab-ipadic via Lindera",
+      "licence": "IPADIC Notice",
+      "version": "2.7.0-20070801",
+      "sha256": "a32e44dced711689d294965b30f2b4b552e8a6e7a91e0e16feadcab05f5d1b2d"
+    },
+    {
+      "path": "ipadic/dict.words.zst",
+      "role": "dictionary",
+      "source": "mecab-ipadic via Lindera",
+      "licence": "IPADIC Notice",
+      "version": "2.7.0-20070801",
+      "sha256": "18c28efa6a6a2a87513fcccc36685f8d9ef70f22bba670d8241233c4eb3e6e75"
+    },
+    {
+      "path": "ipadic/dict.wordsidx.zst",
+      "role": "dictionary",
+      "source": "mecab-ipadic via Lindera",
+      "licence": "IPADIC Notice",
+      "version": "2.7.0-20070801",
+      "sha256": "97eee3a57086a0e3a1a54dd706b04369b034be42ec979cafa6cd6a6ca21e5ce5"
+    },
+    {
+      "path": "ipadic/matrix.mtx.zst",
+      "role": "dictionary",
+      "source": "mecab-ipadic via Lindera",
+      "licence": "IPADIC Notice",
+      "version": "2.7.0-20070801",
+      "sha256": "1394a26f141fcebdc2c65e8edcc772fbe5b065ec17f60afbfc59349b6e9b2f76"
+    },
+    {
+      "path": "ipadic/metadata.json.zst",
+      "role": "dictionary",
+      "source": "mecab-ipadic via Lindera",
+      "licence": "IPADIC Notice",
+      "version": "2.7.0-20070801",
+      "sha256": "3e5c71ac34272fee659f7cd0357549cb8d38fdc0ea7bf86646504483f4707146"
+    },
+    {
+      "path": "ipadic/unk.bin.zst",
+      "role": "dictionary",
+      "source": "mecab-ipadic via Lindera",
+      "licence": "IPADIC Notice",
+      "version": "2.7.0-20070801",
+      "sha256": "cd4e5985a534e1f4b4e040e8c9fda70ab011167745515b1682f75d40669cae2e"
+    }
+  ]
+}

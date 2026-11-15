@@ -1,0 +1,33 @@
+French Word List Attribution & License
+========================================
+
+1. French Word List (`fr_words.tsv`)
+- Upstream Source: Grammalecte v7.7 by Olivier R. (https://grammalecte.net/)
+- Repository: LibreOffice/dictionaries on GitHub (fr_FR/dictionaries/fr.dic, fr.aff)
+- Source URL: https://raw.githubusercontent.com/LibreOffice/dictionaries/master/fr_FR/dictionaries/
+- Version: Grammalecte Dictionnaire Orthographique Français "Classique" v7.7
+- License: Mozilla Public License Version 2.0 (MPL 2.0)
+- License URL: https://www.mozilla.org/MPL/2.0/
+- Access Date: 2026-11-10
+
+2. Mozilla Public License Version 2.0 (MPL 2.0) Text
+---------------------------------------------------
+This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+Principal Contributors to Grammalecte French Dictionaries:
+- Olivier R. (Lead maintainer)
+- Jean-Luc T.
+- Sylvain P.
+- Laurent Dubois
+- Dominique Pellé
+- Pierre Poisson
+- Pierre-Yves
+- Pierre Choffardet
+- Leywen
+- Romain Muller et Serge Bibauw (RENOUVO)
+- Chantal Contant
+- Benoît Sagot
+- Philipp Burgess
+

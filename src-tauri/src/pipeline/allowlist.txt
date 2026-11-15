@@ -1,0 +1,47 @@
+# Curated PII Scrubber Allow List
+# Maintained by hand. One term per line.
+# Covers generic product names, company names, and technical terms to prevent over-redaction.
+# Portions Copyright (c) 2019 Microsoft Corporation. Licensed under the MIT License.
+# Verified against Microsoft Presidio (presidio-analyzer/presidio_analyzer/analyzer_engine.py).
+
+# Companies
+acme
+adobe
+amazon
+apple
+cisco
+google
+ibm
+intel
+microsoft
+oracle
+
+# Products & Services
+docker
+excel
+github
+gitlab
+illustrator
+kubernetes
+macintosh
+philosofile
+photoshop
+powerpoint
+windows
+word
+
+# Technical Terms
+apache
+debian
+javascript
+linux
+mysql
+nginx
+postgresql
+python
+redis
+rust
+sqlite
+typescript
+ubuntu
+

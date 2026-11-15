@@ -1,0 +1,24 @@
+[package]
+name = "philosofile-scrubber"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.77.2"
+description = "Standalone privacy scrubber exported from Philosofile"
+
+[lib]
+name = "philosofile_scrubber"
+path = "src-tauri/src/pipeline/scrubber.rs"
+
+[dependencies]
+dirs = "6"
+lindera = { version = "6.2.0" }
+rayon = "1.10"
+regex = "1.13.1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+unicode-normalization = "0.1"
+zstd = "0.13"
+
+[dev-dependencies]
+md5 = "0.8.1"
+sha2 = "0.10"

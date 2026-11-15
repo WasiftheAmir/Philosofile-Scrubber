@@ -1,0 +1,49 @@
+========================================================================
+Part 1: NLTK Names Corpus (Mark Kantrowitz Names Corpus, Version 1.3)
+========================================================================
+
+Names Corpus, Version 1.3 (1994-03-29)
+Copyright (C) 1991 Mark Kantrowitz
+Additions by Bill Ross
+
+This corpus contains 5001 female names and 2943 male names, sorted
+alphabetically, one per line.
+
+You may use the lists of names for any purpose, so long as credit is
+given in any published work. You may also redistribute the list if you
+provide the recipients with a copy of this README file. The lists are
+not in the public domain (I retain the copyright on the lists) but are
+freely redistributable.  If you have any additions to the lists of
+names, I would appreciate receiving them.
+
+Mark Kantrowitz <mkant+@cs.cmu.edu>
+http://www-2.cs.cmu.edu/afs/cs/project/ai-repository/ai/areas/nlp/corpora/names/
+
+========================================================================
+Part 2: smashew/NameDatabases
+========================================================================
+
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
+
+In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of the heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to <http://unlicense.org/>

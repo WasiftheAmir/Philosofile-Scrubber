@@ -1,0 +1,37 @@
+{
+  "language": "bn",
+  "files": [
+    {
+      "path": "bn_words.tsv",
+      "role": "word_list",
+      "source": "hermitdave/FrequencyWords via OpenSubtitles/OPUS",
+      "licence": "CC BY-SA 4.0 (hermitdave-derived rows; see LICENSE_bn_words_CC-BY-SA-4.0.txt)",
+      "version": "unknown",
+      "sha256": "65f66ed92615cf7c15a35cd850525bad0da20162ac1a3d2454eabd97b4c43b7b"
+    },
+    {
+      "path": "bn_names.tsv",
+      "role": "name_list",
+      "source": "bnwiki_category, gemini_unverified, manual_verification",
+      "licence": "CC BY-SA 4.0 (wikipedia_category subset); project-authored, AI-generated (licence set with release licence)",
+      "version": "unknown",
+      "sha256": "916379bbc8dcc544240f75f03b640dba200b0ec7fe8d021006a110109404010c"
+    },
+    {
+      "path": "bn_suffixes.tsv",
+      "role": "suffix_list",
+      "source": "Universal Dependencies Bengali-BRU",
+      "licence": "CC BY-SA 4.0",
+      "version": "unknown",
+      "sha256": "699d4b2642cce7e6e8916969495f7bc3c30608f092c16f29b1e706372e15edb4"
+    },
+    {
+      "path": "bn_romanized.txt",
+      "role": "romanized_list",
+      "source": "src-tauri/resources/bn/bn_names.tsv (romanized column; AI-generated subset)",
+      "licence": "project-authored, AI-generated (licence set with release licence)",
+      "version": "2026-11-09",
+      "sha256": "e6ce83e07b5d61d7e3a2cfe93956fbbd5907e23840f770bb8e1280b5ceea0b60"
+    }
+  ]
+}

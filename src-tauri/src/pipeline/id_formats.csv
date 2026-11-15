@@ -1,0 +1,39 @@
+#schema_version=1
+# PII Identifier Knowledge Base for scrubber (see text_scrubbing_plan.md, section 4B).
+#
+# WARNING: Do NOT open or save this file in Excel or Apple Numbers.
+# They silently corrupt long digit strings in examples_ok / examples_no
+# (e.g. 1234567890123 becomes 1.23457E+12, leading zeros are dropped).
+# Edit in a plain text editor or Google Sheets (set the examples columns to Plain Text).
+#
+# HOW TO ADD A COUNTRY (no Rust changes needed):
+#   1. Add one row per (country x identifier x format). Quote any cell that contains a comma.
+#   2. format: shorthand like 10D, 2A+7D, ###-##-####, or re:<raw rust regex> (no lookaround!).
+#      D = digit, A = uppercase letter, X = letter-or-digit, # = digit; '+' joins parts.
+#      Alternatives are separated by ';'.
+#   3. context_required = yes for weak formats (plain digit runs); the number then only gets a
+#      specific label when one of the context_keywords appears within 60 characters.
+#   4. verification_status: verified (confirmed by an official source, put its URL in `source`),
+#      seeded (imported from Presidio/stdnum) or unverified. Only `verified` rows may produce the
+#      country-specific label (e.g. [Bangladeshi National ID Number]).
+#   5. Add at least one examples_ok and one examples_no value (separated by |).
+#   6. Run: cargo run --manifest-path src-tauri/Cargo.toml --bin inspect_scrub -- --check-registry
+#
+id,country,authority,identifier_type,display_name,type_display_name,format,context_keywords,context_required,checksum,base_confidence,valid_from,valid_until,verification_status,source,examples_ok,examples_no
+BD-NID-10,BD,Bangladesh Election Commission,national_id,Bangladeshi National ID Number,National ID Number,10D,nid|national id|voter|জাতীয় পরিচয়,yes,none,0.25,,,verified,https://services.nidw.gov.bd,1234567890,12345|12345678901
+BD-NID-13-17,BD,Bangladesh Election Commission,national_id,Bangladeshi National ID Number,National ID Number,13D;17D,nid|national id|voter|জাতীয় পরিচয়,yes,none,0.25,,,verified,https://services.nidw.gov.bd,1234567890123|12345678901234567,123456789012
+BD-TIN-12,BD,National Board of Revenue,tax_id,Bangladeshi Tax Identification Number,Tax ID Number,re:\d{4}[- ]?\d{4}[- ]?\d{4}|\d{3}[- ]?\d{3}[- ]?\d{3}[- ]?\d{3}|\d{12},tin|e-tin|etin|tax|taxpayer,yes,none,0.25,,,unverified,format from search summary - confirm at https://nbr.gov.bd,123456789012,1234567890
+BD-BRN-17,BD,Office of the Registrar General Birth and Death Registration,birth_registration,Bangladeshi Birth Registration Number,Birth Registration Number,17D,birth registration|birth certificate|brn|bdris|জন্ম নিবন্ধন,yes,none,0.25,,,verified,https://everify.bdris.gov.bd,19980123456789012,1998012345678901
+BD-PASSPORT,BD,Department of Immigration and Passports,passport,Bangladeshi Passport Number,Passport Number,2A+7D,passport|travel document|dip,no,none,0.6,,,unverified,standard 2-letter 7-digit DIP format,AB1234567|AB 1234567,A1234567|ABC1234567
+BD-BIN,BD,National Board of Revenue,tax_id,Bangladeshi Business Identification Number,Tax ID Number,9D;13D,bin|vat|business identification,yes,none,0.25,,,unverified,format unconfirmed - confirm at https://nbr.gov.bd,123456789,12345678
+ZZ-IMEI-15,ZZ,GSMA,device_id,IMEI Number,Device ID Number,15D,imei|device|handset,yes,luhn,0.25,,,unverified,GSMA TS.06,490154203237518,49015420323751
+ZZ-VIN-17,ZZ,ISO 3779,vehicle_id,Vehicle Identification Number,Vehicle ID Number,re:[A-HJ-NPR-Z0-9]{17},vin|vehicle|chassis,yes,none,0.3,,,unverified,ISO 3779,1HGCM82633A004352,1HGCM82633A00435
+ZZ-ETH-WALLET,ZZ,Ethereum,crypto_wallet,Ethereum Wallet Address,Crypto Wallet Address,re:0x[a-fA-F0-9]{40},ethereum|wallet|eth|address,no,none,0.7,,,unverified,Ethereum address format,0x52908400098527886E0F7030069857D2E4169EE7,0x5290840009852788
+US-SSN,US,Social Security Administration,social_security,US Social Security Number,Social Security Number,3D+2D+4D;9D,ssn|social security,no,none,0.4,,,seeded,presidio:d8847904621733f4eaad4f9bd977b96a11325c90:us_ssn.py,123-45-6789,12-45-6789
+US-ITIN,US,IRS,tax_id,US Individual Taxpayer Identification Number,Tax ID Number,re:9\d{2}[- ]?[78]\d[- ]?\d{4},itin|tax|irs,yes,none,0.4,,,seeded,stdnum:006192e59be8ed6e08fd680256868a6c31eb2ba9:us.itin,912-70-1234,123-45-6789
+US-EIN,US,IRS,tax_id,US Employer Identification Number,Tax ID Number,re:[1-9]\d[- ]?\d{7},ein|employer identification,yes,none,0.4,,,seeded,stdnum:006192e59be8ed6e08fd680256868a6c31eb2ba9:us.ein,12-3456789,00-1234567
+CA-SIN,CA,Service Canada,social_security,Canadian Social Insurance Number,Social Security Number,9D,sin|social insurance,yes,luhn,0.4,,,seeded,stdnum:006192e59be8ed6e08fd680256868a6c31eb2ba9:ca.sin,123456782,12345678
+GB-NINO,GB,HM Revenue and Customs,national_id,UK National Insurance Number,National ID Number,re:[A-CEGHJ-PR-TW-Z]{2}[0-9]{6}[A-D],nino|national insurance,no,none,0.6,,,seeded,stdnum:006192e59be8ed6e08fd680256868a6c31eb2ba9:gb.nino,AB123456C,AB123456E
+GB-NHS,GB,National Health Service,health_id,UK NHS Number,Health ID Number,10D,nhs,yes,mod11_nhs,0.4,,,seeded,stdnum:006192e59be8ed6e08fd680256868a6c31eb2ba9:gb.nhs,9434765919,123456789
+IN-AADHAAR,IN,UIDAI,national_id,Indian Aadhaar Number,National ID Number,12D,aadhaar|uidai,yes,verhoeff,0.4,,,seeded,stdnum:006192e59be8ed6e08fd680256868a6c31eb2ba9:in_.aadhaar,123456789012,12345678901
+IN-PAN,IN,Income Tax Department,tax_id,Indian Permanent Account Number,Tax ID Number,re:[A-Z]{5}[0-9]{4}[A-Z],pan|permanent account,no,none,0.6,,,seeded,stdnum:006192e59be8ed6e08fd680256868a6c31eb2ba9:in_.pan,ABCDE1234F,ABCDE12345

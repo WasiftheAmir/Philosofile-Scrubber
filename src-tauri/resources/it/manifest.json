@@ -1,0 +1,13 @@
+{
+  "language": "it",
+  "files": [
+    {
+      "path": "it_names.txt",
+      "role": "name_list",
+      "source": "Istituto Nazionale di Statistica (ISTAT)",
+      "licence": "IODL 2.0 (see NOTICE_it.md)",
+      "version": "2026-11-02",
+      "sha256": "411e040ccb7925ece921021493d4d90a658c32e0db49953fcc5e36d5e02b44d1"
+    }
+  ]
+}

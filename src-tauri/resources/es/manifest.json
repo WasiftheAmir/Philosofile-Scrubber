@@ -1,0 +1,45 @@
+{
+  "language": "es",
+  "files": [
+    {
+      "path": "es_words.txt",
+      "role": "word_list",
+      "source": "LibreOffice / Apache OpenOffice Spanish dictionary (rla-es by Santiago Bosio)",
+      "licence": "MPL 1.1",
+      "version": "2.8 / es_ES",
+      "sha256": "4a3626f84d73af372cf638b738dec200397f7e8b1f8afa016105772fba397609"
+    },
+    {
+      "path": "es_names.txt",
+      "role": "name_list",
+      "source": "Instituto Nacional de Estadistica (INE) / Wikidata",
+      "licence": "Ley 37/2007 / CC BY 4.0 / CC0 (see NOTICE_es.md, LICENSE_es_names.txt)",
+      "version": "2026-11-02",
+      "sha256": "42c1d849bd974236dd49d7d99b80f9391708b3f6fb58f2bbec730779d37a517c"
+    },
+    {
+      "path": "es_surnames_ine.csv",
+      "role": "surname_list",
+      "source": "Instituto Nacional de Estadistica (INE)",
+      "licence": "CC BY 4.0 (INE)",
+      "version": "2025",
+      "sha256": "c0077e8d356e90596af603a9860316aaf9ef57b0e63a4a272eb4d54c0f2fc1c5"
+    },
+    {
+      "path": "es_surnames_ai_supplement.csv",
+      "role": "surname_list",
+      "source": "Philosofile (project-authored, AI-generated)",
+      "licence": "project-authored, AI-generated (licence set with release licence)",
+      "version": "v1",
+      "sha256": "c1505143edd2c4844ead6cd5147ac62a88bb260f7b9c59486234c2cf93596df0"
+    },
+    {
+      "path": "es_name_gated.txt",
+      "role": "gated_list",
+      "source": "Leipzig Corpora Collection (spa_news_2024_1M, spa_web_2016_1M, spa_wikipedia_2021_1M) vs Spanish surname lists",
+      "licence": "CC BY 4.0",
+      "version": "2016-2024",
+      "sha256": "330a8b328ddc80cbaa218b061e8259b3de33b0a36d9ba9a25814070c153d5abe"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "language": "hi",
+  "files": [
+    {
+      "path": "hi_words.tsv.zst",
+      "role": "word_list",
+      "source": "Wiktionary (kaikki.org)",
+      "licence": "CC BY-SA 4.0",
+      "version": "2026-10-30",
+      "sha256": "08c0cacf02a5e87c31717d3bec2105855bd7d3a13fdc0d969a31b806b1fe5482"
+    },
+    {
+      "path": "hi_freq.tsv.zst",
+      "role": "frequency",
+      "source": "Leipzig Corpora Collection (hin_mixed_2019_1M, hin_news_2022_1M, hin_wikipedia_2021_1M)",
+      "licence": "CC BY 4.0",
+      "version": "2019-2022",
+      "sha256": "d2e67e339ed16f19d0b99b2c4ae6a8f644f89d4c1849833bfcdb22c9593c7711"
+    },
+    {
+      "path": "hi_names_male_clean.csv",
+      "role": "name_list",
+      "source": "Philosofile (Gemini-generated, cleaned)",
+      "licence": "CC BY 4.0",
+      "version": "unknown",
+      "sha256": "c46e95ac798d054ead6deba82d6945ce5bf107ecca06ccc34bc77eaa124bc660"
+    },
+    {
+      "path": "hi_names_female_clean.csv",
+      "role": "name_list",
+      "source": "Philosofile (Gemini-generated, cleaned)",
+      "licence": "CC BY 4.0",
+      "version": "unknown",
+      "sha256": "3c3463cdc4bd3a21ef188c3e5f5c394f906f2e97058bb52fa961ba36d7e66ec5"
+    },
+    {
+      "path": "hi_surnames_clean.csv",
+      "role": "surname_list",
+      "source": "Philosofile (Gemini-generated, cleaned)",
+      "licence": "CC BY 4.0",
+      "version": "unknown",
+      "sha256": "994b5d1e3e34be66f43a42e1dba5901c805187a7b1b534067abae8c6e31404ca"
+    }
+  ]
+}

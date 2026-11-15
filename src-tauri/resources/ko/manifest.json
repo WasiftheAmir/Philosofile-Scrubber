@@ -1,0 +1,29 @@
+{
+  "language": "ko",
+  "files": [
+    {
+      "path": "ko_names.txt",
+      "role": "name_list",
+      "source": "Wikidata (CC0 1.0) + project-authored additions",
+      "licence": "CC0 1.0 (Wikidata); project-authored additions licence set with the project's release licence",
+      "version": "unknown",
+      "sha256": "c8a66e5c662e23dd6df8d7ec19419049ac3089292d1d98c3c6975d0a9314b8d2"
+    },
+    {
+      "path": "ko_surnames.txt",
+      "role": "surname_list",
+      "source": "Wikidata (CC0 1.0) + project-authored additions",
+      "licence": "CC0 1.0 (Wikidata); project-authored additions licence set with the project's release licence",
+      "version": "unknown",
+      "sha256": "71f7c11c61ea2e84071e575db94e3cb0d9fd3f46c4f19f5e1741281ddcc920e1"
+    },
+    {
+      "path": "ko_names_romanized.txt",
+      "role": "romanized_list",
+      "source": "Wikidata (581fb123-1794212598643_query_3.csv)",
+      "licence": "CC0 1.0 (Wikidata)",
+      "version": "2026-11-09",
+      "sha256": "e133ce76907158e51489269faac20bd347d277b2706f344495149053061323d7"
+    }
+  ]
+}
