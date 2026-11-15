@@ -12,10 +12,18 @@
     {
       "path": "bn_names.tsv",
       "role": "name_list",
-      "source": "bnwiki_category, gemini_unverified, manual_verification",
-      "licence": "CC BY-SA 4.0 (wikipedia_category subset); project-authored, AI-generated (licence set with release licence)",
+      "source": "bnwiki_category, manual_verification",
+      "licence": "CC BY-SA 4.0 (wikipedia_category subset)",
       "version": "unknown",
-      "sha256": "916379bbc8dcc544240f75f03b640dba200b0ec7fe8d021006a110109404010c"
+      "sha256": "6908282f86116e77b463e62109054212057a89735869f2e207ca8ce827fe608f"
+    },
+    {
+      "path": "bn_names_gemini.tsv",
+      "role": "name_list",
+      "source": "Philosofile (Google Gemini, curated and pruned by Wasif Amir)",
+      "licence": "CC-BY-4.0",
+      "version": "unknown",
+      "sha256": "113f2227041c6516050c80d1396adab9dfc307c4ceb9201b21784ba47a15821d"
     },
     {
       "path": "bn_suffixes.tsv",
@@ -28,8 +36,8 @@
     {
       "path": "bn_romanized.txt",
       "role": "romanized_list",
-      "source": "src-tauri/resources/bn/bn_names.tsv (romanized column; AI-generated subset)",
-      "licence": "project-authored, AI-generated (licence set with release licence)",
+      "source": "src-tauri/resources/bn/bn_names_gemini.tsv (romanized column; Google Gemini, curated and pruned by Wasif Amir)",
+      "licence": "CC-BY-4.0",
       "version": "2026-11-09",
       "sha256": "e6ce83e07b5d61d7e3a2cfe93956fbbd5907e23840f770bb8e1280b5ceea0b60"
     }

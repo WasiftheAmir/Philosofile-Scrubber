@@ -159,4 +159,12 @@ DATE	hi	draft	जन्म तिथि	जारी करने की ति�
 ID	hi	draft	राष्ट्रीय पहचान पत्र	पासपोर्ट संख्या	पासपोर्ट नंबर	लाइसेंस संख्या	व्यक्तिगत संख्या	दस्तावेज़ संख्या	कार्ड संख्या	कार्ड नंबर	छात्र पहचान पत्र	छात्र आईडी	खाता संख्या	खाता नंबर	पॉलिसी संख्या	पॉलिसी नंबर	बीमा पॉलिसी संख्या	फ़ाइल संख्या	मामला संख्या	केस नंबर	वाद संख्या	संदर्भ संख्या	पंजीकरण संख्या	वैट संख्या	कर पहचान संख्या	पहचान संख्या	पहचान पत्र संख्या	आईडी नंबर
 PHONE	hi	draft	दूरभाष	टेलीफोन	फ़ोन	फोन	मोबाइल	मोबाइल नंबर	सेल	फैक्स	फ़ैक्स
 PLACE	hi	draft	राष्ट्रीयता	नागरिकता	जन्म स्थान	जन्मस्थान	जन्म का देश	जन्म देश
+SHORT_CODE	en	reviewed	one[- ]time\s+pass(?:code|word)	one[- ]time\s+code	verification\s+code	security\s+code	access\s+code	pass\s?code	pin\s+code	pin\s+number	cvv2?	cvc2?	csc	otp	pin
+SHORT_CODE	pt	draft	c[oó]digo\s+(?:de\s+)?pin	senha\s+pin	c[oó]digo\s+de\s+verifica[cç][aã]o	c[oó]digo\s+de\s+seguran[cç]a	c[oó]digo\s+de\s+acesso	c[oó]digo\s+[uú]nico
+SHORT_CODE	fr	draft	code\s+pin	num[eé]ro\s+pin	code\s+confidentiel	code\s+de\s+v[eé]rification	code\s+de\s+s[eé]curit[eé]	code\s+d['’]acc[eè]s	code\s+[aà]\s+usage\s+unique
+SHORT_CODE	es	draft	c[oó]digo\s+(?:de\s+)?pin	n[uú]mero\s+pin	clave\s+pin	c[oó]digo\s+de\s+verificaci[oó]n	c[oó]digo\s+de\s+seguridad	c[oó]digo\s+de\s+acceso	c[oó]digo\s+de\s+un\s+solo\s+uso
+SHORT_CODE	hi	draft	पिन\s+कोड	पिन\s+नंबर	पिन\s+संख्या	सत्यापन\s+कोड	सुरक्षा\s+कोड	एक्सेस\s+कोड	पासकोड	ओटीपी	पिन
+SHORT_CODE	ja	draft	暗証番号	セキュリティコード	確認コード	認証コード	アクセスコード	パスコード	ピンコード	ピン番号	ワンタイムパスワード
+SHORT_CODE	ko	draft	비밀번호	핀\s*번호	핀\s*코드	인증\s*번호	인증\s*코드	보안\s*코드	일회용\s*비밀번호	패스코드	핀
+SHORT_CODE	bn	draft	পিন\s+নম্বর	পিন\s+কোড	যাচাইকরণ\s+কোড	নিরাপত্তা\s+কোড	অ্যাক্সেস\s+কোড	পাসকোড	ওটিপি	পিন
 

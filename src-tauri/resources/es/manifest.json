@@ -28,16 +28,16 @@
     {
       "path": "es_surnames_ai_supplement.csv",
       "role": "surname_list",
-      "source": "Philosofile (project-authored, AI-generated)",
-      "licence": "project-authored, AI-generated (licence set with release licence)",
+      "source": "Philosofile (Google Gemini, curated and pruned by Wasif Amir)",
+      "licence": "CC-BY-4.0",
       "version": "v1",
       "sha256": "c1505143edd2c4844ead6cd5147ac62a88bb260f7b9c59486234c2cf93596df0"
     },
     {
       "path": "es_name_gated.txt",
       "role": "gated_list",
-      "source": "Leipzig Corpora Collection (spa_news_2024_1M, spa_web_2016_1M, spa_wikipedia_2021_1M) vs Spanish surname lists",
-      "licence": "CC BY 4.0",
+      "source": "Leipzig Corpora Collection (spa_news_2024_1M, spa_web_2016_1M, spa_wikipedia_2021_1M) + INE + es_surnames_ai_supplement.csv",
+      "licence": "CC-BY-4.0",
       "version": "2016-2024",
       "sha256": "330a8b328ddc80cbaa218b061e8259b3de33b0a36d9ba9a25814070c153d5abe"
     }

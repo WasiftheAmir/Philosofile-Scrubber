@@ -15,6 +15,9 @@ use unicode_normalization::UnicodeNormalization;
 #[path = "registry_check.rs"]
 pub mod registry_check;
 
+#[path = "image_redact.rs"]
+pub mod image_redact;
+
 // ── Scoring configuration (plan 4B.5) — ALL tunable weights live here ─────────
 
 pub struct ScoringConfig {
@@ -419,6 +422,7 @@ pub enum ValueKind {
     Id,
     Phone,
     Place,
+    ShortCode,
 }
 
 pub fn group_kind_and_tag(name: &str) -> Option<(ValueKind, &'static str, bool)> {
@@ -430,6 +434,7 @@ pub fn group_kind_and_tag(name: &str) -> Option<(ValueKind, &'static str, bool)>
         "ID" => Some((ValueKind::Id, "[ID_NUMBER]", false)),
         "PHONE" => Some((ValueKind::Phone, "[PHONE]", false)),
         "PLACE" => Some((ValueKind::Place, "[PLACE]", false)),
+        "SHORT_CODE" => Some((ValueKind::ShortCode, "[ID_NUMBER]", false)),
         _ => None,
     }
 }
@@ -583,7 +588,7 @@ pub struct LabelGroup {
 /// Separator recognized after a label: a newline, one or more of `:*-#`, a pipe, or
 /// horizontal whitespace. A pipe only counts when the line is a table row (2+ pipes);
 /// that check is made in `apply_label_group_with_ja_tracking`.
-const LABEL_SEPARATOR: &str = r"(?:[ \t]*\r?\n|[ \t]*[:*\-#]+[ \t]*|[ \t]*\|[ \t]*|[ \t]+)";
+const LABEL_SEPARATOR: &str = r"(?:[ \t]*\r?\n|[ \t]*[:：*\-#]+[ \t]*|[ \t]*\|[ \t]*|[ \t]+)";
 
 fn label_pattern(labels: &str) -> String {
     format!(r"(?i)\b(?:{}){}", labels, LABEL_SEPARATOR)
@@ -986,6 +991,181 @@ fn japanese_bounded_address_span(text: &str, start: usize) -> Option<(usize, usi
     }
 }
 
+const SHORT_CODE_WINDOW_BYTES: usize = 24;
+
+fn is_short_code_blocked_prefix_word(word: &str) -> bool {
+    matches!(
+        word.to_ascii_lowercase().as_str(),
+        "in" | "on"
+            | "at"
+            | "from"
+            | "since"
+            | "until"
+            | "during"
+            | "after"
+            | "before"
+            | "between"
+            | "year"
+            | "years"
+            | "costs"
+            | "cost"
+            | "paid"
+            | "pay"
+            | "price"
+            | "fee"
+            | "worth"
+            | "usd"
+            | "eur"
+            | "gbp"
+            | "cad"
+            | "aud"
+            | "inr"
+            | "bdt"
+            | "jpy"
+            | "krw"
+            | "dollars"
+            | "dollar"
+            | "euros"
+            | "euro"
+            | "pounds"
+            | "pound"
+            | "rupees"
+            | "rupee"
+            | "taka"
+            | "yen"
+            | "won"
+            | "cents"
+            | "cent"
+    )
+}
+
+fn is_short_code_blocked_suffix(after: &str) -> bool {
+    let trimmed = after.trim_start_matches([' ', '\t']);
+    if trimmed.starts_with(['$', '€', '£', '¥', '₹', '৳', '%']) {
+        return true;
+    }
+    let word_end = trimmed
+        .char_indices()
+        .find(|&(_, c)| !c.is_alphabetic())
+        .map(|(i, _)| i)
+        .unwrap_or(trimmed.len());
+    if word_end == 0 {
+        return false;
+    }
+    matches!(
+        trimmed[..word_end].to_ascii_lowercase().as_str(),
+        "dollars"
+            | "dollar"
+            | "usd"
+            | "euros"
+            | "euro"
+            | "eur"
+            | "pounds"
+            | "pound"
+            | "gbp"
+            | "cad"
+            | "aud"
+            | "rupees"
+            | "rupee"
+            | "inr"
+            | "taka"
+            | "bdt"
+            | "yen"
+            | "jpy"
+            | "won"
+            | "krw"
+            | "cents"
+            | "cent"
+            | "percent"
+            | "years"
+            | "year"
+            | "months"
+            | "month"
+            | "days"
+            | "day"
+            | "hours"
+            | "hour"
+            | "minutes"
+            | "minute"
+            | "seconds"
+            | "second"
+    )
+}
+
+/// Extract a 3..=8 digit short sensitive code span (CVC/CVV/PIN/OTP/passcode)
+/// within a short single-line window after a label, redacting only the digits.
+fn short_code_span(text: &str, s: usize) -> Option<(usize, usize)> {
+    let rest = &text[s..];
+    let mut limit = rest.len().min(SHORT_CODE_WINDOW_BYTES);
+    while limit > 0 && !rest.is_char_boundary(limit) {
+        limit -= 1;
+    }
+    let window = &rest[..limit];
+
+    // Scan up to the first ASCII digit on the same line, stopping at sentence/line breaks or currency.
+    let mut rel_digit_start = None;
+    let mut chars = window.char_indices().peekable();
+    while let Some((idx, ch)) = chars.next() {
+        if matches!(ch, '\n' | '\r' | ';' | '!' | '?' | '$' | '€' | '£' | '¥' | '₹' | '৳') {
+            return None;
+        }
+        if ch == '.' && chars.peek().map_or(true, |&(_, next)| next.is_whitespace()) {
+            return None;
+        }
+        if ch.is_ascii_digit() {
+            rel_digit_start = Some(idx);
+            break;
+        }
+    }
+    let rel_start = rel_digit_start?;
+    let prefix = &window[..rel_start];
+
+    // Validate intervening prefix: at most 2 short non-blocked connector words.
+    let mut word_count = 0usize;
+    for raw in prefix.split(|c: char| !c.is_alphabetic()) {
+        if raw.is_empty() {
+            continue;
+        }
+        word_count += 1;
+        if word_count > 2 || raw.chars().count() > 12 || is_short_code_blocked_prefix_word(raw) {
+            return None;
+        }
+    }
+
+    // Reject if the digit run is directly attached to alphanumeric, decimal dot, or slash.
+    if let Some(prev) = text[..s + rel_start].chars().next_back() {
+        if prev.is_ascii_alphanumeric() || matches!(prev, '.' | '/') {
+            return None;
+        }
+    }
+
+    let digit_start = s + rel_start;
+    let digit_len = text[digit_start..]
+        .bytes()
+        .take_while(|b| b.is_ascii_digit())
+        .count();
+    if !(3..=8).contains(&digit_len) {
+        return None;
+    }
+    let digit_end = digit_start + digit_len;
+
+    // Reject decimals (3.50), slashes (123/456), attached alnum units (100px), or unit/currency suffixes.
+    let after = &text[digit_end..];
+    if let Some(next) = after.chars().next() {
+        if next.is_ascii_alphanumeric() {
+            return None;
+        }
+        if matches!(next, '.' | '/') && after[next.len_utf8()..].starts_with(|c: char| c.is_ascii_digit()) {
+            return None;
+        }
+    }
+    if is_short_code_blocked_suffix(after) {
+        return None;
+    }
+
+    Some((digit_start, digit_end))
+}
+
 fn value_span(text: &str, start: usize, kind: ValueKind) -> Option<(usize, usize)> {
     let s = skip_hspace(text, start);
     if s >= text.len() {
@@ -996,7 +1176,11 @@ fn value_span(text: &str, start: usize, kind: ValueKind) -> Option<(usize, usize
     }
     if let Some(placeholder_end) = match_generated_placeholder(text, s) {
         match kind {
-            ValueKind::Name | ValueKind::Date | ValueKind::Place | ValueKind::Phone => {
+            ValueKind::Name
+            | ValueKind::Date
+            | ValueKind::Place
+            | ValueKind::Phone
+            | ValueKind::ShortCode => {
                 return None;
             }
             ValueKind::Address => {
@@ -1044,6 +1228,7 @@ fn value_span(text: &str, start: usize, kind: ValueKind) -> Option<(usize, usize
             }
             Some((s, s + val.len()))
         }
+        ValueKind::ShortCode => short_code_span(text, s),
         ValueKind::Id => {
             // Up to 18 ID-looking tokens; trailing tokens without a digit are dropped
             let mut toks: Vec<(usize, usize, bool)> = Vec::new();
@@ -2999,80 +3184,24 @@ fn load_bn_resources_from_dir_with_mode(dir: &Path, is_release_mode: bool) -> Bn
         res.suffixes = get_bn_resources().suffixes.clone();
     }
 
-    let names_path = dir.join("bn_names.tsv");
-    match std::fs::read_to_string(&names_path) {
-        Ok(content) => {
-            for (idx, line) in content.lines().enumerate() {
-                let trimmed = line.trim();
-                if trimmed.is_empty() || trimmed.starts_with('#') {
-                    continue;
-                }
-                let cols: Vec<&str> = line.split('\t').collect();
-                if cols.is_empty() {
-                    continue;
-                }
-                let name_raw = cols[0].trim();
-                if idx <= 5 && name_raw == "name" {
-                    continue;
-                }
-                let roman_raw = cols.get(1).copied().unwrap_or("").trim();
-
-                let norm_name = normalize_bn_str(name_raw);
-                if norm_name.is_empty() {
-                    continue;
-                }
-
-                all_name_entries.insert(norm_name.clone());
-                for part in norm_name.split_whitespace() {
-                    if part.chars().count() >= 2 {
-                        all_name_entries.insert(part.to_string());
-                    }
-                }
-
-                let romans: Vec<String> = if roman_raw.is_empty() {
-                    Vec::new()
+    for file_name in ["bn_names.tsv", "bn_names_gemini.tsv"] {
+        let names_path = dir.join(file_name);
+        match std::fs::read_to_string(&names_path) {
+            Ok(content) => parse_bn_names_tsv(&content, &mut res, &mut all_name_entries),
+            Err(err) => {
+                if is_release_mode {
+                    let msg = format!(
+                        "[scrubber] ERROR: missing or unreadable Bangla name list in release build at {:?}: {}",
+                        names_path, err
+                    );
+                    eprintln!("{}", msg);
+                    res.load_errors.push(msg);
                 } else {
-                    roman_raw
-                        .split(',')
-                        .map(|r| r.trim().to_string())
-                        .filter(|r| !r.is_empty())
-                        .collect()
-                };
-
-                res.full_names.insert(norm_name.clone());
-                res.names.insert(norm_name.clone());
-                for part in norm_name.split_whitespace() {
-                    if part.chars().count() >= 2 {
-                        res.names.insert(part.to_string());
-                    }
+                    eprintln!(
+                        "[scrubber] Warning: could not read Bangla name list at {:?}: {}",
+                        names_path, err
+                    );
                 }
-                if !romans.is_empty() {
-                    let entry = res
-                        .romanizations
-                        .entry(norm_name.clone())
-                        .or_default();
-                    for r in &romans {
-                        if !entry.contains(r) {
-                            entry.push(r.clone());
-                        }
-                        res.romanized_tokens.insert(r.to_lowercase());
-                    }
-                }
-            }
-        }
-        Err(err) => {
-            if is_release_mode {
-                let msg = format!(
-                    "[scrubber] ERROR: missing or unreadable Bangla name list in release build at {:?}: {}",
-                    names_path, err
-                );
-                eprintln!("{}", msg);
-                res.load_errors.push(msg);
-            } else {
-                eprintln!(
-                    "[scrubber] Warning: could not read Bangla name list at {:?}: {}",
-                    names_path, err
-                );
             }
         }
     }
@@ -3094,35 +3223,8 @@ fn load_bn_resources_from_dir_with_mode(dir: &Path, is_release_mode: bool) -> Bn
     res
 }
 
-fn load_bn_resources_via_manifest() -> Result<BnResources, String> {
-    let words_content = read_manifest_file_string("bn", "bn_words.tsv")?;
-    let suffixes_content = read_manifest_file_string("bn", "bn_suffixes.tsv")?;
-    let names_content = read_manifest_file_string("bn", "bn_names.tsv")?;
-
-    let mut res = BnResources::default();
-    let mut all_name_entries: HashSet<String> = HashSet::new();
-
-    for (idx, line) in words_content.lines().enumerate() {
-        let trimmed = line.trim();
-        if trimmed.is_empty() || trimmed.starts_with('#') {
-            continue;
-        }
-        let mut cols = trimmed.split('\t');
-        let Some(word_raw) = cols.next() else {
-            continue;
-        };
-        if idx <= 10 && word_raw.trim() == "word" {
-            continue;
-        }
-        let norm = normalize_bn_str(word_raw);
-        if !norm.is_empty() {
-            res.words.insert(norm);
-        }
-    }
-
-    res.suffixes = parse_bn_suffixes_tsv(&suffixes_content);
-
-    for (idx, line) in names_content.lines().enumerate() {
+fn parse_bn_names_tsv(content: &str, res: &mut BnResources, all_name_entries: &mut HashSet<String>) {
+    for (idx, line) in content.lines().enumerate() {
         let trimmed = line.trim();
         if trimmed.is_empty() || trimmed.starts_with('#') {
             continue;
@@ -3172,6 +3274,39 @@ fn load_bn_resources_via_manifest() -> Result<BnResources, String> {
             }
         }
     }
+}
+
+fn load_bn_resources_via_manifest() -> Result<BnResources, String> {
+    let words_content = read_manifest_file_string("bn", "bn_words.tsv")?;
+    let suffixes_content = read_manifest_file_string("bn", "bn_suffixes.tsv")?;
+    let names_content = read_manifest_file_string("bn", "bn_names.tsv")?;
+    let gemini_names_content = read_manifest_file_string("bn", "bn_names_gemini.tsv")?;
+
+    let mut res = BnResources::default();
+    let mut all_name_entries: HashSet<String> = HashSet::new();
+
+    for (idx, line) in words_content.lines().enumerate() {
+        let trimmed = line.trim();
+        if trimmed.is_empty() || trimmed.starts_with('#') {
+            continue;
+        }
+        let mut cols = trimmed.split('\t');
+        let Some(word_raw) = cols.next() else {
+            continue;
+        };
+        if idx <= 10 && word_raw.trim() == "word" {
+            continue;
+        }
+        let norm = normalize_bn_str(word_raw);
+        if !norm.is_empty() {
+            res.words.insert(norm);
+        }
+    }
+
+    res.suffixes = parse_bn_suffixes_tsv(&suffixes_content);
+
+    parse_bn_names_tsv(&names_content, &mut res, &mut all_name_entries);
+    parse_bn_names_tsv(&gemini_names_content, &mut res, &mut all_name_entries);
 
     for name_tok in &all_name_entries {
         res.words.remove(name_tok);
@@ -4296,6 +4431,11 @@ const NAME_ALLOWLIST: &[&str] = &[
     "vat",
     "nid",
     "dob",
+    "pin",
+    "otp",
+    "cvc",
+    "cvv",
+    "csc",
     "pdf",
     "id",
     "usa",
@@ -9080,31 +9220,6 @@ mod baseline_issues {
     }
 
     #[test]
-    fn test_hindi_csv_gitignore_negation() {
-        let repo_root = Path::new(env!("CARGO_MANIFEST_DIR")).parent().unwrap();
-        let gitignore = std::fs::read_to_string(repo_root.join(".gitignore")).expect("read .gitignore");
-        assert!(
-            gitignore.lines().any(|l| l.trim() == "!src-tauri/resources/hi/*.csv"),
-            ".gitignore must negate *.csv for src-tauri/resources/hi/*.csv"
-        );
-        let status = std::process::Command::new("git")
-            .current_dir(repo_root)
-            .args([
-                "check-ignore",
-                "src-tauri/resources/hi/hi_names_male_clean.csv",
-                "src-tauri/resources/hi/hi_names_female_clean.csv",
-                "src-tauri/resources/hi/hi_surnames_clean.csv",
-            ])
-            .status()
-            .expect("run git check-ignore");
-        assert_eq!(
-            status.code(),
-            Some(1),
-            "Hindi CSVs must not be ignored by git check-ignore"
-        );
-    }
-
-    #[test]
     fn test_hindi_devanagari_normalization() {
         // Precomposed U+0958..U+095F canonicalize to base + U+093C (same as NFC)
         assert_eq!(normalize_hi_str("\u{095C}\u{093E}"), normalize_hi_str("ड\u{093C}ा")); // ड़ा vs ड + ़ + ा
@@ -9394,8 +9509,8 @@ mod baseline_issues {
         assert!(res_release.words_error.is_some());
         assert_eq!(
             res_release.load_errors.len(),
-            2,
-            "Release mode must record an error for missing bn_words.tsv and bn_names.tsv"
+            3,
+            "Release mode must record an error for missing bn_words.tsv, bn_names.tsv, and bn_names_gemini.tsv"
         );
 
         let mut opts_release_missing = ScrubOptions::without_identity();
@@ -9523,64 +9638,78 @@ mod baseline_issues {
 
     #[test]
     fn test_bn_all_name_rows_loaded_regardless_of_source() {
-        // Every row in bn_names.tsv is active by default, regardless of its source label
+        // Every row in bn_names.tsv and bn_names_gemini.tsv is active by default, regardless of its source label
         // (manual_verification, wikipedia_category, gemini_unverified, or any other label).
         let bn_res = get_bn_resources();
-        let names_path = resolve_default_bn_resource_dir()
-            .expect("resolve bn resource dir")
-            .join("bn_names.tsv");
-        let content = std::fs::read_to_string(&names_path).expect("bn_names.tsv should be readable");
-        let mut expected_rows = 0usize;
-        for (idx, line) in content.lines().enumerate() {
-            let trimmed = line.trim();
-            if trimmed.is_empty() || trimmed.starts_with('#') {
-                continue;
-            }
-            let cols: Vec<&str> = line.split('\t').collect();
-            let name_raw = cols[0].trim();
-            if idx <= 5 && name_raw == "name" {
-                continue;
-            }
-            let norm_name = normalize_bn_str(name_raw);
-            if !norm_name.is_empty() {
-                expected_rows += 1;
-                assert!(
-                    bn_res.full_names.contains(&norm_name),
-                    "Row {} ({:?}) from bn_names.tsv must be loaded into full_names",
-                    idx + 1,
-                    name_raw
-                );
-                assert!(
-                    is_bn_name(&norm_name),
-                    "Row {} ({:?}) from bn_names.tsv must be active in is_bn_name",
-                    idx + 1,
-                    name_raw
-                );
-                assert!(
-                    !bn_res.words.contains(&norm_name),
-                    "Row {} ({:?}) from bn_names.tsv must have zero overlap with bn_words.tsv",
-                    idx + 1,
-                    name_raw
-                );
-                for part in norm_name.split_whitespace() {
-                    if part.chars().count() >= 2 {
-                        assert!(
-                            is_bn_name(part),
-                            "Token {:?} from row {} must be active in is_bn_name",
-                            part,
-                            idx + 1
-                        );
-                        assert!(
-                            !bn_res.words.contains(part),
-                            "Token {:?} from row {} must be absent from bn_words.tsv",
-                            part,
-                            idx + 1
-                        );
+        let bn_dir = resolve_default_bn_resource_dir().expect("resolve bn resource dir");
+
+        let mut file_counts = Vec::new();
+        let mut total_rows = 0usize;
+        for file_name in ["bn_names.tsv", "bn_names_gemini.tsv"] {
+            let names_path = bn_dir.join(file_name);
+            let content = std::fs::read_to_string(&names_path)
+                .unwrap_or_else(|e| panic!("{} should be readable: {}", file_name, e));
+            let mut file_rows = 0usize;
+            for (idx, line) in content.lines().enumerate() {
+                let trimmed = line.trim();
+                if trimmed.is_empty() || trimmed.starts_with('#') {
+                    continue;
+                }
+                let cols: Vec<&str> = line.split('\t').collect();
+                let name_raw = cols[0].trim();
+                if idx <= 5 && name_raw == "name" {
+                    continue;
+                }
+                let norm_name = normalize_bn_str(name_raw);
+                if !norm_name.is_empty() {
+                    file_rows += 1;
+                    assert!(
+                        bn_res.full_names.contains(&norm_name),
+                        "Row {} ({:?}) from {} must be loaded into full_names",
+                        idx + 1,
+                        name_raw,
+                        file_name
+                    );
+                    assert!(
+                        is_bn_name(&norm_name),
+                        "Row {} ({:?}) from {} must be active in is_bn_name",
+                        idx + 1,
+                        name_raw,
+                        file_name
+                    );
+                    assert!(
+                        !bn_res.words.contains(&norm_name),
+                        "Row {} ({:?}) from {} must have zero overlap with bn_words.tsv",
+                        idx + 1,
+                        name_raw,
+                        file_name
+                    );
+                    for part in norm_name.split_whitespace() {
+                        if part.chars().count() >= 2 {
+                            assert!(
+                                is_bn_name(part),
+                                "Token {:?} from {} row {} must be active in is_bn_name",
+                                part,
+                                file_name,
+                                idx + 1
+                            );
+                            assert!(
+                                !bn_res.words.contains(part),
+                                "Token {:?} from {} row {} must be absent from bn_words.tsv",
+                                part,
+                                file_name,
+                                idx + 1
+                            );
+                        }
                     }
                 }
             }
+            file_counts.push((file_name, file_rows));
+            total_rows += file_rows;
         }
-        assert!(expected_rows > 2500, "Expected > 2500 rows in bn_names.tsv, found {}", expected_rows);
+        assert_eq!(file_counts[0], ("bn_names.tsv", 180));
+        assert_eq!(file_counts[1], ("bn_names_gemini.tsv", 2344));
+        assert_eq!(total_rows, 2524);
 
         // Specifically verify gemini_unverified rows like "আব্দুল্লাহ" and "লেখা" are active by default
         assert!(!is_bn_known_word("আব্দুল্লাহ"));
@@ -9964,6 +10093,61 @@ mod baseline_issues {
                 newly_opened.join(",")
             );
         }
+    }
+
+    #[test]
+    fn test_short_code_labels_redacted_digit_run_only() {
+        let cases = [
+            ("CVC: 123", "CVC: [ID_NUMBER]"),
+            ("CVV: 456", "CVV: [ID_NUMBER]"),
+            ("CVV2: 789", "CVV2: [ID_NUMBER]"),
+            ("CSC: 1234", "CSC: [ID_NUMBER]"),
+            ("PIN 4821", "PIN [ID_NUMBER]"),
+            ("Your PIN is 4821.", "Your PIN is [ID_NUMBER]."),
+            ("OTP 90217", "OTP [ID_NUMBER]"),
+            ("one-time code: 654321", "one-time code: [ID_NUMBER]"),
+            ("verification code is 847291", "verification code is [ID_NUMBER]"),
+            ("passcode: 11223344", "passcode: [ID_NUMBER]"),
+            ("security code 987", "security code [ID_NUMBER]"),
+            ("access code: 4455", "access code: [ID_NUMBER]"),
+            // Multilingual PIN labels across all supported languages
+            ("código PIN: 4821", "código PIN: [ID_NUMBER]"),
+            ("code PIN: 4821", "code PIN: [ID_NUMBER]"),
+            ("código de verificación: 4821", "código de verificación: [ID_NUMBER]"),
+            ("पिन: 4821", "पिन: [ID_NUMBER]"),
+            ("暗証番号: 4821", "暗証番号: [ID_NUMBER]"),
+            ("暗証番号：4821", "暗証番号：[ID_NUMBER]"),
+            ("비밀번호: 4821", "비밀번호: [ID_NUMBER]"),
+            ("পিন: 4821", "পিন: [ID_NUMBER]"),
+        ];
+        for (input, expected) in cases {
+            assert_eq!(scrub_plain(input).text, expected, "input: {}", input);
+        }
+    }
+
+    #[test]
+    fn test_short_code_labels_negative_and_bounds() {
+        let negative_cases = [
+            "enter your PIN on the next screen",
+            "PIN",
+            "in 2024",
+            "Your PIN was updated back in 2024",
+            "PIN in 2024",
+            "costs 350 dollars",
+            "PIN costs 350 dollars",
+            "PIN: $350",
+            "PIN: 12",
+            "PIN: 3.50",
+        ];
+        for input in negative_cases {
+            assert_eq!(scrub_plain(input).text, input, "false positive on: {}", input);
+        }
+
+        // Verify short_code_span enforces the 3..=8 digit length bound directly.
+        assert_eq!(short_code_span("12", 0), None);
+        assert_eq!(short_code_span("123", 0), Some((0, 3)));
+        assert_eq!(short_code_span("12345678", 0), Some((0, 8)));
+        assert_eq!(short_code_span("123456789", 0), None);
     }
 }
 

@@ -28,8 +28,8 @@
     {
       "path": "pt_names.txt",
       "role": "name_list",
-      "source": "Philosofile generated Portuguese name lists",
-      "licence": "unknown",
+      "source": "Philosofile (Google Gemini, curated and pruned by Wasif Amir)",
+      "licence": "CC-BY-4.0",
       "version": "2026-11-12",
       "sha256": "27966d2fcc56282d358908feac9e56b2e01d40a909f6d5420a07ef518fe4732d"
     },

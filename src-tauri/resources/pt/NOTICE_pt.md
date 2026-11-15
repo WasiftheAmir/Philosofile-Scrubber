@@ -71,9 +71,10 @@ This directory and the Portuguese PII scrubber pipeline incorporate data and rul
 - **Attribution**: D. Goldhahn, T. Eckart & U. Quasthoff: Building Large Monolingual Dictionaries at the Leipzig Corpora Collection: From 100 to 200 Languages. In: Proceedings of the 8th Language Resources and Evaluation Conference (LREC'12), 2012.
 - **Content**: Compressed TSV mapping lowercase words to frequency counts (446,656 word-count pairs). Contains strictly word and count pairs, without any sentences, examples, or corpus text.
 
-## 5. Portuguese Name Lists (`src-tauri/src/pipeline/names/pt.txt`)
-- **Origin**: Generated name lists (`male_first_names.csv`, `female_first_names.csv`, `surnames.csv`).
-- **Third-Party Status**: These lists were generated and have no third-party source.
+## 5. Portuguese Name Lists (`pt_names.txt`)
+- **Origin & Licence**: Generated with Google Gemini, then curated and pruned by Wasif Amir. Licensed under CC BY 4.0. Changes: curated and pruned from the model's raw output.
+- **Full Licence Text**: [`LICENSE_CC-BY-4.0.txt`](LICENSE_CC-BY-4.0.txt) (`https://creativecommons.org/licenses/by/4.0/`).
+- **Third-Party Status**: Generated with Google Gemini (`male_first_names.csv`, `female_first_names.csv`, `surnames.csv`) with no third-party corpus source.
 - **Processing**: Normalized to Unicode NFC and trimmed of whitespace. Combined into a flat, lowercase, deduplicated list of 11,628 unique names.
 
 ## 6. Particle Handling in Surnames

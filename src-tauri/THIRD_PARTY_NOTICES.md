@@ -142,3 +142,34 @@ The contents of `src-tauri/src/pipeline/dict/es_words.txt` are derived from the 
 - **Copyright**: Portions Copyright (c) 2019 Microsoft Corporation
 - **License**: MIT License — full license text at `src-tauri/src/pipeline/LICENSE_allowlist.txt`
 
+---
+
+## 5. `option-ext` (transitive Rust dependency via `dirs` / `dirs-sys`)
+
+- **Crate**: `option-ext`
+- **Version**: `0.2.0`
+- **Source**: https://github.com/soc/option-ext
+- **License**: Mozilla Public License Version 2.0 (`MPL-2.0`) — https://www.mozilla.org/en-US/MPL/2.0/
+- **Full License Text**: [`src-tauri/LICENSE_MPL-2.0.txt`](LICENSE_MPL-2.0.txt)
+
+---
+
+## 6. Philosofile Scrubber Source Code
+
+- **Files**: `src-tauri/src/pipeline/scrubber.rs`, `src-tauri/src/pipeline/registry_check.rs`, `src-tauri/src/pipeline/image_redact.rs`, `src-tauri/src/pipeline/label_groups.tsv`, `src-tauri/src/pipeline/id_formats.csv`, and crate manifest files (`Cargo.toml`, `Cargo.lock`)
+- **Required Notice**: `Copyright (c) 2026 Wasif Amir (Philosofile scrubber)`
+- **License**: `PolyForm-Noncommercial-1.0.0` (source-available, non-commercial use only; full text in root `LICENSE`)
+- **Source URL**: https://polyformproject.org/licenses/noncommercial/1.0.0 (requested `https://polyformproject.org/licenses/noncommercial/1.0.0/`, canonical text served at `https://polyformproject.org/licenses/noncommercial/1.0.0`)
+- **Fetch Date**: `2026-11-16`
+
+---
+
+## 7. Gemini-Generated Data Lists (`CC BY 4.0`)
+
+The following curated and pruned Gemini-generated name lists are licensed under **Creative Commons Attribution 4.0 International (`CC-BY-4.0`)** (full text in `LICENSE_CC-BY-4.0.txt` in each directory):
+
+- **Bangla (`src-tauri/resources/bn/`)**: `bn_names_gemini.tsv` (`2,344` `gemini_unverified` rows split out from `bn_names.tsv`), `bn_romanized.txt`. (`bn_words.tsv`, `bn_suffixes.tsv`, and Wikipedia rows in `bn_names.tsv` remain under `CC BY-SA 4.0`.)
+- **Spanish (`src-tauri/resources/es/`)**: `es_surnames_ai_supplement.csv` and `es_name_gated.txt` (derived from INE `CC BY 4.0`, Leipzig Corpora `CC BY 4.0`, and `es_surnames_ai_supplement.csv`).
+- **Hindi (`src-tauri/resources/hi/`)**: `hi_names_male_clean.csv`, `hi_names_female_clean.csv`, `hi_surnames_clean.csv`.
+- **Portuguese (`src-tauri/resources/pt/`)**: `pt_names.txt`.
+

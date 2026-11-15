@@ -21,7 +21,7 @@
       "path": "hi_names_male_clean.csv",
       "role": "name_list",
       "source": "Philosofile (Gemini-generated, cleaned)",
-      "licence": "CC BY 4.0",
+      "licence": "CC-BY-4.0",
       "version": "unknown",
       "sha256": "c46e95ac798d054ead6deba82d6945ce5bf107ecca06ccc34bc77eaa124bc660"
     },
@@ -29,7 +29,7 @@
       "path": "hi_names_female_clean.csv",
       "role": "name_list",
       "source": "Philosofile (Gemini-generated, cleaned)",
-      "licence": "CC BY 4.0",
+      "licence": "CC-BY-4.0",
       "version": "unknown",
       "sha256": "3c3463cdc4bd3a21ef188c3e5f5c394f906f2e97058bb52fa961ba36d7e66ec5"
     },
@@ -37,7 +37,7 @@
       "path": "hi_surnames_clean.csv",
       "role": "surname_list",
       "source": "Philosofile (Gemini-generated, cleaned)",
-      "licence": "CC BY 4.0",
+      "licence": "CC-BY-4.0",
       "version": "unknown",
       "sha256": "994b5d1e3e34be66f43a42e1dba5901c805187a7b1b534067abae8c6e31404ca"
     }

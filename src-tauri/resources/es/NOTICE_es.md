@@ -21,8 +21,8 @@ This directory contains Spanish word, given-name, and surname lists loaded at ru
 
 ## 3. AI-Generated Spanish Surname Supplement (`es_surnames_ai_supplement.csv`, `275` rows)
 
-- **Source:** Project-authored, AI-generated supplement (`es_surnames_ai_supplement_v1.csv`, pruned Latin American / regional surnames).
-- **Licence:** This file is **project-authored and AI-generated**; **its licence is set with the project's release licence**.
+- **Source:** Generated with Google Gemini, then curated and pruned by Wasif Amir. Licensed under CC BY 4.0. Changes: curated and pruned from the model's raw output.
+- **Full Licence Text:** [`LICENSE_CC-BY-4.0.txt`](LICENSE_CC-BY-4.0.txt) (`https://creativecommons.org/licenses/by/4.0/`).
 
 ## 4. Spanish Word List (`es_words.txt`)
 
@@ -31,11 +31,13 @@ This directory contains Spanish word, given-name, and surname lists loaded at ru
 
 ## 5. Spanish Cue-Gated Surname List (`es_name_gated.txt`, `185` entries)
 
-- **Content & Derivation:** Derived from INE (`es_surnames_ine.csv`) and AI-generated (`es_surnames_ai_supplement.csv`) surname data filtered by frequency-derived surface-form ratios against Leipzig Spanish corpora (`log10(name_cnt / word_cnt) < -1.0`), excluding protected entries (top 1,000 INE surnames by `first_surname_count`, length <= 3, and multi-word entries). Redacted only when cued by a label or salutation.
+- **Content & Derivation:** Derived from three sources: INE (`es_surnames_ine.csv`), `es_surnames_ai_supplement.csv` (Generated with Google Gemini, then curated and pruned by Wasif Amir), and surface-form frequency ratios against the Leipzig Spanish corpora (`log10(name_cnt / word_cnt) < -1.0`), excluding protected entries (top 1,000 INE surnames by `first_surname_count`, length <= 3, and multi-word entries). Redacted only when cued by a label or salutation.
 - **Corpora Used for Frequency Comparison (not bundled):**
   - `spa_news_2024_1M` — Spanish News 2024 (1M sentences), Leipzig Corpora Collection
   - `spa_wikipedia_2021_1M` — Spanish Wikipedia 2021 (1M sentences), Leipzig Corpora Collection
   - `spa_web_2016_1M` — Spanish Web 2016 (1M sentences), Leipzig Corpora Collection
   - URL: `https://wortschatz.uni-leipzig.de/en/download/Spanish`
-- **Licence & Attribution:** The `es_name_gated.txt` list itself derives from AI-generated (`es_surnames_ai_supplement.csv`) and frequency-derived data and its licence follows the project's release licence. Upstream source data requires **CC BY 4.0** (`https://creativecommons.org/licenses/by/4.0/`) attribution for the Leipzig Corpora Collection (and INE `CC BY 4.0` for `es_surnames_ine.csv`):
-  - Attribution: D. Goldhahn, T. Eckart & U. Quasthoff: *Building Large Monolingual Dictionaries at the Leipzig Corpora Collection: From 100 to 200 Languages.* In: Proceedings of the 8th Language Resources and Evaluation Conference (LREC'12), 2012.
+- **Licence & Attribution:** Licensed under **CC BY 4.0** ([`LICENSE_CC-BY-4.0.txt`](LICENSE_CC-BY-4.0.txt), `https://creativecommons.org/licenses/by/4.0/`) with attribution to all three sources:
+  1. **Instituto Nacional de Estadística (INE)** — *Estadística del Padrón Continuo / Apellidos más frecuentes* (`CC BY 4.0` / `Ley 37/2007`, non-distortion notice applies).
+  2. **Leipzig Corpora Collection** — D. Goldhahn, T. Eckart & U. Quasthoff: *Building Large Monolingual Dictionaries at the Leipzig Corpora Collection: From 100 to 200 Languages.* In: Proceedings of the 8th Language Resources and Evaluation Conference (LREC'12), 2012 (`CC BY 4.0`).
+  3. **`es_surnames_ai_supplement.csv`** — Generated with Google Gemini, then curated and pruned by Wasif Amir. Licensed under CC BY 4.0. Changes: curated and pruned from the model's raw output.

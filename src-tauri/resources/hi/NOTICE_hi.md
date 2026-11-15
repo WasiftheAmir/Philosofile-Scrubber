@@ -39,8 +39,8 @@ This directory contains the external language data and name resources used by th
 ---
 
 ## 3. Hindi Name Lists (`hi_names_*.csv` & `hi_*_clean.csv`)
-- **Origin**: Gemini-generated Hindi name lists (project-owned).
-- **Licence**: **CC BY 4.0** (`LICENSE_hi_names.txt`).
+- **Origin & Licence**: Generated with Google Gemini, then curated and pruned by Wasif Amir. Licensed under CC BY 4.0. Changes: curated and pruned from the model's raw output.
+- **Full Licence Text**: [`LICENSE_CC-BY-4.0.txt`](LICENSE_CC-BY-4.0.txt) (also in [`LICENSE_hi_names.txt`](LICENSE_hi_names.txt)).
 - **Original CSVs** (kept unmodified):
   - `hi_names_male.csv` (1,500)
   - `hi_names_female.csv` (1,500)

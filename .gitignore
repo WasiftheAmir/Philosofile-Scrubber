@@ -1,2 +1,5 @@
 /target/
 .DS_Store
+scratch/internal_test/
+*.test.jpg
+*.test.png
