@@ -16,3 +16,13 @@
 
 5. **Windows OCR and face-detection paths untested on macOS**
    - The Windows WinRT OCR (`Windows.Media.Ocr`) and face-detection (`Windows.Media.FaceAnalysis`) code paths in `image_redact.rs` compile behind `#[cfg(target_os = "windows")]` and are untested when building/testing on macOS.
+
+6. **ID-label same-line trailing sentence over-redaction (`baseline_issues::test_id_label_value_followed_by_ordinary_sentence_not_redacted`)**
+   - When an ID-style label and value are followed by an ordinary sentence on the same line, the scrubber over-redacts trailing same-line sentence text beyond the ID value.
+   - Ignore reason: `"Accepted trade-off: line-bounded label capture over-redacts same-line text (see decision log). Revisit with real OCR samples."`
+   - Status: accepted, under review.
+
+7. **Name-label placeholder followed by capitalized phrase over-redaction (`baseline_issues::test_name_label_placeholder_followed_by_capitalized_phrase_over_redaction`)**
+   - When a name-style label is followed by a redaction placeholder and a capitalized multi-word phrase on the same line, the scrubber over-redacts the capitalized phrase as part of the name.
+   - Ignore reason: `"Accepted trade-off: line-bounded label capture over-redacts same-line text (see decision log). Revisit with real OCR samples."`
+   - Status: accepted, under review.
