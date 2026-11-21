@@ -16,7 +16,7 @@ ID	bn	draft	জাতীয় পরিচয়পত্র	পাসপোর
 PHONE	bn	draft	টেলিফোন	ফোন	ফোন নম্বর	মোবাইল	মোবাইল নম্বর	মুঠোফোন	ফ্যাক্স	ফ্যাক্স নম্বর
 PLACE	bn	draft	জাতীয়তা	নাগরিকত্ব	জন্মস্থান	জন্মের দেশ
 
-# Spanish (es) - UNREVIEWED (draft)
+# Spanish (es)
 RELATION	es	draft	contacto\s+de\s+emergencia	nombre\s+del\s+contacto\s+de\s+emergencia	nombre\s+del\s+padre	nombre\s+de\s+la\s+madre	nombre\s+del\s+cónyuge	nombre\s+del\s+conyuge	nombre\s+de\s+la\s+esposa	nombre\s+del\s+esposo	padre	madre	cónyuge	conyuge	representante\s+legal	tutor\s+legal	tutor	nombre\s+del\s+c[oó]nyuge	nombre\s+de\s+la\s+pareja	nombre\s+del\s+tutor	nombre\s+del\s+representante\s+legal	c[oó]nyuge	tutor(?:\s+legal)?	familiar\s+m[aá]s\s+cercano
 NAME	es	draft	nombre\s+del\s+titular	nombre\s+completo	nombre\s+y\s+apellidos	primer\s+apellido	segundo\s+apellido	apellidos?	primer\s+nombre	segundo\s+nombre	nombres?	nombre	nombres?\s+y\s+apellidos?	nombre\s+de\s+pila	titular
 ADDRESS	es	draft	dirección\s+permanente	direccion\s+permanente	dirección\s+actual	direccion\s+actual	dirección\s+postal	direccion\s+postal	dirección\s+de\s+residencia	direccion\s+de\s+residencia	domicilio\s+habitual	domicilio\s+fiscal	domicilio	dirección	direccion	residencia	calle	direcci[oó]n\s+permanente	direcci[oó]n\s+actual	direcci[oó]n\s+postal	direcci[oó]n\s+de\s+residencia	direcci[oó]n\s+del\s+domicilio	direcci[oó]n\s+habitual	direcci[oó]n	lugar\s+de\s+residencia
@@ -32,7 +32,7 @@ ID	es	draft	Documento Nacional de Identidad	Cédula de identidad	Número de pasa
 PHONE	es	draft	Teléfono	Tel	Móvil	Teléfono móvil	Celular	Fax	Telefax
 PLACE	es	draft	Nacionalidad	Lugar de nacimiento	País de nacimiento
 
-# French (fr) - UNREVIEWED (draft)
+# French (fr)
 RELATION	fr	draft	contact\s+d['’]urgence	nom\s+du\s+contact\s+d['’]urgence	nom\s+du\s+père	nom\s+du\s+pere	nom\s+de\s+la\s+mère	nom\s+de\s+la\s+mere	nom\s+du\s+conjoint	nom\s+de\s+l['’]époux	nom\s+de\s+l['’]épouse	père	pere	mère	mere	conjoint	épouse	époux	représentant\s+légal	representant\s+legal	tuteur	nom\s+du\s+p[eè]re	nom\s+de\s+la\s+m[eè]re	nom\s+de\s+l['’][eé]poux(?:/se)?	nom\s+du\s+tuteur	repr[eé]sentant\s+l[eé]gal	personne\s+[aà]\s+pr[eé]venir	p[eè]re	m[eè]re	[eé]poux	[eé]pouse
 NAME	fr	draft	nom\s+du\s+titulaire	nom\s+complet	nom\s+de\s+famille	nom\s+d['’]usage	nom\s+de\s+naissance	prénom(?:s)?	prenom(?:s)?	nom	noms?\s+et\s+pr[eé]noms?	nom\s+marital	pr[eé]noms?	titulaire
 ADDRESS	fr	draft	adresse\s+permanente	adresse\s+actuelle	adresse\s+postale	adresse\s+du\s+domicile	domicile	adresse	résidence	residence	rue	adresse\s+de\s+domicile	adresse\s+de\s+r[eé]sidence	adresse\s+principale	r[eé]sidence	lieu\s+de\s+r[eé]sidence
@@ -48,7 +48,7 @@ ID	fr	draft	Carte nationale d'identité	Numéro d'identité nationale	Numéro de
 PHONE	fr	draft	Téléphone	Tél	Portable	Téléphone portable	Mobile	Cellulaire	Fax	Télécopie	Télécopieur
 PLACE	fr	draft	Nationalité	Lieu de naissance	Pays de naissance
 
-# German (de) - UNREVIEWED (draft)
+# German (de)
 RELATION	de	draft	notfallkontakt(?:\s*name)?	name\s+des\s+vaters	vater(?:\s*name)?	name\s+der\s+mutter	mutter(?:\s*name)?	name\s+des\s+ehegatten	name\s+des\s+partners	ehegatte	ehepartner	gesetzlicher\s+vertreter	erziehungsberechtigte(?:r)?	notfallkontakt(?:name)?	name\s+des\s+notfallkontakts	vatersname	muttersname	name\s+des\s+gesetzlichen\s+vertreters	vater	mutter	vormund
 NAME	de	draft	vollständiger\s+name	vollstaendiger\s+name	name\s+des\s+inhabers	karteninhaber	vorname(?:n)?	nachname(?:n)?	familienname(?:n)?	geburtsname	name	vollst[aä]ndiger\s+name	vor-\s*und\s*nachname	vorname	nachname	familienname	rufname	k[uü]nstlername	inhaber
 ADDRESS	de	draft	ständiger\s+wohnsitz	staendiger\s+wohnsitz	aktuelle\s+adresse	derzeitige\s+anschrift	postanschrift	postadresse	meldeadresse	wohnsitz	anschrift	adresse	straße	strasse	str\.	wohnort	st[aä]ndiger\s+wohnsitz	hauptwohnsitz	nebenwohnsitz	derzeitige\s+adresse	wohnanschrift	stra[sß]e
@@ -64,7 +64,7 @@ ID	de	draft	Personalausweis	Reisepassnummer	Passnummer	Führerscheinnummer	Lizen
 PHONE	de	draft	Telefon	Tel	Mobiltelefon	Mobil	Handy	Fax	Telefax
 PLACE	de	draft	Staatsangehörigkeit	Nationalität	Geburtsort	Geburtsland
 
-# Portuguese (pt) - UNREVIEWED (draft)
+# Portuguese (pt)
 RELATION	pt	draft	contato\s+de\s+emergência	contato\s+de\s+emergencia	contacto\s+de\s+emergência	nome\s+do\s+pai	filiação\s+paterna	filiacao\s+paterna	nome\s+da\s+mãe	filiação\s+materna	filiacao\s+materna	nome\s+do\s+cônjuge	nome\s+do\s+conjuge	nome\s+da\s+esposa	nome\s+do\s+marido	pai	mãe	mae	cônjuge	conjuge	responsável\s+legal	responsavel\s+legal	tutor	nome\s+do\s+contato\s+de\s+emerg[eê]ncia	contato\s+de\s+emerg[eê]ncia	nome\s+da\s+m[aã]e	filia[cç][aã]o	nome\s+do\s+c[oô]njuge	nome\s+do\s+tutor	representante\s+legal	m[aã]e	c[oô]njuge
 NAME	pt	draft	nome\s+completo	nome\s+do\s+titular	nome\s+próprio	nome\s+proprio	sobrenome	apelido	primeiro\s+nome	último\s+nome	ultimo\s+nome	nome	[uú]ltimo\s+nome	nome\s+de\s+solteiro(?:/a)?	nome\s+de\s+casado(?:/a)?	titular
 ADDRESS	pt	draft	endereço\s+permanente	endereco\s+permanente	morada\s+permanente	endereço\s+atual	endereco\s+atual	morada\s+atual	endereço\s+postal	endereco\s+postal	endereço\s+residencial	endereco\s+residencial	domicílio	domicilio	morada	endereço	endereco	residência	residencia	rua	logradouro	endere[cç]o\s+permanente	endere[cç]o\s+atual	endere[cç]o\s+residencial	endere[cç]o\s+para\s+correspond[eê]ncia	morada\s+fiscal	resid[eê]ncia	endere[cç]o	bairro
@@ -80,7 +80,7 @@ ID	pt	draft	Registro Geral	Documento nacional de identidade	Número do passaport
 PHONE	pt	draft	Telefone	Tel	Telemóvel	Celular	Telefone móvel	Fax	Telefax
 PLACE	pt	draft	Nacionalidade	Local de nascimento	Naturalidade	País de nascimento
 
-# Italian (it) - UNREVIEWED (draft)
+# Italian (it)
 RELATION	it	draft	contatto\s+di\s+emergenza	nome\s+del\s+contatto\s+di\s+emergenza	nome\s+del\s+padre	paternità	paternita	nome\s+della\s+madre	maternità	maternita	nome\s+del\s+coniuge	coniuge	marito	moglie	padre	madre	rappresentante\s+legale	tutore\s+legale	tutore	paternit[aà]	maternit[aà]	nome\s+del\s+tutore
 NAME	it	draft	nome\s+e\s+cognome	nome\s+completo	nome\s+del\s+titolare	intestatario	cognome	nome	cognome\s+e\s+nome	nome\s+di\s+battesimo	primo\s+nome	titolare
 ADDRESS	it	draft	indirizzo\s+permanente	indirizzo\s+attuale	indirizzo\s+postale	indirizzo\s+di\s+residenza	domicilio	residenza	indirizzo	via	corso	piazza	viale	luogo\s+di\s+residenza
@@ -96,7 +96,7 @@ ID	it	draft	Carta d'identità	Numero di passaporto	N\.\s+passaporto	Numero di pa
 PHONE	it	draft	Telefono	Tel	Cellulare	Mobile	Fax	Telefax
 PLACE	it	draft	Cittadinanza	Nazionalità	Luogo di nascita	Paese di nascita	Stato di nascita
 
-# Dutch (nl) - UNREVIEWED (draft)
+# Dutch (nl)
 RELATION	nl	draft	naam\s+noodcontact	noodcontact(?:persoon)?	naam\s+van\s+de\s+vader	naam\s+vader	vader	naam\s+van\s+de\s+moeder	naam\s+moeder	moeder	naam\s+echtgenoot	naam\s+partner	echtgeno(?:o)?t(?:e)?	partner	wettelijke\s+vertegenwoordiger	voogd	naam\s+van\s+de\s+noodcontactpersoon	contactpersoon\s+voor\s+noodgevallen	noodcontact	vader(?:s)?naam	moeder(?:s)?naam	naam\s+van\s+de\s+echtgenoot	naam\s+van\s+de\s+partner	echtgenoot
 NAME	nl	draft	volledige\s+naam	naam\s+kaarthouder	naam\s+houder	voornaam	voornamen	achternaam	familienaam	geboortenaam	meisjesnaam	tussenvoegsel(?:s)?	naam	naam\s+van\s+de\s+houder	voor-\s*en\s*achternaam	voorna(?:a)?m(?:en)?	roepnaam	houder
 ADDRESS	nl	draft	vast\s+adres	permanent\s+adres	huidig\s+adres	postadres	woonadres	domicilie	adres	woonplaats	straat(?:naam)?	verblijfplaats	straat	domicile
@@ -112,7 +112,7 @@ ID	nl	draft	Identiteitskaart	Paspoortnummer	Rijbewijsnummer	Licentienummer	Perso
 PHONE	nl	draft	Telefoon	Telefoonnummer	Tel	Mobiel	Mobiel nummer	GSM	Mobiele telefoon	Fax	Faxnummer
 PLACE	nl	draft	Nationaliteit	Geboorteplaats	Geboorteland
 
-# Japanese (ja) - UNREVIEWED (draft)
+# Japanese (ja)
 RELATION	ja	draft	緊急連絡先(?:\s*氏名)?	緊急連絡先	父親(?:\s*氏名)?	父(?:\s*の\s*氏名|\s*の\s*名前)?	母親(?:\s*氏名)?	母(?:\s*の\s*氏名|\s*の\s*名前)?	配偶者(?:\s*氏名)?	夫(?:\s*氏名)?	妻(?:\s*氏名)?	保護者(?:\s*氏名)?	法定代理人	緊急連絡先氏名	緊急連絡先の氏名	父の氏名	母の氏名	配偶者氏名	配偶者の氏名	保護者氏名	世帯主氏名	世帯主との続柄	続柄	父	母	配偶者	保護者	世帯主
 NAME	ja	draft	氏名	フルネーム	お名前	名前	名義人(?:\s*氏名)?	フリガナ	ふりがな	姓	苗字	名字	名	名義人氏名	なまえ	本名	氏	名義人	ローマ字氏名
 ADDRESS	ja	draft	現住所	本籍(?:地)?	住民票\s*記載\s*の\s*住所	送付先\s*住所	連絡先\s*住所	住所	所在地	番地	本籍地	本籍	居住地	住民票住所	送付先住所	送付先	居所
@@ -128,7 +128,7 @@ ID	ja	draft	マイナンバー	国民識別番号	パスポート番号	旅券�
 PHONE	ja	draft	電話番号	電話	TEL	携帯電話	携帯	FAX	ファクス	ファックス
 PLACE	ja	draft	国籍	出生地	出生国
 
-# Korean (ko) - UNREVIEWED (draft)
+# Korean (ko)
 RELATION	ko	draft	비상\s*연락처(?:\s*성명)?	부(?:\s*성명)?	부친(?:\s*성명)?	아버지\s*성명	모(?:\s*성명)?	모친(?:\s*성명)?	어머니\s*성명	배우자(?:\s*성명)?	보호자(?:\s*성명)?	법정대리인	비상\s*연락처\s*성명	비상\s*연락처	부\s*성명	부의\s*성명	모\s*성명	모의\s*성명	배우자\s*성명	보호자\s*성명	세대주와의\s*관계	세대주\s*성명	부모\s*성명	부	모	배우자	보호자	세대주	관계
 NAME	ko	draft	성명	성함	이름	명의자(?:\s*성명)?	영문\s*성명	성	명	본명	명의인\s*성명	풀네임	영문명	한글\s*성명	한글명	명의인
 ADDRESS	ko	draft	주민등록상\s*주소	실거주지	현주소	우편물\s*수령지	우편\s*주소	주소	거주지	소재지	도로명\s*주소	실거주지\s*주소	거주지\s*주소	배송지	본적지	본적
@@ -144,7 +144,7 @@ ID	ko	draft	주민등록번호	주민등록증	여권번호	여권 번호	면허
 PHONE	ko	draft	전화번호	전화	휴대전화	휴대폰	핸드폰	팩스
 PLACE	ko	draft	국적	출생지	출생국
 
-# Hindi (hi) - UNREVIEWED (draft)
+# Hindi (hi)
 RELATION	hi	draft	आपातकालीन\s+संपर्क(?:\s+नाम)?	पिता\s+का\s+नाम	पिता	माता\s+का\s+नाम	माता	पति\s+का\s+नाम	पत्नी\s+का\s+नाम	जीवनसाथी\s+का\s+नाम	अभिभावक(?:\s+का\s+नाम)?	संरक्षक(?:\s+का\s+नाम)?	आपातकालीन\s+संपर्क\s+नाम	आपातकालीन\s+संपर्क	पति\s*/\s*पत्नी\s+का\s+नाम	अभिभावक\s+का\s+नाम	पति	पत्नी	अभिभावक	संबंध
 NAME	hi	draft	पूरा\s+नाम	धारक\s+का\s+नाम	नाम\s+का	नाम	प्रथम\s+नाम	उपनाम	अंतिम\s+नाम	पहला\s+नाम	कुलनाम	आवेदक\s+का\s+नाम	अभ्यर्थी\s+का\s+नाम
 ADDRESS	hi	draft	स्थायी\s+पता	वर्तमान\s+पता	डाक\s+का\s+पता	पत्राचार\s+का\s+पता	निवास\s+का\s+पता	आवासीय\s+पता	पता	निवास	सड़क	मार्ग	निवास\s+स्थान	गली	गाँव\s*/\s*शहर

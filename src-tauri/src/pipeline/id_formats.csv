@@ -1,5 +1,5 @@
 #schema_version=1
-# PII Identifier Knowledge Base for scrubber (see text_scrubbing_plan.md, section 4B).
+# PII Identifier Knowledge Base for the scrubber.
 #
 # WARNING: Do NOT open or save this file in Excel or Apple Numbers.
 # They silently corrupt long digit strings in examples_ok / examples_no
@@ -17,7 +17,7 @@
 #      seeded (imported from Presidio/stdnum) or unverified. Only `verified` rows may produce the
 #      country-specific label (e.g. [Bangladeshi National ID Number]).
 #   5. Add at least one examples_ok and one examples_no value (separated by |).
-#   6. Run: cargo run --manifest-path src-tauri/Cargo.toml --bin inspect_scrub -- --check-registry
+#   6. Run: cargo test --offline test_registry_csv_is_valid
 #
 id,country,authority,identifier_type,display_name,type_display_name,format,context_keywords,context_required,checksum,base_confidence,valid_from,valid_until,verification_status,source,examples_ok,examples_no
 BD-NID-10,BD,Bangladesh Election Commission,national_id,Bangladeshi National ID Number,National ID Number,10D,nid|national id|voter|জাতীয় পরিচয়,yes,none,0.25,,,verified,https://services.nidw.gov.bd,1234567890,12345|12345678901

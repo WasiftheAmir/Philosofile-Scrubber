@@ -64,6 +64,9 @@ pub struct RedactedImage {
 }
 
 #[cfg(any(target_os = "macos", target_os = "windows"))]
+type NormalizedTextBox = (String, f32, f32, f32, f32);
+
+#[cfg(any(target_os = "macos", target_os = "windows"))]
 struct DetailedRedaction {
     output: RedactedImage,
     baseline: DynamicImage,
@@ -378,9 +381,7 @@ fn detect_faces_normalized(path: &Path) -> Result<Vec<(f32, f32, f32, f32)>, Str
 }
 
 #[cfg(target_os = "macos")]
-fn detect_text_boxes_normalized(
-    path: &Path,
-) -> Result<Vec<(String, f32, f32, f32, f32)>, String> {
+fn detect_text_boxes_normalized(path: &Path) -> Result<Vec<NormalizedTextBox>, String> {
     let _guard = VISION_LOCK.lock().unwrap_or_else(|e| e.into_inner());
     use apple_vision::prelude::*;
     objc::rc::autoreleasepool(|| {
@@ -412,6 +413,9 @@ fn load_windows_bitmap(
     use windows::Storage::StorageFile;
     use windows::Win32::System::Com::{CoInitializeEx, COINIT_MULTITHREADED};
 
+    // SAFETY: `pvReserved` must be `None` (null) per Win32 `CoInitializeEx` requirements.
+    // Initializes COM on the current thread as multithreaded for WinRT imaging/OCR/face APIs;
+    // ignoring `RPC_E_CHANGED_MODE` if the caller already initialized COM with another apartment.
     unsafe {
         let _ = CoInitializeEx(None, COINIT_MULTITHREADED);
     }
@@ -457,12 +461,10 @@ fn detect_faces_normalized(path: &Path) -> Result<Vec<(f32, f32, f32, f32)>, Str
 }
 
 #[cfg(target_os = "windows")]
-fn detect_text_boxes_normalized(
-    path: &Path,
-) -> Result<Vec<(String, f32, f32, f32, f32)>, String> {
+fn detect_text_boxes_normalized(path: &Path) -> Result<Vec<NormalizedTextBox>, String> {
     use windows::Media::Ocr::OcrEngine;
 
-    let run = || -> windows::core::Result<Vec<(String, f32, f32, f32, f32)>> {
+    let run = || -> windows::core::Result<Vec<NormalizedTextBox>> {
         let bitmap = load_windows_bitmap(path)?;
         let engine = OcrEngine::TryCreateFromUserProfileLanguages()?;
         let result = engine.RecognizeAsync(&bitmap)?.get()?;

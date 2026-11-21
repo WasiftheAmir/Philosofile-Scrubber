@@ -1,16 +1,15 @@
 // ──────────────────────────────────────────────────────────────────────────────
 // pipeline/registry_check.rs — PII Identifier Knowledge Base: CSV parsing + validation
 //
-// IMPORTANT: this file must depend ONLY on `std` and `regex`. It is included from two places:
-//   * `src-tauri/build.rs`            (so a broken id_formats.csv fails `cargo build`)
-//   * `src-tauri/src/pipeline/scrubber.rs` (runtime loader and `--check-registry`)
+// IMPORTANT: this file must depend ONLY on `std` and `regex` so it stays
+// self-contained and reusable across the pipeline and validation tests.
 // ──────────────────────────────────────────────────────────────────────────────
 #![allow(dead_code)]
 
 use regex::Regex;
 use std::collections::HashSet;
 
-/// Required CSV columns, in order. See plan section 4B.1.
+/// Required CSV columns, in order, for `id_formats.csv`.
 pub const COLUMNS: [&str; 17] = [
     "id",
     "country",

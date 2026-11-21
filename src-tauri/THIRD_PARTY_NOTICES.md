@@ -134,7 +134,7 @@ above as far as the program is concerned.
 
 ### MPL 1.1 Notice
 
-The contents of `src-tauri/src/pipeline/dict/es_words.txt` are derived from the Spanish spellchecker dictionary developed by Santiago Bosio, distributed under a disjunctive tri-license (GPLv3+, LGPLv3+, MPL-1.1). This project bundles the expanded word list under the terms of the Mozilla Public License, Version 1.1 (the "License"). You may obtain a copy of the License at https://www.mozilla.org/MPL/MPL-1.1.html.
+The contents of `src-tauri/resources/es/es_words.txt` are derived from the Spanish spellchecker dictionary developed by Santiago Bosio, distributed under a disjunctive tri-license (GPLv3+, LGPLv3+, MPL-1.1). This project bundles the expanded word list under the terms of the Mozilla Public License, Version 1.1 (the "License"). You may obtain a copy of the License at https://www.mozilla.org/MPL/MPL-1.1.html.
 
 ## 4. Pipeline Allowlist (`src-tauri/src/pipeline/allowlist.txt`)
 
@@ -156,7 +156,7 @@ The contents of `src-tauri/src/pipeline/dict/es_words.txt` are derived from the 
 
 ## 6. Philosofile Scrubber Source Code & Pipeline Assets
 
-- **Files**: `src-tauri/src/pipeline/scrubber.rs`, `src-tauri/src/pipeline/registry_check.rs`, `src-tauri/src/pipeline/image_redact.rs`, `src-tauri/src/pipeline/label_groups.tsv`, `src-tauri/src/pipeline/id_formats.csv`, crate manifest files (`Cargo.toml`, `Cargo.lock`), and root documentation (`README.md`, `INSTRUCTIONS.md`, `KNOWN_ISSUES.md`)
+- **Files**: `src-tauri/src/pipeline/scrubber.rs`, `src-tauri/src/pipeline/scrubber_tests.rs`, `src-tauri/src/pipeline/registry_check.rs`, `src-tauri/src/pipeline/image_redact.rs`, `src-tauri/src/pipeline/label_groups.tsv`, `src-tauri/src/pipeline/id_formats.csv`, crate manifest files (`Cargo.toml`, `Cargo.lock`), and root documentation (`README.md`, `INSTRUCTIONS.md`, `KNOWN_ISSUES.md`, `LICENCE_STATUS.md`)
 - **Required Notice**: `Copyright (c) 2026 Wasif Amir (Philosofile scrubber)`
 - **License**: `PolyForm-Noncommercial-1.0.0` (source-available, non-commercial use only; full text in root `LICENSE`)
 - **Source URL**: https://polyformproject.org/licenses/noncommercial/1.0.0 (requested `https://polyformproject.org/licenses/noncommercial/1.0.0/`, canonical text served at `https://polyformproject.org/licenses/noncommercial/1.0.0`)

@@ -8,7 +8,7 @@
 
 ## Prerequisites
 
-- **Rust toolchain:** Rust `1.77.2` or later (per `rust-version = "1.77.2"` in `Cargo.toml`).
+- **Rust toolchain:** Rust `1.80.0` or later (per `rust-version = "1.80.0"` in `Cargo.toml`).
 
 ### macOS
 - **OS version:** macOS **13 (Ventura)** or later (`apple-vision` v0.16.7 specifies `.macOS(.v13)` in its Swift bridge package).

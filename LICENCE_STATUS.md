@@ -23,7 +23,8 @@ All source code, pipeline assets, project-authored/AI-generated datasets, and th
 | `KNOWN_ISSUES.md` | Project-authored | PolyForm Noncommercial 1.0.0 | **Settled** | Documented scrubber and harness limitations |
 | `Cargo.toml` | Project-authored | PolyForm Noncommercial 1.0.0 | **Settled** | Standalone crate manifest (`license = "PolyForm-Noncommercial-1.0.0"`) |
 | `Cargo.lock` | Cargo dependency lockfile | PolyForm Noncommercial 1.0.0 | **Settled** | Generated lockfile for reproducible offline build |
-| `src-tauri/src/pipeline/scrubber.rs` | Project-authored | PolyForm Noncommercial 1.0.0 | **Settled** | Includes in-file unit tests |
+| `src-tauri/src/pipeline/scrubber.rs` | Project-authored | PolyForm Noncommercial 1.0.0 | **Settled** | Core text scrubbing engine |
+| `src-tauri/src/pipeline/scrubber_tests.rs` | Project-authored | PolyForm Noncommercial 1.0.0 | **Settled** | Scrubber unit and integration test suite |
 | `src-tauri/src/pipeline/registry_check.rs` | Project-authored | PolyForm Noncommercial 1.0.0 | **Settled** | Pattern validator module loaded by `scrubber.rs` |
 | `src-tauri/src/pipeline/image_redact.rs` | Project-authored | PolyForm Noncommercial 1.0.0 | **Settled** | OS-native OCR and face mosaic redaction module |
 | `src-tauri/src/pipeline/label_groups.tsv` | Project-authored | PolyForm Noncommercial 1.0.0 | **Settled** | Embedded at compile time via `include_str!` |
@@ -59,7 +60,7 @@ All source code, pipeline assets, project-authored/AI-generated datasets, and th
 |---|---|---|---|---|
 | `en/en_words_full.txt` | NLTK `words` corpus (Unix `words`) + 41 project business keywords | Public Domain (NLTK corpus); `CC BY 4.0` (41 project additions) | **Settled** | Project additions documented in `NOTICE_en.md` |
 | `en/en_words_unix.txt` | Unix `words` via NLTK `words` corpus | Public Domain | **Settled** | Public Domain |
-| `en/en_names.txt` | NLTK `names` corpus (Kantrowitz v1.3) + `smashew/NameDatabases` + 7 overlapping project extras | Mark Kantrowitz Names Corpus License (`LICENSE_en_names.txt`) / The Unlicense / `CC BY 4.0` (project extras) | **Settled** | Contains `7` project extras from `gen_dicts.py` under `CC BY 4.0` |
+| `en/en_names.txt` | NLTK `names` corpus (Kantrowitz v1.3) + `smashew/NameDatabases` + 7 overlapping project extras | Mark Kantrowitz Names Corpus License (`LICENSE_en_names.txt`) / The Unlicense / `CC BY 4.0` (project extras) | **Settled** | Contains `7` project-authored extras under `CC BY 4.0` |
 | `en/manifest.json`, `en/NOTICE_en.md`, `en/LICENSE_en_names.txt` | Metadata & notices | — | **Settled** | Upstream notices preserved |
 
 #### Spanish (`es`)
