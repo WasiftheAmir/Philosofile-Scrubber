@@ -6,4 +6,4 @@
 - **Licence:** Italian Open Data License 2.0 (`IODL 2.0`).
 - **Canonical Licence URL:** https://www.dati.gov.it/content/italian-open-data-license-v20
 - **Version / Access Date:** `2026-11-02`
-- **Project-Authored Changes:** Formatted and lowercased into a newline-delimited lookup list; file header currently carries `# Status: UNREVIEWED (draft)`.
+- **Project-Authored Changes:** Formatted and lowercased into a newline-delimited lookup list (header status: `Settled`).

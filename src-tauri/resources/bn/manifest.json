@@ -4,8 +4,8 @@
     {
       "path": "bn_words.tsv",
       "role": "word_list",
-      "source": "hermitdave/FrequencyWords via OpenSubtitles/OPUS",
-      "licence": "CC BY-SA 4.0 (hermitdave-derived rows; see LICENSE_bn_words_CC-BY-SA-4.0.txt)",
+      "source": "bnwiktionary_titles, bnwiki_titles, hermitdave/FrequencyWords (bn_50k) via OpenSubtitles/OPUS",
+      "licence": "CC BY-SA 4.0 (see LICENSE_bn_words_CC-BY-SA-4.0.txt)",
       "version": "unknown",
       "sha256": "65f66ed92615cf7c15a35cd850525bad0da20162ac1a3d2454eabd97b4c43b7b"
     },
@@ -13,7 +13,7 @@
       "path": "bn_names.tsv",
       "role": "name_list",
       "source": "bnwiki_category, manual_verification",
-      "licence": "CC BY-SA 4.0 (wikipedia_category subset)",
+      "licence": "CC BY-SA 4.0 (wikipedia_category subset); CC BY 4.0 (manual_verification rows)",
       "version": "unknown",
       "sha256": "6908282f86116e77b463e62109054212057a89735869f2e207ca8ce827fe608f"
     },

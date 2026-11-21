@@ -18,7 +18,7 @@ This directory and the French PII scrubber pipeline incorporate data and rules f
 - **License URL**: https://creativecommons.org/licenses/by-sa/4.0/
 - **Access Date**: 2026-11-10
 
-## 3. French Given Names (`src-tauri/src/pipeline/names/fr.txt`)
+## 3. French Given Names (`fr_names.txt`)
 - **Source**: Institut National de la Statistique et des Études Économiques (INSEE) - Fichier des prénoms (1900–2021)
 - **Repository**: ThinkR-open/prenoms on GitHub (`data-raw/nat2021.csv`)
 - **URL**: https://raw.githubusercontent.com/ThinkR-open/prenoms/master/data-raw/nat2021.csv

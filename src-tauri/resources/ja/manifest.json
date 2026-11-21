@@ -21,15 +21,15 @@
       "path": "ja_given_romanized.txt",
       "role": "romanized_list",
       "source": "Wikidata (en romanizations) + project-generated kana Hepburn/passport expansions (generate_ja_lists.py)",
-      "licence": "CC0 1.0 (Wikidata base) / Project-authored (kana expansions); see NOTICE_ja.md",
+      "licence": "CC0 1.0 (Wikidata base) / CC BY 4.0 (project-generated kana expansions); see NOTICE_ja.md",
       "version": "2026-11-07",
-      "sha256": "1ecc0064da23401eee9350f8a72137d20f6f0b0eabbfce89907728b11b6e7e61"
+      "sha256": "7d35c6e9926500da24dcb71b48adb4aed5789888322fb0abe749ab4a60be2689"
     },
     {
       "path": "ja_surnames_romanized.txt",
       "role": "romanized_list",
       "source": "Wikidata (en romanizations) + project-generated ASCII/diacritic alias expansions",
-      "licence": "CC0 1.0 (Wikidata base) / Project-authored (ASCII alias expansions); see NOTICE_ja.md",
+      "licence": "CC0 1.0 (Wikidata base) / CC BY 4.0 (project-generated ASCII alias expansions); see NOTICE_ja.md",
       "version": "2026-11-09",
       "sha256": "c668dbde2002347da20bde1f4d4e0e2519264f24d66a2d195b36a7617d861110"
     },

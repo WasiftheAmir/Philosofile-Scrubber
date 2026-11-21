@@ -154,9 +154,9 @@ The contents of `src-tauri/src/pipeline/dict/es_words.txt` are derived from the 
 
 ---
 
-## 6. Philosofile Scrubber Source Code
+## 6. Philosofile Scrubber Source Code & Pipeline Assets
 
-- **Files**: `src-tauri/src/pipeline/scrubber.rs`, `src-tauri/src/pipeline/registry_check.rs`, `src-tauri/src/pipeline/image_redact.rs`, `src-tauri/src/pipeline/label_groups.tsv`, `src-tauri/src/pipeline/id_formats.csv`, and crate manifest files (`Cargo.toml`, `Cargo.lock`)
+- **Files**: `src-tauri/src/pipeline/scrubber.rs`, `src-tauri/src/pipeline/registry_check.rs`, `src-tauri/src/pipeline/image_redact.rs`, `src-tauri/src/pipeline/label_groups.tsv`, `src-tauri/src/pipeline/id_formats.csv`, crate manifest files (`Cargo.toml`, `Cargo.lock`), and root documentation (`README.md`, `INSTRUCTIONS.md`, `KNOWN_ISSUES.md`)
 - **Required Notice**: `Copyright (c) 2026 Wasif Amir (Philosofile scrubber)`
 - **License**: `PolyForm-Noncommercial-1.0.0` (source-available, non-commercial use only; full text in root `LICENSE`)
 - **Source URL**: https://polyformproject.org/licenses/noncommercial/1.0.0 (requested `https://polyformproject.org/licenses/noncommercial/1.0.0/`, canonical text served at `https://polyformproject.org/licenses/noncommercial/1.0.0`)
@@ -164,12 +164,21 @@ The contents of `src-tauri/src/pipeline/dict/es_words.txt` are derived from the 
 
 ---
 
-## 7. Gemini-Generated Data Lists (`CC BY 4.0`)
+## 7. Project-Authored & Gemini AI-Generated Data Lists (`CC BY 4.0`)
 
-The following curated and pruned Gemini-generated name lists are licensed under **Creative Commons Attribution 4.0 International (`CC-BY-4.0`)** (full text in `LICENSE_CC-BY-4.0.txt` in each directory):
+The following project-authored and curated Gemini AI-generated name/word supplements and romanization expansions are licensed under **Creative Commons Attribution 4.0 International (`CC-BY-4.0`)** (full text in `LICENSE_CC-BY-4.0.txt` in `bn/`, `es/`, `hi/`, `pt/`, and `https://creativecommons.org/licenses/by/4.0/`):
 
-- **Bangla (`src-tauri/resources/bn/`)**: `bn_names_gemini.tsv` (`2,344` `gemini_unverified` rows split out from `bn_names.tsv`), `bn_romanized.txt`. (`bn_words.tsv`, `bn_suffixes.tsv`, and Wikipedia rows in `bn_names.tsv` remain under `CC BY-SA 4.0`.)
+- **Bangla (`src-tauri/resources/bn/`)**: `bn_names_gemini.tsv` (`2,344` `gemini_unverified` rows split out from `bn_names.tsv`), `bn_romanized.txt`, and `manual_verification` rows (`8` entries) in `bn_names.tsv`. (`bn_words.tsv` — including `hermitdave/FrequencyWords` `bn_50k` under its `CC BY-SA 4.0` content license — `bn_suffixes.tsv`, and Wikipedia rows in `bn_names.tsv` remain under `CC BY-SA 4.0`.)
+- **English (`src-tauri/resources/en/`)**: `41` project-authored business keywords in `en_words_full.txt` and `7` project extras in `en_names.txt`.
 - **Spanish (`src-tauri/resources/es/`)**: `es_surnames_ai_supplement.csv` and `es_name_gated.txt` (derived from INE `CC BY 4.0`, Leipzig Corpora `CC BY 4.0`, and `es_surnames_ai_supplement.csv`).
 - **Hindi (`src-tauri/resources/hi/`)**: `hi_names_male_clean.csv`, `hi_names_female_clean.csv`, `hi_surnames_clean.csv`.
+- **Japanese (`src-tauri/resources/ja/`)**: Project-generated kana/ASCII alias expansions in `ja_given_romanized.txt` and `ja_surnames_romanized.txt` (combined with Wikidata `CC0 1.0` bases).
+- **Korean (`src-tauri/resources/ko/`)**: Project-authored additions (`7` given names in `ko_names.txt`, `5` surnames in `ko_surnames.txt`) and filtering/ASCII alias expansions in `ko_names_romanized.txt` (combined with Wikidata `CC0 1.0` bases).
 - **Portuguese (`src-tauri/resources/pt/`)**: `pt_names.txt`.
+
+---
+
+## 8. Third-Party Linguistic Datasets & License Separation
+
+All bundled third-party linguistic datasets (`src-tauri/resources/<lang>/`) retain their respective upstream licenses (`CC0 1.0`, `CC BY 4.0`, `CC BY-SA 4.0`, `LGPLv3`, `MPL 1.1`, `MPL 2.0`, `dl-de/by-2-0`, `IODL 2.0`, `Licence Ouverte v2.0`, Public Domain, and IPADIC Notice), documented in root `LICENCE_STATUS.md` and each language directory's `NOTICE_*.md` and `manifest.json`. Share-alike and weak-copyleft licenses on individual third-party dataset files (e.g., `bn_words.tsv`, `bn_names.tsv` Wikipedia subset, `bn_suffixes.tsv`, `fr_name_gated.txt`, `hi_words.tsv.zst`, `es_words.txt`, `fr_words.tsv`, `pt_BR_words.tsv`, `pt_PT_words.tsv`) apply strictly to those individual dataset files as separate data aggregations loaded at runtime; the Rust scrubber source code itself is governed by the PolyForm Noncommercial License 1.0.0.
 

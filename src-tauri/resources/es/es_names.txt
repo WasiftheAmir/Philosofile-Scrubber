@@ -2,7 +2,7 @@
 # URL: https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177009
 # License: Open Data Government of Spain (Ley 37/2007) / CC-BY 4.0 compatible / CC0
 # Access Date: 2026-11-02
-# Status: UNREVIEWED (draft)
+# Status: Settled
 daniel
 andrea
 david

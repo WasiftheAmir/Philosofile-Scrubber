@@ -2,7 +2,7 @@
 # URL: https://www.insee.fr/fr/statistiques/2540004
 # License: Licence Ouverte v2.0 (Etalab)
 # Access Date: 2026-11-10
-# Status: UNREVIEWED (draft)
+# Status: Settled
 aadil
 aaliya
 aaliyah

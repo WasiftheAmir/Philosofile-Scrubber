@@ -6,4 +6,4 @@
 - **Licence:** Creative Commons Zero (`CC0 1.0`) / Open Overheid.
 - **Canonical Licence URL (CC0 1.0):** https://creativecommons.org/publicdomain/zero/1.0/
 - **Version / Access Date:** `2026-11-02`
-- **Project-Authored Changes:** Formatted and lowercased into a newline-delimited lookup list; file header currently carries `# Status: UNREVIEWED (draft)`.
+- **Project-Authored Changes:** Formatted and lowercased into a newline-delimited lookup list (header status: `Settled`).

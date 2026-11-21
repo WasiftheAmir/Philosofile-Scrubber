@@ -2,7 +2,7 @@
 # URL: https://www.svb.nl/nl/kindernamen/
 # License: Creative Commons Zero (CC0 1.0) / Open Overheid
 # Access Date: 2026-11-02
-# Status: UNREVIEWED (draft)
+# Status: Settled
 jansen
 visser
 smit

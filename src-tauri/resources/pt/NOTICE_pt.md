@@ -1,6 +1,6 @@
 # Portuguese Language Resources Attribution & Notice
 
-This directory and the Portuguese PII scrubber pipeline incorporate data and rules from the following open sources. Note that the Philosofile scrubber component is planned to be open source.
+This directory and the Portuguese PII scrubber pipeline incorporate data and rules from the following sources. The Philosofile scrubber source code is source-available under the **PolyForm Noncommercial License 1.0.0** (see root `LICENSE`).
 
 ## 1. Brazilian Portuguese Dictionary (`pt_BR_words.tsv`)
 - **Upstream Source**: **VERO (Verificador Ortográfico Livre) pt_BR v3.2.15** by Raimundo Santos Moura and the Brazilian community.

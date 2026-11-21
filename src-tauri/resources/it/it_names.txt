@@ -2,7 +2,7 @@
 # URL: https://www.istat.it/it/dati-analisi-e-prodotti/banche-dati/nomi-al-cancello
 # License: Italian Open Data License 2.0 (IODL 2.0)
 # Access Date: 2026-11-02
-# Status: UNREVIEWED (draft)
+# Status: Settled
 rossi
 ferrari
 russo

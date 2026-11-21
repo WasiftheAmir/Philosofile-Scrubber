@@ -11,7 +11,7 @@ This directory contains the English common-word lists and English/Latin name lis
 ## 2. `en_words_full.txt` (`234,371` entries)
 
 - **Source:** `nltk.corpus.words.words()` from NLTK Data `words.zip` (`packages/corpora/words.xml`), lowercased and filtered (`len(w) > 1 or w in ['a', 'i']`), unioned with 41 project-authored business/document keywords via `gen_dicts.py` / `generate_wordlist.py`.
-- **Licence:** Public Domain (NLTK `words` corpus; project additions under repository terms).
+- **Licence:** Public Domain (NLTK `words` corpus; 41 project-authored business/document keyword additions licensed under **CC BY 4.0**).
 - **Provenance:** Added to the repository in commit `9e1b79b` (2026-10-08) as `wordlist_full.txt`.
 
 ## 3. `en_names.txt` (`6,679` entries)
@@ -23,4 +23,5 @@ This directory contains the English common-word lists and English/Latin name lis
 - **Licences:**
   - NLTK `names` corpus: Copyright (C) 1991 Mark Kantrowitz; freely redistributable provided credit is given in published work and recipients receive a copy of `names/README`. See `LICENSE_en_names.txt`.
   - `smashew/NameDatabases`: Released under The Unlicense (public domain dedication). See `LICENSE_en_names.txt`.
+  - Project extras: Licensed under **CC BY 4.0**.
 - **Provenance Note:** Added in commit `9e1b79b` (2026-10-08) as `namelist.txt`. The `3,983` Wikidata/kana Japanese romanized given names previously appended in commit `e17f9f2` (2026-11-07) have been separated into `../ja/ja_given_romanized.txt`.

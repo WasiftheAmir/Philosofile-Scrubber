@@ -5,7 +5,7 @@
       "path": "en_words_full.txt",
       "role": "word_list",
       "source": "NLTK words corpus (Unix words) + 41 project business keywords",
-      "licence": "Public Domain",
+      "licence": "Public Domain (NLTK words corpus); CC BY 4.0 (project additions)",
       "version": "nltk_data/words (2026-10-08)",
       "sha256": "4d9fa7911005e2033b6028ebfcac92ba8435e24c10d9ca422ff2bec2c70b11ae"
     },
@@ -21,7 +21,7 @@
       "path": "en_names.txt",
       "role": "name_list",
       "source": "NLTK names corpus (Kantrowitz v1.3) + smashew/NameDatabases + project extras, filtered against en_words_full",
-      "licence": "Mark Kantrowitz Names Corpus License (LICENSE_en_names.txt) / The Unlicense",
+      "licence": "Mark Kantrowitz Names Corpus License (LICENSE_en_names.txt) / The Unlicense / CC BY 4.0 (project extras)",
       "version": "v1.3 (1994-03-29) / 2026-10-08",
       "sha256": "9ca79985d2990acc5dfb875db2ebd0bdc9a32a77abe56899971b3bb1e92c84f8"
     }

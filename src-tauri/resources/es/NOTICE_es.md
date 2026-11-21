@@ -5,7 +5,7 @@ This directory contains Spanish word, given-name, and surname lists loaded at ru
 ## 1. Given Name List (`es_names.txt`)
 
 - **Source:** Instituto Nacional de Estadistica (INE) — *Frecuencias de nombres y apellidos* (`https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177009`) and Wikidata (`https://www.wikidata.org/`, `query (2).csv`).
-- **Version / Date:** `2026-11-02` (header status: `UNREVIEWED (draft)`).
+- **Version / Date:** `2026-11-02` (header status: `Settled`).
 - **Licence:** INE reuse terms (`Ley 37/2007` / `CC BY 4.0`) and Wikidata `CC0 1.0 Universal`.
   - CC BY 4.0 canonical URL: https://creativecommons.org/licenses/by/4.0/
   - CC BY 4.0 full license text: [`LICENSE_es_names.txt`](LICENSE_es_names.txt)

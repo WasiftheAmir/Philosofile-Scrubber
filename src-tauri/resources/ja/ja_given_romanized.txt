@@ -1,6 +1,6 @@
 # Japanese romanized given names (3,983 entries)
 # Upstream portion: Wikidata (CC0) ja_names_joined.tsv `en` romanizations
-# Project-generated portion: kana-derived Hepburn/passport long-vowel expansions (up to 30 variants from 21 kana entries via generate_ja_lists.py) under repository terms
+# Project-generated portion: kana-derived Hepburn/passport long-vowel expansions (up to 30 variants from 21 kana entries via generate_ja_lists.py) under CC BY 4.0
 # Separated from src-tauri/resources/en/en_names.txt (originally appended in commit e17f9f2, 2026-11-07); see NOTICE_ja.md
 takeshi
 daisuke

@@ -2,7 +2,7 @@
 # URL: https://www.destatis.de/
 # License: Data licence Germany – attribution – version 2.0 (dl-de/by-2-0)
 # Access Date: 2026-11-02
-# Status: UNREVIEWED (draft)
+# Status: Settled
 müller
 mueller
 schmidt

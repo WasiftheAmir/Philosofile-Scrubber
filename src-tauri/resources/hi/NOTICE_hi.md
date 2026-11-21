@@ -4,7 +4,7 @@ This directory contains the external language data and name resources used by th
 
 ## License Separation
 
-- **Rust source code (`src-tauri/src/`)**: Retains the Philosofile project's existing repository licence. The CC BY-SA 4.0 dictionary word list (`hi_words.tsv.zst`) is loaded and decompressed lazily at runtime from bundle resources and is **not** compiled into the application binary as source code.
+- **Rust source code (`src-tauri/src/`)**: Licensed under **PolyForm Noncommercial License 1.0.0** (see root `LICENSE`). The CC BY-SA 4.0 dictionary word list (`hi_words.tsv.zst`) is loaded and decompressed lazily at runtime from bundle resources and is **not** compiled into the application binary as source code.
 - **Hindi Wiktionary word list (`hi_words.tsv.zst`)**: Licensed under **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** (full licence text in `LICENSE_hi_dictionary.txt`; copyright notice also included in the compressed file header).
 - **Hindi combined frequency counts (`hi_freq.tsv.zst`)**: Licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)** (full licence text in `LICENSE_hi_names.txt`).
 - **Hindi name lists (`hi_names_male.csv`, `hi_names_female.csv`, `hi_surnames.csv`, and cleaned lists `hi_names_male_clean.csv`, `hi_names_female_clean.csv`, `hi_surnames_clean.csv`)**: Project-owned generated lists licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)** (full licence text in `LICENSE_hi_names.txt`), kept separate from the CC BY-SA 4.0 word list.
