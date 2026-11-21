@@ -4,7 +4,7 @@ Local-first, zero-cloud privacy scrubber exported from Philosofile.
 
 `philosofile-scrubber` provides deterministic, on-device PII redaction for both text and images without external network calls or cloud inference:
 
-- **Multilingual PII Text Scrubbing (`src-tauri/src/pipeline/scrubber.rs`):** Cross-platform (macOS, Windows, Linux) text redaction across 11 languages (`en`, `es`, `fr`, `de`, `pt`, `it`, `nl`, `ja`, `ko`, `hi`, `bn`), combining structured identifier detection, label-guided capture, and frequency-/dictionary-gated name recognition.
+- **Multilingual PII Text Scrubbing (`src-tauri/src/pipeline/scrubber.rs`):** Cross-platform (macOS, Windows, Linux) text redaction across 9 supported languages (`en`, `es`, `fr`, `de`, `pt`, `ja`, `ko`, `hi`, `bn`) — plus experimental/lightweight name lists for `it` and `nl` — combining structured identifier detection, label-guided capture, and frequency-/dictionary-gated name recognition.
 - **OS-Native Image Redaction (`src-tauri/src/pipeline/image_redact.rs`):** Detects faces and sensitive text via OS-native frameworks—Apple `Vision` on macOS (`13+`) and WinRT `Windows.Media.Ocr` / `Windows.Media.FaceAnalysis` on Windows—and applies mosaic pixelation to matched regions. On unsupported platforms (such as Linux), `redact_image` fails closed with `Err("unsupported platform")` and never returns unblurred image bytes.
 
 ## Architectural Overview
